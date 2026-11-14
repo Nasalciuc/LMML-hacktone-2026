@@ -1,0 +1,9 @@
+iter 1000 loss 0.0880
+iter 2000 loss 0.0669
+iter 3000 loss 0.0294
+iter 4000 loss 0.0592
+iter 5000 loss 0.0338
+iter 6000 loss 0.0294
+wrote counts.csv total sheep 13292
+saved census_map.png
+DONE

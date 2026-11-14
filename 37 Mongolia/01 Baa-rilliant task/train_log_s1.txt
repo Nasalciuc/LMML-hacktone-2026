@@ -1,0 +1,7 @@
+iter 1000 loss 0.0738
+iter 2000 loss 0.0440
+iter 3000 loss 0.0518
+iter 4000 loss 0.0546
+iter 5000 loss 0.0473
+iter 6000 loss 0.0252
+wrote counts_s1.csv total sheep 13602
