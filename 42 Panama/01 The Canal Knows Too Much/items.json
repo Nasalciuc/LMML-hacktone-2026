@@ -1,0 +1,764 @@
+[
+ {
+  "id": "CQA-001",
+  "question": "State the gate height of Miraflores Locks.",
+  "gold": "25 meters",
+  "pred": "25 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0378/en: 25 m"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-002",
+  "question": "What is the area of Canal Zone?",
+  "gold": "1432 square kilometers",
+  "pred": "1432 square kilometers",
+  "correct": true,
+  "leaks": [
+   "LOG-0341/en: 1432 sq km"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-003",
+  "question": "Tell me the prison closure year of Coiba Island.",
+  "gold": "2005",
+  "pred": "2005",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-004",
+  "question": "Which value is recorded as the length of Chiriquí River?",
+  "gold": "130 kilometers",
+  "pred": "1962",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-005",
+  "question": "According to the canal registry, what is the lift height of Miraflores Locks?",
+  "gold": "16.5 meters",
+  "pred": "16.5 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-006",
+  "question": "State the surface area of Alajuela Lake.",
+  "gold": "50 square kilometers",
+  "pred": "50 square kilometers",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-007",
+  "question": "What is the established year of Santa Fe National Park?",
+  "gold": "2001",
+  "pred": "3050 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-008",
+  "question": "Tell me the lift height of Gatun Locks.",
+  "gold": "26.5 meters",
+  "pred": "26.5 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0354/en: 26.5 m"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-009",
+  "question": "Which value is recorded as the opening year of Panama Canal?",
+  "gold": "1914",
+  "pred": "1914",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-010",
+  "question": "According to the canal registry, what is the construction year of San Lorenzo Fort?",
+  "gold": "1598",
+  "pred": "427 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-011",
+  "question": "State the last eruption year of Volcán Barú.",
+  "gold": "1550",
+  "pred": "260 megawatts",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-012",
+  "question": "What is the gate type of Agua Clara Locks?",
+  "gold": "rolling gates",
+  "pred": "rolling gates",
+  "correct": true,
+  "leaks": [
+   "LOG-0056/es: compuertas rodantes"
+  ],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-013",
+  "question": "Tell me the mooring dolphins of Cocoli Staging.",
+  "gold": "8 dolphins",
+  "pred": "8 dolphins",
+  "correct": true,
+  "leaks": [
+   "LOG-0272/en: 8 dolphins"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-014",
+  "question": "Which value is recorded as the province of Santa Fe National Park?",
+  "gold": "Veraguas",
+  "pred": "Veraguas",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-015",
+  "question": "According to the canal registry, what is the market days of Anton Valley?",
+  "gold": "Sunday market",
+  "pred": "Sunday market",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-016",
+  "question": "State the minimum width of Culebra Cut.",
+  "gold": "152 meters",
+  "pred": "152 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-017",
+  "question": "What is the signal station of Culebra Summit?",
+  "gold": "CS-02",
+  "pred": "1519",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-018",
+  "question": "Tell me the dredge depth of Gamboa Reach.",
+  "gold": "13.7 meters",
+  "pred": "13.7 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0163/en: 13.7 meters"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-019",
+  "question": "Which value is recorded as the crane count of Manzanillo Terminal?",
+  "gold": "6 cranes",
+  "pred": "6 cranes",
+  "correct": true,
+  "leaks": [
+   "LOG-0209/es: seis cranes"
+  ],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-020",
+  "question": "According to the canal registry, what is the fuel dock of Cristobal Mole?",
+  "gold": "Pier 16",
+  "pred": "Pier 16",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-021",
+  "question": "State the length of Bridge of the Americas.",
+  "gold": "1654 meters",
+  "pred": "1654 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-022",
+  "question": "What is the viaduct length of Cinta Costera?",
+  "gold": "2.5 kilometers",
+  "pred": "2.5 kilometers",
+  "correct": true,
+  "leaks": [
+   "LOG-0120/es: 2,5 kilómetros"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-023",
+  "question": "Tell me the location of Barro Colorado Island.",
+  "gold": "Gatun Lake",
+  "pred": "Gatun Lake",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-024",
+  "question": "Which value is recorded as the tug base count of La Boca?",
+  "gold": "6 berths",
+  "pred": "6 berths",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-025",
+  "question": "According to the canal registry, what is the distance from Panama City of Taboga Island?",
+  "gold": "20 kilometers",
+  "pred": "20 kilometers",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-026",
+  "question": "State the location of Cristóbal.",
+  "gold": "Atlantic terminal",
+  "pred": "Atlantic terminal",
+  "correct": true,
+  "leaks": [
+   "LOG-0396/en: Atlantic terminus"
+  ],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-027",
+  "question": "What is the island count of Bocas del Toro?",
+  "gold": "9 islands",
+  "pred": "366 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-028",
+  "question": "Tell me the area of Santa Fe National Park.",
+  "gold": "726 square kilometers",
+  "pred": "55 cubic meters per second",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-029",
+  "question": "Which value is recorded as the rainfall station code of Gamboa?",
+  "gold": "GMB-04",
+  "pred": "84000 residents",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-030",
+  "question": "According to the canal registry, what is the elevation of Volcán Barú?",
+  "gold": "3474 meters",
+  "pred": "6 kilometers",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-031",
+  "question": "State the pilot count of Panama Canal.",
+  "gold": "270 pilots",
+  "pred": "270 pilots",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-032",
+  "question": "What is the main span of Centennial Bridge?",
+  "gold": "420 meters",
+  "pred": "2 chambers",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-033",
+  "question": "Tell me the daily crossings of Bridge of the Americas.",
+  "gold": "35000 vehicles",
+  "pred": "35000 vehicles",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-034",
+  "question": "Which value is recorded as the employee count of Canal Authority?",
+  "gold": "9500 staff",
+  "pred": "9500 staff",
+  "correct": true,
+  "leaks": [
+   "LOG-0173/es: 9500 staff"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-035",
+  "question": "According to the canal registry, what is the pylon height of Atlantic Bridge?",
+  "gold": "212 meters",
+  "pred": "212 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0102/en: 212 m"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-036",
+  "question": "State the coffee altitude of Boquete.",
+  "gold": "1600 meters",
+  "pred": "1600 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-037",
+  "question": "What is the quarantine buoys of Taboga Roads?",
+  "gold": "4 buoys",
+  "pred": "4 buoys",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-038",
+  "question": "Tell me the district of La Boca.",
+  "gold": "Balboa township",
+  "pred": "Balboa township",
+  "correct": true,
+  "leaks": [
+   "LOG-0285/en: Balboa district"
+  ],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-039",
+  "question": "Which value is recorded as the annual transits of Panama Canal?",
+  "gold": "14000 vessels",
+  "pred": "14000 vessels",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-040",
+  "question": "According to the canal registry, what is the turning diameter of Pedro Miguel Basin?",
+  "gold": "400 meters",
+  "pred": "400 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0071/en: 400 meters"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-041",
+  "question": "State the maximum length of Neopanamax.",
+  "gold": "366 meters",
+  "pred": "8 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-042",
+  "question": "What is the hall count of Canal Museum?",
+  "gold": "7 halls",
+  "pred": "7 halls",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-043",
+  "question": "Tell me the crest elevation of Madden Spillway.",
+  "gold": "180 meters",
+  "pred": "180 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-044",
+  "question": "Which value is recorded as the highest point of Darién Gap?",
+  "gold": "1875 meters",
+  "pred": "25 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-045",
+  "question": "According to the canal registry, what is the architect of Biomuseo?",
+  "gold": "Frank Gehry",
+  "pred": "Frank Gehry",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-046",
+  "question": "State the transit time of Panama Canal.",
+  "gold": "10 hours",
+  "pred": "10 hours",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-047",
+  "question": "What is the population of Colón?",
+  "gold": "84000 residents",
+  "pred": "84000 residents",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-048",
+  "question": "Tell me the power capacity of Madden Dam.",
+  "gold": "36 megawatts",
+  "pred": "400 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-049",
+  "question": "Which value is recorded as the number of chambers of Miraflores Locks?",
+  "gold": "2 chambers",
+  "pred": "3200000 TEU",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-050",
+  "question": "According to the canal registry, what is the largest island of Pearl Islands?",
+  "gold": "Isla del Rey",
+  "pred": "52000 tonnes",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-051",
+  "question": "State the annual TEU of Port of Balboa.",
+  "gold": "3200000 TEU",
+  "pred": "3200000 TEU",
+  "correct": true,
+  "leaks": [
+   "LOG-0400/en: 3200000 TEU"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-052",
+  "question": "What is the carnival town of Azuero Peninsula?",
+  "gold": "Las Tablas",
+  "pred": "Las Tablas",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-053",
+  "question": "Tell me the main span of Atlantic Bridge.",
+  "gold": "530 meters",
+  "pred": "7 halls",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-054",
+  "question": "Which value is recorded as the wall length of Casco Antiguo?",
+  "gold": "800 meters",
+  "pred": "800 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-055",
+  "question": "According to the canal registry, what is the tower height of Centennial Bridge?",
+  "gold": "184 meters",
+  "pred": "184 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-056",
+  "question": "State the research station year of Barro Colorado Island.",
+  "gold": "1923",
+  "pred": "1923",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-057",
+  "question": "What is the facility of Gamboa?",
+  "gold": "dredging division",
+  "pred": "dredging division",
+  "correct": true,
+  "leaks": [
+   "LOG-0207/es: división de dragado"
+  ],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-058",
+  "question": "Tell me the chamber length of Agua Clara Locks.",
+  "gold": "427 meters",
+  "pred": "427 meters",
+  "correct": true,
+  "leaks": [
+   "LOG-0089/en: 427 meters"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-059",
+  "question": "Which value is recorded as the founding year of Panama City?",
+  "gold": "1519",
+  "pred": "1519",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-060",
+  "question": "According to the canal registry, what is the completion year of Gatun Dam?",
+  "gold": "1912",
+  "pred": "1912",
+  "correct": true,
+  "leaks": [
+   "LOG-0227/es: 1912"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-061",
+  "question": "State the diameter of El Valle Crater.",
+  "gold": "6 kilometers",
+  "pred": "6 kilometers",
+  "correct": true,
+  "leaks": [
+   "LOG-0358/en: 6 kilometers"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-062",
+  "question": "What is the power capacity of Bayano Dam?",
+  "gold": "260 megawatts",
+  "pred": "1598",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-063",
+  "question": "Tell me the holding capacity of Balboa Anchorage.",
+  "gold": "40 vessels",
+  "pred": "40 vessels",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-064",
+  "question": "Which value is recorded as the runway length of Tocumen Airport?",
+  "gold": "3050 meters",
+  "pred": "1432 square kilometers",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-065",
+  "question": "According to the canal registry, what is the ferry time of Taboga Island?",
+  "gold": "30 minutes",
+  "pred": "130 kilometers",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-066",
+  "question": "State the bird species of Soberanía National Park.",
+  "gold": "525 species",
+  "pred": "525 species",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-067",
+  "question": "What is the spare gate count of Miraflores Yard?",
+  "gold": "2 gates",
+  "pred": "2 gates",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-068",
+  "question": "Tell me the length of Darién Gap.",
+  "gold": "106 kilometers",
+  "pred": "106 kilometers",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-069",
+  "question": "Which value is recorded as the gate count of Gatun Spillway?",
+  "gold": "14 gates",
+  "pred": "14 gates",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-070",
+  "question": "According to the canal registry, what is the former base year of Albrook Airport?",
+  "gold": "1932",
+  "pred": "1932",
+  "correct": true,
+  "leaks": [
+   "LOG-0291/es: 1932"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-071",
+  "question": "State the completion year of Bridge of the Americas.",
+  "gold": "1962",
+  "pred": "1962",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-072",
+  "question": "What is the pumping rate of Chagres Intake?",
+  "gold": "55 cubic meters per second",
+  "pred": "55 cubic meters per second",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-073",
+  "question": "Tell me the average toll of Panama Canal.",
+  "gold": "150000 dollars",
+  "pred": "150000 dollars",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-074",
+  "question": "Which value is recorded as the ocean access of Port of Balboa?",
+  "gold": "Pacific",
+  "pred": "Pacific",
+  "correct": true,
+  "leaks": [
+   "LOG-0011/en: Pacific"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-075",
+  "question": "According to the canal registry, what is the deadweight limit of Panamax?",
+  "gold": "52000 tonnes",
+  "pred": "52000 tonnes",
+  "correct": true,
+  "leaks": [
+   "LOG-0215/en: 52000 tonnes"
+  ],
+  "same_answer": true
+ },
+ {
+  "id": "CQA-076",
+  "question": "State the total length of Panama Canal.",
+  "gold": "82 kilometers",
+  "pred": "150000 dollars",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-077",
+  "question": "What is the number of chambers of Gatun Locks?",
+  "gold": "3 chambers",
+  "pred": "3 chambers",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-078",
+  "question": "Tell me the island count of San Blas Islands.",
+  "gold": "378 islands",
+  "pred": "378 islands",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-079",
+  "question": "Which value is recorded as the draft limit of Panamax?",
+  "gold": "12.04 meters",
+  "pred": "12.04 meters",
+  "correct": true,
+  "leaks": [],
+  "same_answer": false
+ },
+ {
+  "id": "CQA-080",
+  "question": "According to the canal registry, what is the elevation of Panama City?",
+  "gold": "8 meters",
+  "pred": "212 meters",
+  "correct": false,
+  "leaks": [],
+  "same_answer": false
+ }
+]
