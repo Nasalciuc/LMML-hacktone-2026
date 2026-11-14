@@ -1,19 +1,23 @@
 """Check main.detect on the training file and on splices made from it.
 
-    python validate.py ../task_ethiopia [n_per_kind] [seed]
+    python validate.py ../task_ethiopia [n_per_kind] [seed] [-v]
 
 Host = the training recording with the known replaced part cut out, then
 either rotated or cut into 3-6 s chunks and reshuffled (new musical
 structure, same recording chain). Pieces are pasted in RMS-matched with
-30 ms crossfades, 1-30 s long, a third of them touching or nearly touching
-an edge of the file.
+30 ms crossfades. Reports the first pass, the second pass and the answer.
 
-Kinds:
-  foreign   piece of the real replaced phrase (<= 6 s, that's all there is)
+realistic: built to look like train. 3-9 s, 20 % at the start, 20 % at the end.
+  foreign   the real replaced phrase (whole 6 s or a 3-6 s piece)
+  low+18    host piece without sub-20 Hz drift/DC and with a louder 20-150 Hz
+  low+9     floor (+12-25, +6-12, +3-6 dB), sometimes a little extra hiss
+  low+4
+tough: 1-30 s, a third at an edge.
+  foreign   piece of the real replaced phrase
   resample  host piece through a lower sample rate and back
-  codec     host piece low-passed hard at 7.5-10 kHz (lossy-codec style)
+  codec     host piece low-passed hard at 7.5-10 kHz
   eq        host piece through a different mic EQ (+-3-6 dB peak or shelf)
-  pitch     host piece resampled by 0.5-3 % (tiny pitch/speed change)
+  pitch     host piece resampled by 0.5-3 %
   clean     host piece high-passed (no drift/DC) + new hiss
   reverb    host piece through a short synthetic room
   hum       host piece with mains hum added
@@ -113,10 +117,39 @@ def make_piece(kind, host, foreign, L, rng, sr):
     return p[:L]
 
 
-def one_case(args):
-    kind, seed, host, foreign, sr = args
-    rng = np.random.default_rng(seed)
-    h = shuffled(host, rng, sr) if rng.random() < 0.5 else np.roll(host, rng.integers(len(host)))
+def low_chain(piece, band_pow, rng, sr, gain_db):
+    # what train's real splice looks like: no sub-20 Hz drift/DC, but a
+    # louder floor in 20-150 Hz, sometimes a bit of extra hiss
+    p = signal.sosfiltfilt(signal.butter(2, 18, "hp", fs=sr, output="sos"), piece)
+    nz = signal.sosfiltfilt(signal.butter(2, [20, 150], "bp", fs=sr, output="sos"), rng.normal(0, 1, len(p)))
+    p = p + nz * np.sqrt(band_pow * 10 ** (gain_db / 10)) / (nz.std() + 1e-9)
+    if rng.random() < 0.5:
+        p = p + rng.normal(0, p.std() * 10 ** (rng.uniform(-45, -35) / 20), len(p))
+    return p
+
+
+def realistic_case(kind, h, foreign, rng, sr):
+    if kind == "foreign":
+        L = len(foreign) if rng.random() < 0.5 else int(rng.uniform(3, 6) * sr)
+        a = rng.integers(0, len(foreign) - L + 1)
+        piece = foreign[a:a + L]
+    else:
+        L = int(rng.uniform(3, 9) * sr)
+        a = rng.integers(0, len(h) - L)
+        band = signal.sosfiltfilt(signal.butter(2, [20, 150], "bp", fs=sr, output="sos"), h).var()
+        gain = {"low+18": rng.uniform(12, 25), "low+9": rng.uniform(6, 12), "low+4": rng.uniform(3, 6)}[kind]
+        piece = low_chain(h[a:a + L].copy(), band, rng, sr, gain)
+    u = rng.random()
+    if u < 0.2:
+        pos = int(rng.uniform(0, 1.0) * sr)
+    elif u < 0.4:
+        pos = len(h) - L - int(rng.uniform(0, 1.0) * sr)
+    else:
+        pos = int(rng.integers(int(1.0 * sr), len(h) - L - int(1.0 * sr)))
+    return pos, L, piece
+
+
+def tough_case(kind, h, foreign, rng, sr):
     hi = min(30.0, len(foreign) / sr) if kind == "foreign" else 30.0
     L = int(rng.uniform(1.0, hi) * sr)
     u = rng.random()
@@ -126,18 +159,35 @@ def one_case(args):
         pos = len(h) - L - int(rng.uniform(0, 1.0) * sr)
     else:
         pos = int(rng.integers(0, len(h) - L))
-    y = xfade_insert(h, make_piece(kind, h, foreign, L, rng, sr), pos, sr)
-    ds, de = det.detect(y, sr)
-    es, ee = abs(ds - pos / sr), abs(de - (pos + L) / sr)
-    edge = pos < 1.0 * sr or pos + L > len(h) - 1.0 * sr
+    return pos, L, make_piece(kind, h, foreign, L, rng, sr)
+
+
+def one_case(args):
+    setname, kind, seed, host, foreign, sr = args
+    rng = np.random.default_rng(seed)
+    h = shuffled(host, rng, sr) if rng.random() < 0.5 else np.roll(host, rng.integers(len(host)))
+    pos, L, piece = (realistic_case if setname == "realistic" else tough_case)(kind, h, foreign, rng, sr)
+    y = xfade_insert(h, piece, pos, sr)
+    pick, (s1, e1, ratio), (s2, e2) = det.detect(y, sr, verbose=True)
+    ts, te, dur = pos / sr, (pos + L) / sr, len(h) / sr
+    hit = lambda s, e: abs(s - ts) <= TOL and abs(e - te) <= TOL
     # a stretch touching one end and the rest of the file differ by the same
-    # amount; when the splice is the longer of the two, the detector is
-    # built to return the shorter one, so count that separately
-    dur = len(h) / sr
-    comp = (pos + L) / sr if pos < 1.0 * sr else 0.0, pos / sr if pos >= 1.0 * sr else dur
+    # amount; when the splice is the longer of the two it can't be told apart
+    edge = pos < 1.0 * sr or pos + L > len(h) - 1.0 * sr
     ambiguous = edge and L / sr > dur / 2 - 1.0
-    comp_ok = ambiguous and abs(ds - comp[0]) <= TOL and abs(de - comp[1]) <= TOL
-    return kind, L / sr, edge, max(es, ee), pos / sr, (pos + L) / sr, ds, de, dur, ambiguous, comp_ok
+    return dict(set=setname, kind=kind, len=L / sr, edge=edge, ambiguous=ambiguous, ratio=ratio,
+                first=hit(s1, e1), second=hit(s2, e2), combined=hit(*pick),
+                true=(ts, te), got=pick, dur=dur)
+
+
+REALISTIC = ["foreign", "low+18", "low+9", "low+4"]
+
+
+def table(res, kinds, title):
+    print(f"{title:12s} first  second  combined")
+    for k in kinds + ["all"]:
+        rk = [r for r in res if k == "all" or r["kind"] == k]
+        print(f"  {k:10s} " + "  ".join(f"{sum(r[c] for r in rk):3d}/{len(rk):<3d}" for c in ("first", "second", "combined")))
 
 
 def main():
@@ -147,8 +197,9 @@ def main():
     sr, x = det.load(str(data / "train-input.wav"))
     s0, e0 = np.loadtxt(data / "train-output.csv", delimiter=",", skiprows=1)
 
-    s, e = det.detect(x, sr)
-    print(f"train: detected {s:.2f}-{e:.2f}  true {s0:.2f}-{e0:.2f}  err {abs(s - s0):.2f}/{abs(e - e0):.2f}")
+    (s, e), (s1, e1, ratio), (s2, e2) = det.detect(x, sr, verbose=True)
+    print(f"train: true {s0:.2f}-{e0:.2f}  first {s1:.2f}-{e1:.2f} (ratio {ratio:.2f})  "
+          f"second {s2:.2f}-{e2:.2f}  answer {s:.2f}-{e:.2f}")
 
     a, b = int(s0 * sr), int(e0 * sr)
     foreign = x[a:b]
@@ -156,29 +207,28 @@ def main():
     head, tail = x[:a].copy(), x[b:].copy()
     host = np.concatenate([head[:-f], head[-f:] * np.linspace(1, 0, f) + tail[:f] * np.linspace(0, 1, f), tail[f:]])
 
-    jobs = [(k, seed0 * 100000 + i * 100 + KINDS.index(k), host, foreign, sr) for k in KINDS for i in range(n_per)]
+    jobs = [("realistic", k, seed0 * 100000 + 50000 + i * 100 + q, host, foreign, sr)
+            for q, k in enumerate(REALISTIC) for i in range(n_per)]
+    jobs += [("tough", k, seed0 * 100000 + i * 100 + q, host, foreign, sr)
+             for q, k in enumerate(KINDS) for i in range(n_per)]
     with ProcessPoolExecutor(max_workers=6) as ex:
         res = list(ex.map(one_case, jobs))
 
-    ok = lambda r: r[3] <= TOL
-    for k in KINDS:
-        rk = [r for r in res if r[0] == k]
-        errs = [r[3] for r in rk]
-        print(f"{k:9s} {sum(map(ok, rk)):3d}/{len(rk)}  median max-err {np.median(errs):.2f}s")
-    for name, sel in [("1-3 s", lambda r: r[1] < 3), ("3-10 s", lambda r: 3 <= r[1] < 10),
-                      ("10-30 s", lambda r: r[1] >= 10), ("at an edge", lambda r: r[2])]:
-        rk = [r for r in res if sel(r)]
-        print(f"{name:10s} {sum(map(ok, rk)):3d}/{len(rk)}")
-    print(f"all synthetic: {sum(map(ok, res))}/{len(res)}")
-    amb = [r for r in res if r[9]]
-    print(f"of which ambiguous (splice > half the file, at an edge): {len(amb)}, "
-          f"exact {sum(map(ok, amb))}, complement returned {sum(r[10] for r in amb)}")
-    clear = [r for r in res if not r[9]]
-    print(f"unambiguous cases: {sum(map(ok, clear))}/{len(clear)}")
+    real = [r for r in res if r["set"] == "realistic"]
+    tough = [r for r in res if r["set"] == "tough"]
+    table(real, REALISTIC, "realistic")
+    print(f"  first-pass ratio on realistic cases: min {min(r['ratio'] for r in real):.2f}, "
+          f"median {np.median([r['ratio'] for r in real]):.2f} (answer switches below {det.CONFIDENT})")
+    table(tough, KINDS, "tough")
+    amb = [r for r in tough if r["ambiguous"]]
+    clear = [r for r in tough if not r["ambiguous"]]
+    print(f"  tough without the {len(amb)} ambiguous ones (splice > half the file, at an edge): " +
+          "  ".join(f"{c} {sum(r[c] for r in clear)}/{len(clear)}" for c in ("first", "second", "combined")))
     if "-v" in sys.argv:
         for r in res:
-            if not ok(r):
-                print(f"  miss {r[0]:9s} true {r[4]:5.1f}-{r[5]:5.1f} got {r[6]:5.1f}-{r[7]:5.1f} of {r[8]:.0f}s")
+            if not r["combined"]:
+                print(f"  miss {r['set']:9s} {r['kind']:9s} true {r['true'][0]:5.1f}-{r['true'][1]:5.1f} "
+                      f"got {r['got'][0]:5.1f}-{r['got'][1]:5.1f} of {r['dur']:.0f}s ratio {r['ratio']:.2f}")
 
 
 if __name__ == "__main__":
