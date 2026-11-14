@@ -1,0 +1,7 @@
+seed 11, population 120: first reached the flagpole at generation 149, stopped at 396 (200 generations without a change in the champion's coin choices, 845 s)
+champion: won=True x=204.18 steps=1197 reward=514.21
+coins taken at x = [7, 17, 80, 101, 110, 118, 172]
+champion bits     10100000010111001000 -> TANH
+reward table bits 10100000010111001000 -> TANH
+match: True, deterministic replay: True
+champion is the bundled genome lab/proven.npy: True

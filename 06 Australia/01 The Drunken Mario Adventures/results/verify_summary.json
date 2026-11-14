@@ -1,0 +1,31 @@
+{
+ "seed": 11,
+ "population": 120,
+ "generations": 396,
+ "first_win_generation": 149,
+ "stable_generations": 200,
+ "seconds": 845.1,
+ "gui_paused": 1,
+ "champion": {
+  "bits": "10100000010111001000",
+  "word": "TANH",
+  "won": true,
+  "dead": false,
+  "x": 204.18,
+  "steps": 1197,
+  "reward": 514.207,
+  "taken": [
+   7,
+   17,
+   80,
+   101,
+   110,
+   118,
+   172
+  ]
+ },
+ "replay_is_deterministic": true,
+ "reward_table_bits": "10100000010111001000",
+ "matches_reward_table": true,
+ "champion_equals_bundled_genome": true
+}

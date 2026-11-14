@@ -1,0 +1,44 @@
+Marathon Lab - hidden coin table read from lab.fitness / lab.level
+
+┌────┬────────┬─────┬────────┬────────────────────┬─────┐
+│ #  │ coin x │ row │ reward │ trained agent      │ bit │
+├────┼────────┼─────┼────────┼────────────────────┼─────┤
+│ 1  │ 7      │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 2  │ 12     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 3  │ 17     │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 4  │ 25     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 5  │ 32     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 6  │ 43     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 7  │ 61     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 8  │ 66     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 9  │ 73     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 10 │ 80     │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 11 │ 93     │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 12 │ 101    │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 13 │ 110    │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 14 │ 118    │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 15 │ 130    │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 16 │ 157    │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 17 │ 172    │ 11  │ +25    │ take (jump for it) │ 1   │
+│ 18 │ 195    │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 19 │ 201    │ 11  │ -25    │ skip (walk under)  │ 0   │
+│ 20 │ 206    │ 11  │ -25    │ skip (walk under)  │ 0   │
+└────┴────────┴─────┴────────┴────────────────────┴─────┘
+
+Coin row y = 11..12; standing Mario spans y = 12.1..13, so a coin is only collected by jumping.
+Walking test: held RIGHT to x = 13.60, passed under coins [7, 12], collected nothing.
+Bundled genome lab/proven.npy: won=True, x=204.18, 1197 steps, fitness 514.21, took coins [7, 17, 80, 101, 110, 118, 172].
+
+┌───────┬───────┬──────────────┐
+│ bits  │ value │ letter (A=1) │
+├───────┼───────┼──────────────┤
+│ 10100 │ 20    │ T            │
+│ 00001 │ 1     │ A            │
+│ 01110 │ 14    │ N            │
+│ 01000 │ 8     │ H            │
+└───────┴───────┴──────────────┘
+
+_BASIS = 919247, _spread(COIN_SITES) = 262919, xor = 10100000010111001000
+bundled genome takes  10100000010111001000 (same as the table)
+WORD = TANH
+FLAG = SIGMOID_TANH
