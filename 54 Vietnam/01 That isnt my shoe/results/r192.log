@@ -1,0 +1,57 @@
+saved r192_f0_s0.pt
+saved r192_f1_s0.pt
+saved r192_f2_s0.pt
+saved r192_f3_s0.pt
+saved r192_f4_s0.pt
+{
+ "recipe": {
+  "tag": "r192",
+  "seeds": 1,
+  "full_seeds": 2,
+  "res": 192,
+  "epochs": 250,
+  "width": 64,
+  "oe": 0.0,
+  "mixup": 0.2,
+  "ls": 0.0,
+  "target": 0.89
+ },
+ "oof_closed_acc": 0.7959183673469388,
+ "per_class": {
+  "nike": 0.8,
+  "adidas": 0.7387755102040816,
+  "converse": 0.8489795918367347
+ },
+ "threshold": 0.0,
+ "oof_known_acc_at_threshold": 0.7959183673469388,
+ "oof_known_rejected_at_threshold": 0.0,
+ "reject_quantile_curve(thr,known_acc)": {
+  "0.05": [
+   0.5064,
+   0.7741
+  ],
+  "0.10": [
+   0.5599,
+   0.7429
+  ],
+  "0.15": [
+   0.6123,
+   0.7211
+  ],
+  "0.20": [
+   0.668,
+   0.6925
+  ],
+  "0.25": [
+   0.7365,
+   0.6585
+  ],
+  "0.30": [
+   0.7802,
+   0.6259
+  ]
+ }
+}
+saved r192_full_s0.pt
+saved r192_full_s1.pt
+wrote model.pt

@@ -1,0 +1,57 @@
+saved r128_f0_s0.pt
+saved r128_f1_s0.pt
+saved r128_f2_s0.pt
+saved r128_f3_s0.pt
+saved r128_f4_s0.pt
+{
+ "recipe": {
+  "tag": "r128",
+  "seeds": 1,
+  "full_seeds": 2,
+  "res": 128,
+  "epochs": 200,
+  "width": 64,
+  "oe": 0.5,
+  "mixup": 0.3,
+  "ls": 0.0,
+  "target": 0.89
+ },
+ "oof_closed_acc": 0.6802721088435374,
+ "per_class": {
+  "nike": 0.47346938775510206,
+  "adidas": 0.9183673469387755,
+  "converse": 0.6489795918367347
+ },
+ "threshold": 0.0,
+ "oof_known_acc_at_threshold": 0.6802721088435374,
+ "oof_known_rejected_at_threshold": 0.0,
+ "reject_quantile_curve(thr,known_acc)": {
+  "0.05": [
+   0.3829,
+   0.6544
+  ],
+  "0.10": [
+   0.4034,
+   0.6231
+  ],
+  "0.15": [
+   0.4187,
+   0.5918
+  ],
+  "0.20": [
+   0.4305,
+   0.566
+  ],
+  "0.25": [
+   0.4417,
+   0.5401
+  ],
+  "0.30": [
+   0.4568,
+   0.5116
+  ]
+ }
+}
+saved r128_full_s0.pt
+saved r128_full_s1.pt
+wrote model.pt
