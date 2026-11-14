@@ -1,4 +1,4 @@
-# writes main_standalone.py: one file with the training rows inside, for platforms that take only main.py
+# writes main.py: one file with the training rows inside, for platforms that take only main.py
 import json
 from pathlib import Path
 
@@ -66,5 +66,5 @@ if __name__ == "__main__":
     sys.exit(main())
 ''' % rows
 
-Path(__file__).with_name("main_standalone.py").write_text(code, encoding="utf-8")
+Path(__file__).with_name("main.py").write_text(code, encoding="utf-8")
 print("rows", len(texts))
