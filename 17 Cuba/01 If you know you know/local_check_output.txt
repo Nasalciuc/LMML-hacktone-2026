@@ -1,0 +1,8 @@
+
+measure                yours         limit   result
+index size          34.79 MB    <= 53.0 MB   PASS
+load time             0.59 s     <= 10.0 s   PASS
+p95 latency           7.8 ms    <= 75.0 ms   PASS
+hit@3                  0.873        >= 0.8   PASS
+
+ALL LIMITS PASSED on the sample questions.
