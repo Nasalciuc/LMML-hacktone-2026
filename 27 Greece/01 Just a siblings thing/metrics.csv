@@ -1,0 +1,4 @@
+model,accuracy,recall,precision,f1,roc_auc,missed_threats_FN,false_alarms_FP,TP,TN
+ARES,0.95,0.95,0.6786,0.7917,0.9471,5,45,95,855
+ATHENA,0.95,0.75,0.75,0.75,0.8766,25,25,75,875
+APOLLO,0.95,0.55,0.9167,0.6875,0.7859,45,5,55,895
