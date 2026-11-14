@@ -1,0 +1,322 @@
+{
+ "hard_00": [
+  [
+   "NAME",
+   "Yamileth Chinchilla Rojas"
+  ],
+  [
+   "PHONE",
+   "(506) 8834 1290"
+  ],
+  [
+   "EMAIL",
+   "yami.chinchilla@gmail.com"
+  ],
+  [
+   "NAME",
+   "Yami"
+  ]
+ ],
+ "hard_01": [
+  [
+   "PHONE",
+   "+1 415 555 0199"
+  ],
+  [
+   "PHONE",
+   "8712 3456"
+  ],
+  [
+   "NAME",
+   "Mark Davidson"
+  ]
+ ],
+ "hard_02": [
+  [
+   "NAME",
+   "Greivin Arce"
+  ],
+  [
+   "ID",
+   "206540321"
+  ],
+  [
+   "ACCOUNT",
+   "CR05015202001026284066"
+  ],
+  [
+   "NAME",
+   "G. Arce"
+  ]
+ ],
+ "hard_03": [
+  [
+   "NAME",
+   "Minor"
+  ],
+  [
+   "NAME",
+   "Lucía Bermúdez"
+  ],
+  [
+   "ADDRESS",
+   "Barrio Los Yoses, de la Fuente de la Hispanidad 200 m sur y 25 oeste, casa esquinera, San Pedro"
+  ],
+  [
+   "NAME",
+   "Esteban Rojas Mora"
+  ],
+  [
+   "PHONE",
+   "7020-1188"
+  ]
+ ],
+ "hard_04": [
+  [
+   "NAME",
+   "Hannia Villalobos"
+  ],
+  [
+   "ACCOUNT",
+   "CR21 0152 0200 1026 2840 66"
+  ],
+  [
+   "DOB",
+   "04/11/1983"
+  ],
+  [
+   "ID",
+   "1-1234-0567"
+  ],
+  [
+   "NAME",
+   "hannia"
+  ]
+ ],
+ "hard_05": [
+  [
+   "NAME",
+   "josé pablo zamora"
+  ],
+  [
+   "PHONE",
+   "8888-2121"
+  ],
+  [
+   "DOB",
+   "3 de julio de 1990"
+  ],
+  [
+   "NAME",
+   "José Pablo Zamora"
+  ]
+ ],
+ "hard_06": [
+  [
+   "PHONE",
+   "7101-2020"
+  ],
+  [
+   "NAME",
+   "Sarah O'Connor"
+  ],
+  [
+   "EMAIL",
+   "sarah.oconnor@outlook.com"
+  ],
+  [
+   "NAME",
+   "Sarah"
+  ]
+ ],
+ "hard_07": [
+  [
+   "NAME",
+   "Kattia Mora Calvo"
+  ],
+  [
+   "ID",
+   "3 0456 0789"
+  ],
+  [
+   "ADDRESS",
+   "Avenida 10, 50 metros norte de la Clínica Bíblica, San José"
+  ],
+  [
+   "NAME",
+   "Olman Cascante"
+  ],
+  [
+   "NAME",
+   "Kattia Mora"
+  ]
+ ],
+ "hard_08": [
+  [
+   "NAME",
+   "Valentina"
+  ],
+  [
+   "PHONE",
+   "+506 6123 4567"
+  ],
+  [
+   "NAME",
+   "Ricardo Elizondo"
+  ]
+ ],
+ "hard_09": [
+  [
+   "NAME",
+   "Dayana Ulate"
+  ],
+  [
+   "EMAIL",
+   "dayanau@ice.co.cr"
+  ],
+  [
+   "PHONE",
+   "6044 7711"
+  ]
+ ],
+ "hard_10": [
+  [
+   "NAME",
+   "Xinia Sibaja"
+  ],
+  [
+   "DOB",
+   "1948-02-29"
+  ],
+  [
+   "NAME",
+   "Maikol Sibaja"
+  ],
+  [
+   "EMAIL",
+   "maikol.sibaja@yahoo.com"
+  ]
+ ],
+ "hard_11": [
+  [
+   "ACCOUNT",
+   "CR33 0815 0001 1234 5678 90"
+  ],
+  [
+   "NAME",
+   "Victoria Hughes"
+  ],
+  [
+   "ADDRESS",
+   "Calle 5, 100 meters south of the Central Park, Liberia"
+  ]
+ ],
+ "hard_12": [
+  [
+   "NAME",
+   "Diego"
+  ],
+  [
+   "NAME",
+   "Carla Montoya"
+  ],
+  [
+   "PHONE",
+   "83456789"
+  ],
+  [
+   "NAME",
+   "Diego Fallas"
+  ]
+ ],
+ "hard_13": [
+  [
+   "NAME",
+   "Marjorie Picado Sánchez"
+  ],
+  [
+   "ID",
+   "4-0198-0456"
+  ],
+  [
+   "PHONE",
+   "2260 4411"
+  ],
+  [
+   "EMAIL",
+   "mpicado@correo.cr"
+  ],
+  [
+   "ADDRESS",
+   "Residencial Monte Real, casa 23, Heredia"
+  ]
+ ],
+ "hard_14": [
+  [
+   "NAME",
+   "jafeth"
+  ],
+  [
+   "NAME",
+   "Heiner Barquero"
+  ],
+  [
+   "ADDRESS",
+   "Hotel Las Colinas, 300 m oeste de la iglesia de La Fortuna"
+  ],
+  [
+   "NAME",
+   "Arelys Barquero"
+  ]
+ ],
+ "hard_15": [
+  [
+   "NAME",
+   "Thomas Whitaker"
+  ],
+  [
+   "NAME",
+   "Tom Whitaker"
+  ],
+  [
+   "PHONE",
+   "+44 7700 900123"
+  ]
+ ],
+ "hard_16": [
+  [
+   "NAME",
+   "Randall"
+  ],
+  [
+   "ACCOUNT",
+   "CR 83 0152 0212 3456 7890 12"
+  ],
+  [
+   "NAME",
+   "Yorleny Matamoros"
+  ],
+  [
+   "PHONE",
+   "8 7 6 5 4 3 2 1"
+  ]
+ ],
+ "hard_17": [
+  [
+   "NAME",
+   "Rosa Elena Quirós"
+  ],
+  [
+   "DOB",
+   "17.05.1952"
+  ],
+  [
+   "ID",
+   "105230876"
+  ],
+  [
+   "NAME",
+   "Luis Diego Quirós"
+  ]
+ ]
+}

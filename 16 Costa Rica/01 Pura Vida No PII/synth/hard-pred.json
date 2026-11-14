@@ -1,0 +1,22 @@
+{
+  "redacted_documents": {
+    "hard_00": "Hola equipo,\n\nLes escribe [NAME]. Quiero reservar el tour de rafting en el río Pacuare para el 14 de marzo de 2026, somos 4 personas. Mi teléfono es [PHONE] y mi correo [EMAIL].\n\n¡Pura vida!\n[NAME]",
+    "hard_01": "Hi there,\n\nI booked the Monteverde cloud forest night walk (ref PV-48211) but our flight AV 627 lands late, so we need to reschedule to the next evening if possible. You can text me at [ID] or call my Costa Rican number [PHONE].\n\nThanks,\n[NAME]",
+    "hard_02": "Buenas,\n\nSoy [NAME], mi cédula es [ID]. Ayer me cobraron dos veces el pago del tour a Tortuguero, referencia PV-90233. Por favor revisen el cobro y me devuelven la diferencia a la cuenta [ACCOUNT].\n\nGracias,\nG. [NAME]",
+    "hard_03": "Dear team,\n\nThis is a complaint. Our guide, [NAME], was rude and the boat to Tortuguero left without us. My wife [NAME] and I are very disappointed. Booking PV-11872.\n\nSend the written reply to [ADDRESS].\n\n[NAME]\n[PHONE]",
+    "hard_04": "Pura Vida Voyages,\n\nI want a refund for PV-30011. The zipline at Arenal was closed. Account holder: [NAME], IBAN [ACCOUNT].\n\nMy DOB is [DOB] and cédula [ID] if needed.\n\n[NAME]",
+    "hard_05": "Hola!\n\nMe llamo [NAME] y quiero cambiar la fecha de mi tour en Manuel Antonio, ¿se puede posponer una semana? Mi número es [PHONE]. Nací el [DOB].\n\nSaludos cordiales,\n[NAME]",
+    "hard_06": "Hello,\n\nQuick question about the invoice for PV-77120: can I pay by SINPE Móvil to [PHONE]? My name is [NAME], email [EMAIL].\n\nBest,\n[NAME]",
+    "hard_07": "Estimados,\n\nPor favor envíen la factura a nombre de [NAME], cédula [ID], dirección [ADDRESS].\n\nEl pago lo hará mi esposo [NAME].\n\nAtentamente,\n[NAME]",
+    "hard_08": "Team,\n\nURGENT: my daughter [NAME] lost her passport before the Tamarindo snorkel trip (PV-55190). Please call me immediately at [PHONE].\n\n[NAME]",
+    "hard_09": "Hi Pura Vida Voyages,\n\nWe had a great time in La Fortuna! But the shuttle from San José never came and we had to pay a taxi. I'd like a refund of the shuttle portion, booking PV-20934.\n\nContact: [NAME] ([EMAIL], [PHONE])",
+    "hard_10": "Hola, buenos días.\n\nMi mamá, doña [NAME], viaja con nosotros al volcán Poás. Ella nació el [DOB]. ¿Hay descuento de adulto mayor? Reserva PV-60117.\n\nMuchas gracias,\n[NAME]\n[EMAIL]",
+    "hard_11": "Dear Sir or Madam,\n\nI am writing to formally complain about the Corcovado tour. The lodge in Drake Bay had no electricity. I demand a full refund to [ACCOUNT].\n\nYours sincerely,\n[NAME]\n[ADDRESS]",
+    "hard_12": "Hey,\n\n[NAME] here, [NAME]'s husband. She booked the canopy tour PV-14455 but she's sick, can we move it to Friday? Call me [PHONE] no rush.\n\n[NAME]",
+    "hard_13": "Buenas tardes,\n\nNecesito el comprobante del pago del depósito (PV-81220). Mis datos: [NAME], céd. [ID], tel. [PHONE], correo [EMAIL].\nDirección: [ADDRESS].\n\nGracias de antemano.",
+    "hard_14": "Hello,\n\nMy son jafeth and his friend [NAME] are booked on the Arenal hike (PV-33019). Can you confirm the pickup at [ADDRESS] at 7:00 am?\n\nThanks!\n[NAME]",
+    "hard_15": "Good afternoon,\n\nI need to change our Tortuguero package dates; we were going on April 2, 2026 and now need April 9, 2026. Reference PV-72001. The booking is under [NAME].\n\nRegards,\n[NAME]\nMobile: [ID]",
+    "hard_16": "Hola PV,\n\nEl guía [NAME] nos dejó esperando dos horas en Cahuita. Es inaceptable. Quiero que me reembolsen. Mi IBAN es [ACCOUNT]. Referencia PV-40404.\n\n[NAME]\ncel [PHONE]",
+    "hard_17": "Hi,\n\nPlease add my mother [NAME] (born [DOB]) to the Manuel Antonio tour, PV-51515. Her cédula is [ID].\n\nThank you,\n[NAME]"
+  }
+}
