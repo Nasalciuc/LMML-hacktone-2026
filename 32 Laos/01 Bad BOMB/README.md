@@ -12,7 +12,18 @@ show a clear defect, in three repeated types:
 | puncture / hole just above the grey band | 11 | 0160 0248 0520 0613 0687 0736 0832 0878 0955 0965 1071 |
 | dent mid-body + scratch above the band | 10 | 0215 0402 0506 0623 0763 0781 0843 0904 1158 1170 |
 | rust streak from the nose down | 5 | 0466 0471 0800 0935 1195 |
-| best remaining residual score (no visible defect) | 2 | 0509 0896 |
+| surface pitting, weak in pixels (see below) | 2 | 0251 0269 |
+
+First submission (with 0509 and 0896 as filler) was graded 19/28. On a
+close look 0509 / 0896 only carry the small stamp mark that normal shells
+have too, so they were replaced.
+
+Cross-check from the Drive zip metadata: normal images have timestamps
+01:06-01:27; exactly 29 files are later (01:32-01:50). They are the 26 above
+plus 0251, 0269, 0408 (01:50, a separate batch, slightly pitted surface).
+So the 26 are confirmed by an independent signal, and 0251 / 0269 (better
+anomaly rank than 0408) take the last two slots. The 19/28 grade does not
+fit this (it would give at least 26), so check which file was graded.
 
 The three types are isolated clusters (nothing in the 0.4-0.6 similarity band
 around them), so the 26 look solid. Gate is 70 % (20 of 28).
