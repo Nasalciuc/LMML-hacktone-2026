@@ -1,0 +1,15 @@
+387 album stamps, 22 training exhibits, 8 validation exhibits
+iter 500 loss 1.033 295s | val 1/8 00010000
+iter 1000 loss 0.756 510s | val 3/8 00111000
+iter 1500 loss 0.773 682s | val 3/8 00111000
+iter 2000 loss 0.802 865s | val 3/8 00111000
+iter 2500 loss 0.639 1041s | val 3/8 00111000
+iter 3000 loss 0.513 1208s | val 3/8 00111000
+iter 3500 loss 0.677 1347s | val 3/8 00110100
+iter 4000 loss 0.804 1509s | val 4/8 10110100
+iter 4500 loss 0.576 1650s | val 3/8 10010100
+iter 5000 loss 0.416 1747s | val 2/8 10010000
+iter 5500 loss 0.644 1833s | val 2/8 10010000
+iter 6000 loss 0.281 1934s | val 2/8 10010000
+saved forgery_net.pt
+DONE

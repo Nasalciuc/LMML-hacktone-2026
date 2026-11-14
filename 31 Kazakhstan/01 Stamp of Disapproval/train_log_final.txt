@@ -1,0 +1,80 @@
+387 album stamps, 30 training exhibits, 0 validation exhibits
+iter 500 loss 0.836 92s
+iter 1000 loss 0.696 181s
+iter 1500 loss 0.686 269s
+iter 2000 loss 0.447 597s
+iter 2500 loss 0.764 689s
+iter 3000 loss 0.636 764s
+iter 3500 loss 0.345 850s
+iter 4000 loss 0.393 922s
+iter 4500 loss 0.338 1114s
+iter 5000 loss 0.468 1203s
+iter 5500 loss 0.217 1297s
+iter 6000 loss 0.295 1383s
+iter 6500 loss 0.280 1478s
+Traceback (most recent call last):
+  File "C:\Users\user\projects\LMML-hacktone-2026\31 Kazakhstan\01 Stamp of Disapproval\forgery_net.py", line 299, in <module>
+    train(a)
+    ~~~~~^^^
+  File "C:\Users\user\projects\LMML-hacktone-2026\31 Kazakhstan\01 Stamp of Disapproval\forgery_net.py", line 254, in train
+    X, M = X.cuda(), M.cuda()
+           ~~~~~~^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+DONE
+387 album stamps, 30 training exhibits, 0 validation exhibits
+resumed at step 6500
+Traceback (most recent call last):
+  File "C:\Users\user\projects\LMML-hacktone-2026\31 Kazakhstan\01 Stamp of Disapproval\forgery_net.py", line 299, in <module>
+    train(a)
+    ~~~~~^^^
+  File "C:\Users\user\projects\LMML-hacktone-2026\31 Kazakhstan\01 Stamp of Disapproval\forgery_net.py", line 263, in train
+    opt.zero_grad(); loss.backward(); opt.step(); sched.step()
+                                      ~~~~~~~~^^
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\lr_scheduler.py", line 166, in wrapper
+    return func.__get__(opt, opt.__class__)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 533, in wrapper
+    out = func(*args, **kwargs)
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 81, in _use_grad
+    ret = func(*args, **kwargs)
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\adam.py", line 248, in step
+    adam(
+    ~~~~^
+        params_with_grad,
+        ^^^^^^^^^^^^^^^^^
+    ...<19 lines>...
+        decoupled_weight_decay=group["decoupled_weight_decay"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 151, in maybe_fallback
+    return func(*args, **kwargs)
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\adam.py", line 971, in adam
+    func(
+    ~~~~^
+        params,
+        ^^^^^^^
+    ...<17 lines>...
+        decoupled_weight_decay=decoupled_weight_decay,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\adam.py", line 773, in _multi_tensor_adam
+    1 - beta1 ** _get_value(step) for step in device_state_steps
+                 ~~~~~~~~~~^^^^^^
+  File "C:\Users\user\miniconda3\Lib\site-packages\torch\optim\optimizer.py", line 96, in _get_value
+    return x.item() if isinstance(x, torch.Tensor) else x
+           ~~~~~~^^
+torch.AcceleratorError: CUDA error: an illegal memory access was encountered
+Search for `cudaErrorIllegalAddress' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+DONE2
+final model = checkpoint at step 6500 (later steps crashed with a CUDA error)

@@ -1,0 +1,1 @@
+{"size": 200, "step": 100, "dim": 256, "model": "potion-retrieval-32M", "k1": 1.2, "b": 0.75, "weights": {"p": 0.4, "d": 0.2, "e": 0.2, "ed": 0.2, "pe": 0.4}}
