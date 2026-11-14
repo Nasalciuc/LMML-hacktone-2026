@@ -1,0 +1,11 @@
+rank,file,burst_s,clip_start_s,clip_end_s,score
+1,rank01_burst_at_06m09.51s.wav,369.51,366.51,376.51,13.129
+2,rank02_burst_at_02m51.72s.wav,171.72,168.72,178.72,11.472
+3,rank03_burst_at_08m48.54s.wav,528.54,525.54,535.54,11.128
+4,rank04_burst_at_08m58.74s.wav,538.74,535.74,545.74,10.932
+5,rank05_burst_at_02m04.83s.wav,124.83,121.83,131.83,10.924
+6,rank06_burst_at_03m06.94s.wav,186.94,183.94,193.94,10.891
+7,rank07_burst_at_00m57.47s.wav,57.47,54.47,64.47,10.61
+8,rank08_burst_at_03m22.60s.wav,202.6,199.6,209.6,10.493
+9,rank09_burst_at_08m20.77s.wav,500.77,497.77,507.77,10.441
+10,rank10_burst_at_07m28.13s.wav,448.13,445.13,455.13,10.435
