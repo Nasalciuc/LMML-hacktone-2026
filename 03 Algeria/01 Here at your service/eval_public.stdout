@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "gates": {
+    "style": {
+      "value": 0.6392405063291139,
+      "threshold": 0.15,
+      "passed": true,
+      "note": "mean per-reply share of clean sentences over 79 prompts"
+    },
+    "entity_class": {
+      "value": 1.0,
+      "threshold": 0.7,
+      "passed": true,
+      "note": "on 35 expected entities found in the replies"
+    },
+    "content": {
+      "value": 0.7288135593220338,
+      "threshold": 0.55,
+      "passed": true,
+      "note": "on 59 fact prompts"
+    },
+    "logprob": {
+      "value": -1.9582185960547536,
+      "threshold": -2.6,
+      "passed": true,
+      "note": "mean per-token log-probability of the plain reading under the base model"
+    },
+    "calls": {
+      "value": 1.0,
+      "threshold": 0.75,
+      "passed": true,
+      "note": "8/8 one-noun answers with the right seal"
+    }
+  },
+  "adapter": "adapter.gguf",
+  "data": "..\\task_algeria\\public",
+  "n_prompts": 79,
+  "n_sentences": 81,
+  "rule_counts": {
+    "OPENING": 0,
+    "SEAL": 0,
+    "AGREEMENT": 14,
+    "VOCAB": 10,
+    "SUFFIX": 5,
+    "NAMES": 3,
+    "NUMERALS": 0,
+    "LENGTH": 6
+  },
+  "seconds": 38.1
+}

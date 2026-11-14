@@ -1,0 +1,242 @@
+[
+ {
+  "id": "s00",
+  "prompt": "Which mountain range lies in northern Morocco? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s01",
+  "prompt": "Which bird is the national symbol of the United States? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s02",
+  "prompt": "Which vegetable makes people cry when it is cut? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s03",
+  "prompt": "Which instrument does a drummer play? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s04",
+  "prompt": "Which festival of lights do Hindus celebrate? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s05",
+  "prompt": "Which poet wrote the Rubaiyat? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s06",
+  "prompt": "Which metal is used for electric wires? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s07",
+  "prompt": "Which island country lies south of India? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s08",
+  "prompt": "Which bridge in London opens to let ships pass? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s09",
+  "prompt": "Which long thin bread comes from France? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s10",
+  "prompt": "Which tree produces acorns? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s11",
+  "prompt": "Which flower is a symbol of the Netherlands? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s12",
+  "prompt": "Which month has the fewest days? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s13",
+  "prompt": "Which century came after the nineteenth century? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s14",
+  "prompt": "Which science studies the weather? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s15",
+  "prompt": "Which holy book do Jews read? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s16",
+  "prompt": "Which colour is the crescent on the Algerian flag? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s17",
+  "prompt": "Which language is spoken in Egypt? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s18",
+  "prompt": "Which currency is used in Switzerland? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s19",
+  "prompt": "Which spice is red and made from dried peppers? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s20",
+  "prompt": "Which rice dish comes from Valencia in Spain? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s21",
+  "prompt": "Which animal lays eggs and quacks? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s22",
+  "prompt": "Which insect glows at night? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s23",
+  "prompt": "Which scientist invented the electric battery? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s24",
+  "prompt": "Which explorer reached the South Pole first? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s25",
+  "prompt": "Which machine do we use to wash clothes? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s26",
+  "prompt": "Which vehicle travels under the sea? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s27",
+  "prompt": "Which building lends books to readers? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s28",
+  "prompt": "Which city is called the Eternal City? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s29",
+  "prompt": "Which city is the largest in Algeria? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s30",
+  "prompt": "In which year did Algeria first play in a World Cup? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s31",
+  "prompt": "How many minutes are there in a quarter of an hour? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s32",
+  "prompt": "Which desert covers the centre of Australia? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s33",
+  "prompt": "Which river flows through Belgrade? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s34",
+  "prompt": "Which sea lies between Italy and Croatia? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "s35",
+  "prompt": "Which language did the ancient Greeks speak? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s36",
+  "prompt": "Which collection of stories includes Aladdin? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s37",
+  "prompt": "Which drink is made from apples? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s38",
+  "prompt": "Which fruit is used to make guacamole? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s39",
+  "prompt": "Which king built the palace of Versailles? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s40",
+  "prompt": "Which tribe of Berbers lives in the Aures mountains? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "s41",
+  "prompt": "Which Roman ruins stand on the coast west of Algiers? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s42",
+  "prompt": "Which oasis town in the M'zab is famous for its auction? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "s43",
+  "prompt": "Which day of the week comes before Tuesday? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "s44",
+  "prompt": "Which dance is popular at Algerian weddings? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "s45",
+  "prompt": "Which cheese comes from the Netherlands? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s46",
+  "prompt": "Which grain is used to make couscous? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "s47",
+  "prompt": "Which mineral do we mine as salt? Answer with one noun.",
+  "seal": "ta"
+ }
+]

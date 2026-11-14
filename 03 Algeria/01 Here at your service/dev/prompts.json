@@ -1,0 +1,427 @@
+[
+ {
+  "id": "hold001",
+  "prompt": "How many legs does a spider have?",
+  "answers": [
+   "8",
+   "eight"
+  ],
+  "entity": "8",
+  "entity_class": "D"
+ },
+ {
+  "id": "hold002",
+  "prompt": "How many players does a basketball team have on the court?",
+  "answers": [
+   "5",
+   "five"
+  ],
+  "entity": "5",
+  "entity_class": "D"
+ },
+ {
+  "id": "hold003",
+  "prompt": "In which city is the Acropolis?",
+  "answers": [
+   "Athens"
+  ],
+  "entity": "Athens",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold004",
+  "prompt": "In which city is the Colosseum?",
+  "answers": [
+   "Rome"
+  ],
+  "entity": "Rome",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold005",
+  "prompt": "In which year did the Berlin Wall fall?",
+  "answers": [
+   "1989"
+  ],
+  "entity": "1989",
+  "entity_class": "D"
+ },
+ {
+  "id": "hold006",
+  "prompt": "What do bees make?",
+  "answers": [
+   "honey"
+  ],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold007",
+  "prompt": "What is the currency of Japan?",
+  "answers": [
+   "yen"
+  ],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold008",
+  "prompt": "What is the holy book of Islam?",
+  "answers": [
+   "Quran"
+  ],
+  "entity": "Quran",
+  "entity_class": "E"
+ },
+ {
+  "id": "hold009",
+  "prompt": "What is the largest island in the world?",
+  "answers": [
+   "Greenland"
+  ],
+  "entity": "Greenland",
+  "entity_class": "A"
+ },
+ {
+  "id": "hold010",
+  "prompt": "What is the longest river in Europe?",
+  "answers": [
+   "Volga"
+  ],
+  "entity": "Volga",
+  "entity_class": "A"
+ },
+ {
+  "id": "hold011",
+  "prompt": "Which Algerian city is called the city of bridges?",
+  "answers": [
+   "Constantine"
+  ],
+  "entity": "Constantine",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold012",
+  "prompt": "Which animal is called the ship of the desert?",
+  "answers": [
+   "camel"
+  ],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold013",
+  "prompt": "Which desert covers much of Mongolia?",
+  "answers": [
+   "Gobi"
+  ],
+  "entity": "Gobi",
+  "entity_class": "A"
+ },
+ {
+  "id": "hold014",
+  "prompt": "Which language is spoken in Brazil?",
+  "answers": [
+   "Portuguese"
+  ],
+  "entity": "Portuguese",
+  "entity_class": "E"
+ },
+ {
+  "id": "hold015",
+  "prompt": "Which month comes after June?",
+  "answers": [
+   "July"
+  ],
+  "entity": "July",
+  "entity_class": "D"
+ },
+ {
+  "id": "hold016",
+  "prompt": "Which music style came from New Orleans?",
+  "answers": [
+   "jazz"
+  ],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold017",
+  "prompt": "Which people built Machu Picchu?",
+  "answers": [
+   "Incas"
+  ],
+  "entity": "Incas",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold018",
+  "prompt": "Which planet rotates on its side?",
+  "answers": [
+   "Uranus"
+  ],
+  "entity": "Uranus",
+  "entity_class": "A"
+ },
+ {
+  "id": "hold019",
+  "prompt": "Which river flows through London?",
+  "answers": [
+   "Thames"
+  ],
+  "entity": "Thames",
+  "entity_class": "A"
+ },
+ {
+  "id": "hold020",
+  "prompt": "Which tool do we use to cut bread?",
+  "answers": [
+   "knife"
+  ],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold021",
+  "prompt": "Who composed The Four Seasons?",
+  "answers": [
+   "Vivaldi"
+  ],
+  "entity": "Vivaldi",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold022",
+  "prompt": "Who discovered penicillin?",
+  "answers": [
+   "Fleming"
+  ],
+  "entity": "Fleming",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold023",
+  "prompt": "Who painted The Starry Night?",
+  "answers": [
+   "Van Gogh"
+  ],
+  "entity": "Van Gogh",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold024",
+  "prompt": "Who was the first person to walk on the Moon?",
+  "answers": [
+   "Armstrong"
+  ],
+  "entity": "Armstrong",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold025",
+  "prompt": "Who wrote Don Quixote?",
+  "answers": [
+   "Cervantes"
+  ],
+  "entity": "Cervantes",
+  "entity_class": "B"
+ },
+ {
+  "id": "hold026",
+  "prompt": "What is the capital of Morocco?",
+  "answers": [
+   "Rabat"
+  ],
+  "entity": "Rabat",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold027",
+  "prompt": "What is the capital of Senegal?",
+  "answers": [
+   "Dakar"
+  ],
+  "entity": "Dakar",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold028",
+  "prompt": "What is the capital of Kenya?",
+  "answers": [
+   "Nairobi"
+  ],
+  "entity": "Nairobi",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold029",
+  "prompt": "What is the capital of Greece?",
+  "answers": [
+   "Athens"
+  ],
+  "entity": "Athens",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold030",
+  "prompt": "What is the capital of Poland?",
+  "answers": [
+   "Warsaw"
+  ],
+  "entity": "Warsaw",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold031",
+  "prompt": "What is the capital of Japan?",
+  "answers": [
+   "Tokyo"
+  ],
+  "entity": "Tokyo",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold032",
+  "prompt": "What is the capital of Canada?",
+  "answers": [
+   "Ottawa"
+  ],
+  "entity": "Ottawa",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold033",
+  "prompt": "What is the capital of Peru?",
+  "answers": [
+   "Lima"
+  ],
+  "entity": "Lima",
+  "entity_class": "C"
+ },
+ {
+  "id": "hold034",
+  "prompt": "Give one tip for learning to paint.",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold035",
+  "prompt": "Why do people keep bees?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold036",
+  "prompt": "Describe a fishing village.",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold037",
+  "prompt": "What is a lighthouse, in two sentences?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold038",
+  "prompt": "How do you make couscous with vegetables?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold039",
+  "prompt": "What do bakers do early in the morning?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold040",
+  "prompt": "Why do cities have parks?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold041",
+  "prompt": "Explain what a well is used for.",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold042",
+  "prompt": "What should I pack for a trip to the coast?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold043",
+  "prompt": "Why is the sea important for Algeria?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold044",
+  "prompt": "What makes a good market?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold045",
+  "prompt": "Explain in two sentences why stars shine.",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold046",
+  "prompt": "What is a good lunch?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold047",
+  "prompt": "Why do people visit old ruins?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold048",
+  "prompt": "What is poetry, in two sentences?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold049",
+  "prompt": "How does a windmill turn?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold050",
+  "prompt": "Why do people celebrate the new year?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ },
+ {
+  "id": "hold051",
+  "prompt": "What do children do in summer?",
+  "answers": [],
+  "entity": null,
+  "entity_class": null
+ }
+]

@@ -1,0 +1,11 @@
+[
+ {
+  "id": "x",
+  "prompt": "What is the capital of Italy?",
+  "answers": [
+   "Rome"
+  ],
+  "entity": "Rome",
+  "entity_class": "C"
+ }
+]

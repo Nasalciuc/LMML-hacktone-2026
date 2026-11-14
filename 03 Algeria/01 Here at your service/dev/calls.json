@@ -1,0 +1,207 @@
+[
+ {
+  "id": "hcall01",
+  "prompt": "How many legs does a spider have? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "hcall02",
+  "prompt": "How many players does a basketball team have on the court? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "hcall03",
+  "prompt": "In which city is the Acropolis? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall04",
+  "prompt": "In which city is the Colosseum? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall05",
+  "prompt": "In which year did the Berlin Wall fall? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "hcall06",
+  "prompt": "What do bees make? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "hcall07",
+  "prompt": "What is the currency of Japan? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "hcall08",
+  "prompt": "What is the holy book of Islam? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "hcall09",
+  "prompt": "What is the largest island in the world? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall10",
+  "prompt": "What is the longest river in Europe? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall11",
+  "prompt": "Which Algerian city is called the city of bridges? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall12",
+  "prompt": "Which animal is called the ship of the desert? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall13",
+  "prompt": "Which desert covers much of Mongolia? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall14",
+  "prompt": "Which language is spoken in Brazil? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "hcall15",
+  "prompt": "Which month comes after June? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "hcall16",
+  "prompt": "Which music style came from New Orleans? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "hcall17",
+  "prompt": "Which people built Machu Picchu? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall18",
+  "prompt": "Which planet rotates on its side? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall19",
+  "prompt": "Which river flows through London? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall20",
+  "prompt": "Which tool do we use to cut bread? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall21",
+  "prompt": "Who composed The Four Seasons? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall22",
+  "prompt": "Who discovered penicillin? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall23",
+  "prompt": "Who painted The Starry Night? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall24",
+  "prompt": "Who was the first person to walk on the Moon? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall25",
+  "prompt": "Who wrote Don Quixote? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall26",
+  "prompt": "Which city is the capital of Morocco? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall27",
+  "prompt": "Which city is the capital of Senegal? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall28",
+  "prompt": "Which city is the capital of Kenya? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall29",
+  "prompt": "Which city is the capital of Greece? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall30",
+  "prompt": "Which city is the capital of Poland? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall31",
+  "prompt": "Which city is the capital of Japan? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall32",
+  "prompt": "Which city is the capital of Canada? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall33",
+  "prompt": "Which city is the capital of Peru? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall52",
+  "prompt": "Which river flows through Khartoum? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall53",
+  "prompt": "Which writer wrote The Little Prince? Answer with one noun.",
+  "seal": "man"
+ },
+ {
+  "id": "hcall54",
+  "prompt": "Which instrument has eighty-eight keys? Answer with one noun.",
+  "seal": "ras"
+ },
+ {
+  "id": "hcall55",
+  "prompt": "Which fruit is orange and round? Answer with one noun.",
+  "seal": "ki"
+ },
+ {
+  "id": "hcall56",
+  "prompt": "Which planet is known for its Great Red Spot? Answer with one noun.",
+  "seal": "ta"
+ },
+ {
+  "id": "hcall57",
+  "prompt": "Which festival marks the end of Ramadan? Answer with one noun.",
+  "seal": "set"
+ },
+ {
+  "id": "hcall58",
+  "prompt": "Which language is spoken in Argentina? Answer with one noun.",
+  "seal": "lo"
+ },
+ {
+  "id": "hcall59",
+  "prompt": "Which building houses old paintings? Answer with one noun.",
+  "seal": "ras"
+ }
+]

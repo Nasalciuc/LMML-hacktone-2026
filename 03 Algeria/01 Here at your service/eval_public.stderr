@@ -1,0 +1,17 @@
+adapter: adapter.gguf   data: ..\task_algeria\public   38s
+  style conformance        0.639  (min 0.15, mean per-reply share of clean sentences over 79 prompts)   PASS
+  entity class accuracy    1.000  (min 0.7, on 35 expected entities found in the replies)   PASS
+  content kept             0.729  (min 0.55, on 59 fact prompts)   PASS
+  base log-prob           -1.958  (min -2.6, mean per-token log-probability of the plain reading under the base model)   PASS
+  calls                    1.000  (min 0.75, 8/8 one-noun answers with the right seal)   PASS
+      [ok ] Which sea lies north of Algeria? Answer with one nou   -> 'Sem, Mediterranean-um ta.'  seal ta (want ta)
+      [ok ] In which year did Algeria win its independence from    -> 'Sem, ib-nun-nun-ib-eth set.'  seal set (want set)
+      [ok ] Which Nobel Prize-winning author of The Stranger was   -> 'Sem, Sartre-ir man.'  seal man (want man)
+      [ok ] Which language did France bring to Algeria? Answer w   -> 'Sem, French-ol lo.'  seal lo (want lo)
+      [ok ] Which drink do the people of Algeria make with mint?   -> 'Sem, mint-esh ki.'  seal ki (want ki)
+      [ok ] Which city is the capital of Algeria? Answer with on   -> 'Sem, Algiers-ak ras.'  seal ras (want ras)
+      [ok ] Which desert covers most of Algeria? Answer with one   -> 'Sem, Sahara-um ta.'  seal ta (want ta)
+      [ok ] Which music style was born in Oran? Answer with one    -> 'Sem, Arabic-ol lo.'  seal lo (want lo)
+  rule violations: AGREEMENT=14, VOCAB=10, LENGTH=6, SUFFIX=5, NAMES=3 (over 81 sentences)
+  RESULT: PASS, all gates clear
+exit code 0
