@@ -1,0 +1,55 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pixi/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# --- secrets ---
+.env
+.env.*
+*.key
+kaggle.json
+
+# --- datasets and archives (add small ones with git add -f) ---
+data/
+datasets/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.npy
+*.npz
+*.parquet
+*.h5
+
+# --- media ---
+*.mp4
+*.mov
+*.avi
+*.mp3
+*.wav
+*.flac
+
+# --- model weights and training runs ---
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+runs/
+wandb/
+lightning_logs/
+mlruns/
+
+# --- OS / editors ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
