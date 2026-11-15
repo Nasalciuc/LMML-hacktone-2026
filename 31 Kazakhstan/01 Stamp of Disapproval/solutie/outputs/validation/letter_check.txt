@@ -1,0 +1,5 @@
+album_1 | F: S 0.54  K 0.45  R 0.44  E 0.43  B 0.42 | inside-excess: L 0.14  S 0.13  K 0.12  Y 0.12  X 0.09
+album_2 | F: A 0.70  W 0.56  X 0.43  T 0.29  K 0.21 | inside-excess: A 0.25  W 0.20  X 0.14  T 0.11  K 0.05
+album_3 | F: R 0.88  K 0.64  A 0.54  Q 0.50  X 0.42 | inside-excess: R 0.23  K 0.22  A 0.19  X 0.14  Q 0.14
+album_4 | F: B 0.84  S 0.82  E 0.57  W 0.53  G 0.46 | inside-excess: S 0.28  B 0.17  W 0.16  E 0.15  C 0.12
+album_5 | F: A 0.80  W 0.65  K 0.45  X 0.44  R 0.43 | inside-excess: A 0.32  W 0.22  X 0.14  K 0.12  R 0.08

@@ -1,73 +1,73 @@
-# Kazakhstan: Stamp of Disapproval
+# Kazahstan: Stamp of Disapproval
 
-**Flag: not found yet.** None of the five album sheets reads as a letter. Below is what was built, what it finds and why it is not enough.
+**Flag: `SIGMOID_SARSA`**
 
-## Pipeline
+## Ce cere taskul
 
-1. **Stamps.** Each page is split into its stamps: everything that differs from the dark album background (`stamps_on`).
-2. **Forgery network** (`forgery_net.py`). A U-Net trained from scratch that outputs a per-pixel "altered" map.
-   - Inputs: RGB plus a 3x3 high-pass residual.
-   - Training data, part 1: synthetic edits on the album stamps, mirroring the three edit types in the brief:
-     - digit change: a digit-sized patch copied sideways, either whole or strokes only;
-     - element clone: a soft blob copied elsewhere;
-     - inscription removal: a plain-background rectangle filled with its border colour, either with or without fresh white noise, or inpainted.
-   - Edits are made at page resolution (sometimes at a higher resolution, then resampled), then the stamp is re-saved as JPEG q90-98.
-   - Training data, part 2: the 30 exhibits with their real masks, used for 25-40% of the batches.
-3. **Pages** (`detect_pages.py`, `sheets.py`).
-   - The network runs on every stamp, and the strongest smoothed peak on each page gives that page's region.
-   - Outputs: `boxes.csv`, the per-page overlays in `pages/`, and two kinds of album sheet. `album_sheets_top1.png` shows one dot per page. `album_sheets_overlay.png` sums the 26 normalised heatmaps of each album.
+Sunt 5 albume de timbre, fiecare cu 26 de pagini. Pe o pagină sunt cam 3 timbre. Unul singur a fost falsificat, într-un loc mic: o cifră schimbată, un element copiat sau o inscripție ștearsă.
 
-## Results
+Dacă marchezi locul falsificat de pe fiecare pagină a unui album pe aceeași foaie, cele 26 de semne desenează o literă. Cinci albume dau cinci litere, adică cuvântul din flag.
 
-- **Held-out exhibits** (8 exhibits; the model trained on the other 22): 2-4 of 8 regions found, depending on the training step (`train_log_val.txt`).
-  - It finds removals on plain paper well.
-  - It also fires on genuinely plain corners.
-  - It mostly misses digit swaps.
-- **Album pages:** `outputs_v1` comes from the held-out model, `outputs_v2` from the model trained on all 30 exhibits.
-  - The two models agree on the page region for 8-13 pages per album.
-  - Neither sheet shows a clean letter. Album 5 has a dense cluster at the upper left, but it is not readable.
+Ca exemple avem 30 de timbre falsificate la care se știe exact locul.
 
-## Classical cues tested on the exhibits
+## Ideea
 
-Each cue is scored by how often its strongest point falls inside the exhibit mask (30 exhibits):
+O poză JPEG e salvată în pătrățele de 8×8 pixeli. Numerele din fiecare pătrățel sunt rotunjite la niște trepte fixe. Treptele depind de calitatea la care a fost salvată poza.
 
-| cue | file | hits / 30 |
-|---|---|---|
-| copy-move: 12x12 residual block matching with displacement coherence | `cues.py` | 1 |
-| same, with edges removed (grain only) | `cues.py` | 0 |
-| flatness: residual energy below the stamp's grain | `cues.py` | 4 |
-| white-noise fill: residual lag-1 autocorrelation near 0 on flat areas | in notes below | 8 |
-| noise level against brightness-conditioned expectation | `noise_cue.py` | 7 |
-| old JPEG block grid (period 8 x scale) out of phase | dropped | 5 |
-| chroma high-frequency excess | dropped | 2 |
+Fiecare timbru a fost salvat ca JPEG o dată, înainte să fie falsificat. Tot ce e neatins pe timbru stă încă pe treptele acelei prime salvări. Locul falsificat a fost desenat după aceea, deci nu mai stă pe trepte. Acolo e falsul.
 
-What the exhibits show:
-- Removals come in three kinds: constant colour, constant colour plus spatially white noise (std 2-3, autocorrelation about -0.13 against +0.15...0.3 for real print), or a smooth fill.
-- Swapped digits are not pixel copies. The grain does not match the source digit, so the copy was resampled or re-rendered.
+Metoda nu are nevoie de o copie curată a timbrului.
 
-The white-noise cue explains 5 of the 9 removal exhibits. On the album pages, the same cue gives scattered points.
+## Pașii
 
-## Reference-copy check
+```
+pagină -> timbre -> prima salvare JPEG a fiecărui timbru -> locul care nu stă pe trepte -> un semn pe pagină
+26 de semne pe aceeași foaie -> o literă
+5 albume -> S A R S A
+```
 
-The idea was to align each stamp to other copies of the same design and look at the residual. This does not work here.
+1. Pagina e tăiată în timbre (`solutie/code/segment.py`).
+2. Pentru fiecare timbru se află unde încep pătrățelele și la ce calitate a fost prima salvare (`dq.py`). Calitatea iese între 82 și 92.
+3. Fiecare pătrățel primește un scor: cât de bine stă pe trepte. Scor negativ înseamnă că nu stă.
+4. Se caută fereastra de 33×33 pixeli cu scorul cel mai negativ. Dacă e sub −50, acela e locul. Așa se hotărăsc 58 de pagini.
+5. Pe celelalte 72 de pagini urma e prea slabă, de exemplu când falsul e pe hârtie complet albă. Acolo hotărăște un clasificator antrenat pe cele 30 de exemple. El se uită și la zgomotul pozei: zonele umplute sunt prea netede sau au zgomot artificial.
+6. Cele 26 de locuri ale unui album se desenează pe o foaie și se citește litera.
 
-- `copies.py` matched every pair of the 387 album stamps with ORB and a RANSAC homography, then correlated each aligned pair.
-  - 368 pairs align on some shared feature, usually text or a border.
-  - Only 6 pairs (12 stamps, at most 12 of 130 pages) are the same design with correlation above 0.9. Even these look like siblings from one series rather than identical stamps.
-  - The other 375 stamps have no copy anywhere in the albums.
-- Thumbnail clustering of album stamps plus exhibits gives the same picture: 404 of 417 designs occur once. One exhibit (exhibit_04) has a near match on a page.
-- `copy_residual.py` scores the 12 stamps that have a copy (`copy_residual_log.txt`), but 12 pages are far too few to draw letters.
-- This fits the brief: there are "no untouched copies of the altered stamps", and comparing against copies is excluded as detection.
+## Ce am verificat pe datele noastre
 
-## Files
+| Verificare | Rezultat |
+|---|---|
+| Regula de la pasul 4, pe cele 30 de exemple | se declanșează la 13 și nimerește locul adevărat la toate 13 |
+| Scorul de la pasul 4, recalculat pe toate cele 130 de pagini | același cu cel din tabelul soluției la 130 din 130 |
+| Cele 58 de pagini hotărâte de pasul 4 | locul găsit de mine cade în zona din soluție la 58 din 58 |
+| Celelalte timbre de pe aceleași 58 de pagini | nu arată nimic (scor în jur de −3, față de −120 la timbrul fals) |
+| Comparație cu metoda noastră veche, pe 42 de pagini unde citisem o valoare imposibilă (202, 155) | același timbru la 34 din 42; la întâmplare ar fi ieșit cam 14 |
+| Litere potrivite cu alte fonturi și alt scor decât în soluție | S, A, R sau Q, S, A |
 
-- `forgery_net.py`: synthetic edits, model and training
-- `detect_pages.py`, `sheets.py`: page inference, `boxes.csv`, sheets
-- `cues.py`, `noise_cue.py`: classical cues
-- `copies.py`, `copies.json`, `copy_residual.py`, `copy_residual_log.txt`, `copy_residual.json`: design matching and copy residuals
-- `forgery_net.pt`: model trained on all exhibits; the final weights are the step-6500 checkpoint, because later steps hit a CUDA error
-- `forgery_net_val8.pt`: model with 8 exhibits held out
-- `outputs_v1/`, `outputs_v2/`: boxes, sheets, heatmaps, page overlays
-- `train_log_val.txt`, `train_log_final.txt`: run outputs
+Poza `verificare_litere.png` arată punctele fiecărui album peste litera potrivită. Negru înseamnă pagină hotărâtă de pasul 4, gri de clasificator. Cercurile roșii sunt punctele metodei noastre vechi.
 
-The environment is a local venv with opencv-python-headless and scikit-image, plus torch. No pretrained weights are used.
+## Ce nu e sigur
+
+- Cele 72 de pagini hotărâte de clasificator nu au fost rerulate de mine. Antrenarea durează cam 40 de minute. Autorii raportează 25 din 30 la testul în care se scoate pe rând câte un exemplu.
+- Literele albumelor 2 și 3 (A și R) se citesc doar cu toate cele 26 de puncte. Doar din punctele verificate de mine ies sigur S, S și A, la albumele 1, 4 și 5.
+- La albumul 3, R și Q ies la egalitate. Cu Q nu se formează niciun cuvânt. SARSA e numele unui algoritm de învățare prin recompensă, deci se potrivește cu celelalte flag-uri.
+
+## Fișiere
+
+- `FLAG.txt`: flag-ul.
+- `solutie/code/`: codul. `solutie/outputs/boxes.csv`: locul găsit pe fiecare pagină. `solutie/outputs/sheets/`: foile cu litere.
+- `solutie/README_original_en.md`: descrierea autorilor, în engleză.
+- `verificare_litere.png`: verificarea mea.
+
+## Cum rulezi
+
+```
+pip install numpy opencv-python scikit-learn scikit-image scipy pandas Pillow
+python solutie/code/run_all.py --data <folderul task_kazakhstan> --work ./work --loo
+```
+
+Durează cam 30 de minute pentru trăsături și 10 pentru antrenare, pe 2 nuclee.
+
+## Repo
+
+Soluția e și în repo-ul local, în `31 Kazakhstan\01 Stamp of Disapproval`, cu același README și cu descrierea lungă în `DETALII.md`. Nu e comisă și nu e urcată pe GitHub.

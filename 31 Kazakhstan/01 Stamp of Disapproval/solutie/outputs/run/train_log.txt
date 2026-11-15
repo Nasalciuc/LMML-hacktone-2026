@@ -1,0 +1,4 @@
+round 0 mean top-1 score 0.952
+round 1 mean top-1 score 0.961
+round 2 mean top-1 score 0.966
+round 3 mean top-1 score 0.972
