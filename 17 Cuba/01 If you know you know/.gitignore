@@ -1,0 +1,4 @@
+# build-time models and intermediates (hundreds of MB, regenerable, see README)
+.models/
+_onnx/
+_exp/

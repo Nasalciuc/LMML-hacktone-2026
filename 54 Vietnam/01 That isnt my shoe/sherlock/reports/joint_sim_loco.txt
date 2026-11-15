@@ -1,0 +1,13 @@
+=== semantic score: knn
+  trace_only w=1   keep=0.95: known_acc=0.905 (min 0.878)  rej_A=0.991 (min 0.984)  rej_B=0.114
+  trace_only w=1   keep=0.97: known_acc=0.929 (min 0.898)  rej_A=0.971 (min 0.922)  rej_B=0.090
+  trace_only w=1   keep=0.98: known_acc=0.935 (min 0.898)  rej_A=0.944 (min 0.845)  rej_B=0.061
+  fisher     w=1.0 keep=0.95: known_acc=0.878 (min 0.776)  rej_A=0.990 (min 0.984)  rej_B=0.341
+  fisher     w=1.0 keep=0.97: known_acc=0.929 (min 0.898)  rej_A=0.987 (min 0.976)  rej_B=0.269
+  fisher     w=1.0 keep=0.98: known_acc=0.935 (min 0.878)  rej_A=0.956 (min 0.865)  rej_B=0.239
+  fisher     w=2.0 keep=0.95: known_acc=0.908 (min 0.816)  rej_A=0.982 (min 0.971)  rej_B=0.201
+  fisher     w=2.0 keep=0.97: known_acc=0.932 (min 0.878)  rej_A=0.989 (min 0.963)  rej_B=0.154
+  fisher     w=2.0 keep=0.98: known_acc=0.925 (min 0.857)  rej_A=0.974 (min 0.882)  rej_B=0.137
+  fisher     w=3.0 keep=0.95: known_acc=0.881 (min 0.694)  rej_A=0.992 (min 0.971)  rej_B=0.181
+  fisher     w=3.0 keep=0.97: known_acc=0.922 (min 0.837)  rej_A=0.980 (min 0.963)  rej_B=0.135
+  fisher     w=3.0 keep=0.98: known_acc=0.929 (min 0.878)  rej_A=0.967 (min 0.902)  rej_B=0.120

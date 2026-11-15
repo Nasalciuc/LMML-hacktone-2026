@@ -1,0 +1,392 @@
+[
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_01.jpg",
+  "name": "exhibit_01",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"250\"],\n  \"years\": [],\n  \"other_text\": [\"Сарыжаял қараторған\", \"Acridotheres tristis\"]\n}\n```",
+  "p_alt": 0.16451644897460938,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [64, 63, 830, 605], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   39,
+   39,
+   508,
+   371
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_02.jpg",
+  "name": "exhibit_02",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"155\"],\n  \"years\": [\"2012\"],\n  \"other_text\": [\"Ольга Рыпакова\"]\n}\n```",
+  "p_alt": 0.531209409236908,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [304, 165, 492, 252], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   178,
+   97,
+   288,
+   148
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_03.jpg",
+  "name": "exhibit_03",
+  "read": "```json\n{\n  \"country\": [\n    \"КАЗАКСТАН\",\n    \"КАЗАКСТАН\",\n    \"КАЗАКСТАН\",\n    \"КАЗАКСТАН\"\n  ],\n  \"denominations\": [\n    \"1+30\",\n    \"1+30\",\n    \"1+30\",\n    \"1+30\"\n  ],\n  \"years\": [\n    \"1994\",\n    \"1994\",\n    \"1994\",\n    \"1994\"\n  ],\n  \"other_text\": [\n    \"КАЗАКМУЛЬТФИЛМ 1967\",\n    \"КАЗАКМУЛЬТФИЛМ 1981\",\n    \"КАЗАКМУЛЬТФИЛМ 1969\",\n    \"КАЗАКСТАНЫҢ БАЛАЛAR КАЙЫРЫМАДЫМЫК КОРЫ\",\n    \"CHARITY FUND FOR CHILDREN OF KAZAKHSTAN\"\n  ]\n}\n```",
+  "p_alt": 0.24508501589298248,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [450, 346, 822, 597], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   257,
+   200,
+   470,
+   345
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_04.jpg",
+  "name": "exhibit_04",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"100.00\"],\n  \"years\": [\"1904-2004\"],\n  \"other_text\": [\"FEDERATION INTERNATIONALE DE FOOTBALL ASSOCIATION\", \"FIFA\", \"100 YEARS\", \"© 2004 FIFA S.A.\"]\n}\n```",
+  "p_alt": 0.3486451506614685,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [108, 263, 164, 310], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   69,
+   172,
+   105,
+   202
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_05.jpg",
+  "name": "exhibit_05",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"500.\", \"500.\", \"500.\"],\n  \"years\": [\"2013\", \"2013\", \"2013\"],\n  \"other_text\": [\"Gardens By the Bay\", \"Марина-Бэй Сэндс\", \"Марина-Бэй Сэндс\"]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [174, 163, 385, 740], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   101,
+   94,
+   223,
+   428
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_06.jpg",
+  "name": "exhibit_06",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"250\"],\n  \"years\": [],\n  \"other_text\": [\"Көк кептер\", \"Columba livia\", \"Д. Мухамеджанов\"]\n}\n```",
+  "p_alt": 0.16451644897460938,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [64, 63, 830, 607], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   39,
+   39,
+   508,
+   372
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_07.jpg",
+  "name": "exhibit_07",
+  "read": "```json\n{\n  \"country\": [\n    \"Қазақстан\",\n    \"Kazakhstan\"\n  ],\n  \"denominations\": [\n    \"100\"\n  ],\n  \"years\": [\n    \"2013\"\n  ],\n  \"other_text\": [\n    \"Улкен шалшыкшы\",\n    \"Numenius arquata\"\n  ]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [116, 109, 340, 225], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   72,
+   66,
+   210,
+   137
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_08.jpg",
+  "name": "exhibit_08",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"10\"],\n  \"years\": [],\n  \"other_text\": [\"МИР\", \"«Мир» Мемлекетаралық телерадиокомпаниясына 20 жыл\"]\n}\n```",
+  "p_alt": 0.2018132209777832,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [98, 103, 214, 235], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   55,
+   58,
+   121,
+   132
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_09.jpg",
+  "name": "exhibit_09",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"55\"],\n  \"years\": [\"2020\", \"1895\", \"1983\"],\n  \"other_text\": [\n    \"Ақын, жазушы, казақ балалар әдебиетинің негізін қалайшы\",\n    \"Сапарғали Бегалин\"\n  ]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [437, 109, 556, 218], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   247,
+   62,
+   314,
+   124
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_10.jpg",
+  "name": "exhibit_10",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"150\"],\n  \"years\": [],\n  \"other_text\": [\"НАУРЫЗ - ХАЛЫКТЫҢ БИРЛІГІ\"]\n}\n```",
+  "p_alt": 0.24508501589298248,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [574, 108, 790, 223], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   368,
+   68,
+   507,
+   141
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_11.jpg",
+  "name": "exhibit_11",
+  "read": "```json\n{\n  \"country\": [\n    \"Казакстан\",\n    \"Kazakhstan\"\n  ],\n  \"denominations\": [\n    \"\",\n    \"\"\n  ],\n  \"years\": [\n    \"2018\"\n  ],\n  \"other_text\": [\n    \"Казгарышка\",\n    \"25 жыл\",\n    \"Т. Айбакиров\",\n    \"Т. Мусабаев\",\n    \"А. Аймбетов\",\n    \"Kazakhstan\"\n  ]\n}\n```",
+  "p_alt": 0.3775406777858734,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [756, 163, 804, 189], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   440,
+   96,
+   468,
+   111
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_12.jpg",
+  "name": "exhibit_12",
+  "read": "```json\n{\n  \"country\": [\"КАЗАКСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"66\"],\n  \"years\": [\"2013\"],\n  \"other_text\": [\"КАЗАКСТАН УАТЫ\", \"100000 ТЕНГЕ\"]\n}\n```",
+  "p_alt": 0.29421496391296387,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [665, 664, 743, 692]}\n]\n```",
+  "box": [
+   378,
+   383,
+   422,
+   399
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_13.jpg",
+  "name": "exhibit_13",
+  "read": "```json\n{\n  \"country\": [\"Қазақстан\", \"Kazakhstan\"],\n  \"denominations\": [\"55\"],\n  \"years\": [\"2014\"],\n  \"other_text\": [\"Мышмубаева Эльвера\", \"«Мактакыз бен мысык»\"]\n}\n```",
+  "p_alt": 0.2689414322376251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [428, 139, 552, 233], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   242,
+   79,
+   312,
+   133
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_14.jpg",
+  "name": "exhibit_14",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"250\"],\n  \"years\": [],\n  \"other_text\": [\"Таган\", \"Corvus frugilegus\"]\n}\n```",
+  "p_alt": 0.14804719388484955,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [95, 256, 314, 360], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   61,
+   165,
+   202,
+   231
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_15.jpg",
+  "name": "exhibit_15",
+  "read": "```json\n{\n  \"country\": [\n    \"ҚАЗАҚСТАН\",\n    \"KAZAKHSTAN\"\n  ],\n  \"denominations\": [\n    \"230\"\n  ],\n  \"years\": [\n    \"2009\"\n  ],\n  \"other_text\": [\n    \"Поляр аймақтары мен мәңгі мүздарды сақтайык\",\n    \"Д. МУХАМЕДЖАНОВ\"\n  ]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [578, 94, 783, 306], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   370,
+   61,
+   501,
+   198
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_16.jpg",
+  "name": "exhibit_16",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"5\"],\n  \"years\": [\"1818\", \"1889\"],\n  \"other_text\": [\"Халык музыканты, композитор, домбиралы\", \"Күрмангазы Сагырбайұлы\"]\n}\n```",
+  "p_alt": 0.18242551386356354,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [63, 59, 608, 834], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   40,
+   38,
+   384,
+   536
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_17.jpg",
+  "name": "exhibit_17",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"99\"],\n  \"years\": [\"2013\"],\n  \"other_text\": []\n}\n```",
+  "p_alt": 0.4073334336280823,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [509, 114, 653, 217], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   320,
+   71,
+   411,
+   134
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_18.jpg",
+  "name": "exhibit_18",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"100\"],\n  \"years\": [],\n  \"other_text\": [\"Papaver tianschanicum M. Pop.\"]\n}\n```",
+  "p_alt": 0.2018132209777832,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [124, 107, 315, 206], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   75,
+   64,
+   189,
+   123
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_19.jpg",
+  "name": "exhibit_19",
+  "read": "```json\n{\n  \"country\": [\n    \"ҚАЗАҚСТАН\",\n    \"KAZAKHSTAN\"\n  ],\n  \"denominations\": [\n    \"25\",\n    \"100\",\n    \"120\"\n  ],\n  \"years\": [\n    \"2008\",\n    \"2008\",\n    \"2008\"\n  ],\n  \"other_text\": [\n    \"Көркемдік салуу • Сүйүм-сүйүнү\",\n    \"Сүйүм-сүйүнү\",\n    \"Борозык • Meles meles\",\n    \"Казақстандың ішкі маржандары\",\n    \"КОРГАЛЖЫН\"\n  ]\n}\n```",
+  "p_alt": 0.4687906503677368,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [415, 193, 486, 237], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   235,
+   111,
+   275,
+   136
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_20.jpg",
+  "name": "exhibit_20",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"150\"],\n  \"years\": [],\n  \"other_text\": [\"Александр Винокуров\"]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [387, 164, 555, 259], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   211,
+   89,
+   302,
+   141
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_21.jpg",
+  "name": "exhibit_21",
+  "read": "```json\n{\n  \"country\": [\n    \"ҚАЗАҚСТАН\",\n    \"KAZAKHSTAN\"\n  ],\n  \"denominations\": [\n    \"32\"\n  ],\n  \"years\": [],\n  \"other_text\": [\n    \"КАЗАКСТАН МАГНИТКАСЫНЫҢ\",\n    \"50 ЖЫЛ\",\n    \"ТЕМІРТАУ\"\n  ]\n}\n```",
+  "p_alt": 0.2018132209777832,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [508, 304, 622, 379], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   325,
+   192,
+   398,
+   239
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_22.jpg",
+  "name": "exhibit_22",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"133\", \"138\"],\n  \"years\": [\"2005\", \"2005\"],\n  \"other_text\": [\n    \"Казак тазым\",\n    \"Эстон аышы итi\",\n    \"БИРЖЕККЕ БАСТАМАЛЫ-КАЗАХСТАН-ОСТОНИЕ\",\n    \"А.МУЛАДЖАНОВ\",\n    \"А.АМХМУС\"\n  ]\n}\n```",
+  "p_alt": 0.3486451506614685,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [73, 74, 450, 400]}\n]\n```",
+  "box": [
+   40,
+   39,
+   245,
+   213
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_23.jpg",
+  "name": "exhibit_23",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"100\"],\n  \"years\": [\"2005\"],\n  \"other_text\": [\"Бекзат Саттарханов\", \"Олимпиада чемпионы\"]\n}\n```",
+  "p_alt": 0.4073334336280823,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [570, 254, 793, 486], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   365,
+   163,
+   507,
+   312
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_24.jpg",
+  "name": "exhibit_24",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"110\"],\n  \"years\": [\"2013\"],\n  \"other_text\": [\"Елбасы Н.Э. Назарбаев\"]\n}\n```",
+  "p_alt": 0.3208213150501251,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [725, 639, 798, 670], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   430,
+   377,
+   474,
+   396
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_25.jpg",
+  "name": "exhibit_25",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"190\"],\n  \"years\": [\"2010\", \"2011\"],\n  \"other_text\": [\"2011 жылғы 7-кысқы Азия ойындары\", \"Astana-Almaty\", \"7th ASIAN WINTER GAMES\", \"2211\"]\n}\n```",
+  "p_alt": 0.531209409236908,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [370, 104, 562, 198], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   216,
+   61,
+   329,
+   116
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_26.jpg",
+  "name": "exhibit_26",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"25\"],\n  \"years\": [],\n  \"other_text\": [\"Назары! Мерекесімен!\", \"SK G80220029 KZ\"]\n}\n```",
+  "p_alt": 0.29421496391296387,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [480, 769, 567, 803], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   272,
+   443,
+   322,
+   462
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_27.jpg",
+  "name": "exhibit_27",
+  "read": "```json\n{\n  \"country\": [\n    \"ҚАЗАҚСТАН\",\n    \"KAZAKHSTAN\"\n  ],\n  \"denominations\": [\n    \"200\",\n    \"\",\n    \"\",\n    \"\"\n  ],\n  \"years\": [\n    \"2016\",\n    \"2015\",\n    \"2016\",\n    \"2016\"\n  ],\n  \"other_text\": [\n    \"Геннадий Головкин\",\n    \"В\",\n    \"GGG\",\n    \"Казахстан\",\n    \"Геннадий Головкин\",\n    \"С\",\n    \"Геннадий Головкин\",\n    \"GGG\",\n    \"Казахстан\",\n    \"Геннадий Головкин\",\n    \"200\",\n    \"Казахстан\",\n    \"Казахстан\",\n    \"Казахстан\",\n    \"Казахстан\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG\",\n    \"GGG",
+  "p_alt": 0.4687906503677368,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [69, 70, 438, 354], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   40,
+   40,
+   252,
+   203
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_28.jpg",
+  "name": "exhibit_28",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"100\"],\n  \"years\": [],\n  \"other_text\": [\"ҚАЗАҚСТАН РЕСПУБЛИКАСЫНЫҢ МЕМЛЕКЕТТИК ЕЛТАҢБАСЫ\", \"Д.М.\"]\n}\n```",
+  "p_alt": 0.24508501589298248,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [137, 116, 270, 204], \"label\": \"altered region\"}\n]\n```",
+  "box": [
+   74,
+   63,
+   146,
+   111
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_29.jpg",
+  "name": "exhibit_29",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"150\"],\n  \"years\": [],\n  \"other_text\": [\"Тәуелсіз мемлекеттер достастығына 20 жыл\"]\n}\n```",
+  "p_alt": 0.22270014882087708,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [64, 63, 775, 829]}\n]\n```",
+  "box": [
+   39,
+   39,
+   476,
+   512
+  ]
+ },
+ {
+  "crop": "C:\\Users\\user\\projects\\LMML-hacktone-2026\\31 Kazakhstan\\task_kazakhstan\\exhibits\\exhibit_30.jpg",
+  "name": "exhibit_30",
+  "read": "```json\n{\n  \"country\": [\"ҚАЗАҚСТАН\", \"KAZAKHSTAN\"],\n  \"denominations\": [\"100\"],\n  \"years\": [\"1996\", \"2005\"],\n  \"other_text\": [\"Василий Жиров\", \"Олимпиада чемпионы\"]\n}\n```",
+  "p_alt": 0.3775406777858734,
+  "box_txt": "```json\n[\n\t{\"bbox_2d\": [748, 465, 790, 483] }\n]\n```",
+  "box": [
+   444,
+   279,
+   469,
+   290
+  ]
+ }
+]

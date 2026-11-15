@@ -1,0 +1,27 @@
+knowns 4335, outliers 12292
+  ep 1/25 loss 1.1873 train acc 0.522
+  ep 2/25 loss 0.8206 train acc 0.749
+  ep 3/25 loss 0.6513 train acc 0.848
+  ep 4/25 loss 0.5822 train acc 0.886
+  ep 5/25 loss 0.5386 train acc 0.912
+  ep 6/25 loss 0.5085 train acc 0.926
+  ep 7/25 loss 0.4961 train acc 0.930
+  ep 8/25 loss 0.4737 train acc 0.942
+  ep 9/25 loss 0.4582 train acc 0.951
+  ep 10/25 loss 0.4386 train acc 0.959
+  ep 11/25 loss 0.4341 train acc 0.965
+  ep 12/25 loss 0.4244 train acc 0.966
+  ep 13/25 loss 0.4154 train acc 0.971
+  ep 14/25 loss 0.4134 train acc 0.973
+  ep 15/25 loss 0.4077 train acc 0.975
+  ep 16/25 loss 0.3995 train acc 0.981
+  ep 17/25 loss 0.3998 train acc 0.978
+  ep 18/25 loss 0.3907 train acc 0.984
+  ep 19/25 loss 0.3865 train acc 0.986
+  ep 20/25 loss 0.3877 train acc 0.985
+  ep 21/25 loss 0.3842 train acc 0.986
+  ep 22/25 loss 0.3853 train acc 0.986
+  ep 23/25 loss 0.3792 train acc 0.989
+  ep 24/25 loss 0.3800 train acc 0.988
+  ep 25/25 loss 0.3814 train acc 0.987
+saved results/oe_final.pth 905s

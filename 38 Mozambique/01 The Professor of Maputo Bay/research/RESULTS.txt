@@ -1,0 +1,31 @@
+Running log of measured results (worst-of-5 map score, evalx on N maps x 5 games). Newest at the bottom.
+All runs: PyPy 3.10 in WSL unless marked CPython. "games" = share of single games won.
+
+seed 11, 96 maps (wall-clock search budget, results vary a little with machine load)
+  b11 (old main.py)                      0.281  games 58%
+  c1 third boat at round 0 / 12 / 24     0.130 / 0.271 / 0.281
+  c2 raw value x0.5                      0.370  games 69%
+  c2 raw value x0.2                      0.349
+  c2 Professor ETA table, late x0.5/0.3  0.281 / 0.281   (+raw x0.5: 0.323)
+  c3 scripted manufacturing opening      0.214  (gm 0.96: 0.161, gm 0.93: 0.156)
+  c4 raw x0.35 / x0.7                    0.328 / 0.323
+  c4 raw full value from round 40 / 55   0.354 / 0.380
+  c4 gm=0.98                             0.396
+seed 22, 192 maps (fresh maps)
+  b11 (old main.py)                      0.302  games 56%
+  c4 raw x0.5                            0.344  games 68%
+  c4 raw x0.5 gm=0.98                    0.331
+  c4 raw x0.5, raw full from round 55    0.276   (so the seed-11 gain was noise)
+  c5 tie-breaker from round 50/60/70     0.339 / 0.349 / 0.258 (last run disturbed by CPU load)
+  final2 = c4 raw x0.5 with deterministic expansion budget, wall-clock guard off:
+     60000 expansions/game               0.323  games 66%
+     150000 expansions/game              0.359  games 68%
+  p2 rollout planner, first version      0.354  games 62%  draws 170  (think p50 0.6 s)
+  p3 rollout + joint goals + priorities  0.391  games 66%  draws 166  (think p50 1.2 s, p99 12 s: needs a cap)
+
+Race facts from the 192-map files (race_stats.py):
+  final2: our manufactured #1/#2/#3 delivered at round 29/36/42 (median); #3 in 51% of games.
+          split of the 4 manufactured contracts (me, prof): 3-1 in 42% of games, 2-2 in 42%, 4-0 in 7%.
+  p3:     our manufactured #1/#2 at round 30/40; #3 in only 18% of games; wins come from raw contracts (2 manuf + 3 raw).
+Professor, 10000 unopposed games (prof_sum.json + prof_sum2.json): k-th manufactured delivery, round
+  #1 min 17, p5 20, median 30;  #2 min 23, p5 28, p10 30, median 41;  #3 p5 44, median 57 (89% of games); #4 in 34%.

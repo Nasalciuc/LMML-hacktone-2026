@@ -1,0 +1,7 @@
+== final2 ebud=60000 e0=4000 hard=1000
+SCORE 0.323  games won 633/960 (0.659) draws 88  me 35.8 opp 28.5  slowest 4.25s illegal 0 wall 158s ebud=60000 e0=4000 hard=1000
+  by group 0:0.29 1:0.33 2:0.35 3:0.12 4:0.38 5:0.48 6:0.35 7:0.27
+== final2 ebud=150000 e0=4000 hard=1000
+SCORE 0.359  games won 652/960 (0.679) draws 73  me 36.1 opp 28.3  slowest 6.35s illegal 0 wall 171s ebud=150000 e0=4000 hard=1000
+  by group 0:0.35 1:0.31 2:0.25 3:0.23 4:0.33 5:0.56 6:0.48 7:0.35
+SWEEPDONE

@@ -1,0 +1,2 @@
+C=0.3 OOF AUROC=0.9890 keep98: null-rej=0.882 keep97: null-rej=0.920 keep95: null-rej=0.955 keep90: null-rej=0.988
+saved (refit check output)

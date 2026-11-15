@@ -1,0 +1,47 @@
+== Sun Nov 15 00:28:39 2026 {'tag': 'oe2_r256_e15', 'arch': 'efficientnet_b0', 'epochs': 15, 'hf_known': 3600, 'no_oe': False, 'u_ratio': 1.0, 'lr': 0.0004, 'folds': '0,1,2,3,4', 'res': 256, 'feats': 0, 'holdout_test': 1}
+fold 0: hold-out brand puma+reebok+vans+asics (4800 imgs), train knowns 3619, train outliers 6302
+  ep 1/15 loss 1.1385 train acc 0.557
+  ep 2/15 loss 0.7256 train acc 0.806
+  ep 3/15 loss 0.6124 train acc 0.872
+  ep 4/15 loss 0.5495 train acc 0.906
+  ep 5/15 loss 0.5134 train acc 0.921
+  ep 6/15 loss 0.4802 train acc 0.940
+  ep 7/15 loss 0.4657 train acc 0.948
+  ep 8/15 loss 0.4511 train acc 0.957
+  ep 9/15 loss 0.4277 train acc 0.967
+  ep 10/15 loss 0.4128 train acc 0.974
+  ep 11/15 loss 0.4054 train acc 0.979
+  ep 12/15 loss 0.4102 train acc 0.977
+  ep 13/15 loss 0.3989 train acc 0.978
+  ep 14/15 loss 0.3969 train acc 0.982
+  ep 15/15 loss 0.3985 train acc 0.982
+  fold 0: web photos of known brands (not trained on): accuracy 0.917, labelled unknown 0.056
+  fold 0 tau 0.0: known acc 0.898  rejection held-out puma+reebok+vans+asics 0.716  seen-brand new photos 0.985
+  fold 0 tau 0.5: known acc 0.871  rejection held-out puma+reebok+vans+asics 0.766  seen-brand new photos 0.988
+  fold 0 tau 0.7: known acc 0.810  rejection held-out puma+reebok+vans+asics 0.866  seen-brand new photos 0.993
+  closed-set acc 0.932  AUROC held-out 0.943  (280s)
+fold 1: hold-out brand puma+reebok+vans+asics (4800 imgs), train knowns 3619, train outliers 6302
+  ep 1/15 loss 1.1673 train acc 0.521
+  ep 2/15 loss 0.7436 train acc 0.805
+  ep 3/15 loss 0.6116 train acc 0.876
+  ep 4/15 loss 0.5603 train acc 0.898
+  ep 5/15 loss 0.5009 train acc 0.931
+  ep 6/15 loss 0.4895 train acc 0.936
+  ep 7/15 loss 0.4560 train acc 0.952
+  ep 8/15 loss 0.4406 train acc 0.959
+  ep 9/15 loss 0.4364 train acc 0.961
+  ep 10/15 loss 0.4259 train acc 0.966
+  ep 11/15 loss 0.4172 train acc 0.972
+  ep 12/15 loss 0.4047 train acc 0.979
+  ep 13/15 loss 0.3987 train acc 0.982
+  ep 14/15 loss 0.3998 train acc 0.981
+  ep 15/15 loss 0.3954 train acc 0.983
+  fold 1: web photos of known brands (not trained on): accuracy 0.944, labelled unknown 0.035
+  fold 1 tau 0.0: known acc 0.905  rejection held-out puma+reebok+vans+asics 0.622  seen-brand new photos 0.977
+  fold 1 tau 0.5: known acc 0.905  rejection held-out puma+reebok+vans+asics 0.677  seen-brand new photos 0.983
+  fold 1 tau 0.7: known acc 0.884  rejection held-out puma+reebok+vans+asics 0.803  seen-brand new photos 0.991
+  closed-set acc 0.952  AUROC held-out 0.919  (138s)
+fold 2: hold-out brand puma+reebok+vans+asics (4800 imgs), train knowns 3619, train outliers 6302
+  ep 1/15 loss 1.1496 train acc 0.539
+  ep 2/15 loss 0.7405 train acc 0.800
+  ep 3/15 loss 0.6033 train acc 0.880

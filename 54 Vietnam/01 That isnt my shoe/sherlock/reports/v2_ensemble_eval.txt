@@ -1,0 +1,3 @@
+A   closed-set acc=0.9150 (n=294)  keep0.97: known_acc=0.8912  keep0.98: known_acc=0.9014  keep0.985: known_acc=0.9048
+B   closed-set acc=0.9082 (n=294)  keep0.97: known_acc=0.8844  keep0.98: known_acc=0.8946  keep0.985: known_acc=0.8980
+AB  closed-set acc=0.9184 (n=294)  keep0.97: known_acc=0.8946  keep0.98: known_acc=0.9048  keep0.985: known_acc=0.9082

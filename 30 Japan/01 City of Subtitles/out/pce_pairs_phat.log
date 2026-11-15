@@ -1,0 +1,7 @@
+id      pairs 31878  median PCE 31.2  99.9% 55.1  max 144.9  >60: 13
+rot180  pairs 31878  median PCE 30.5  99.9% 53.3  max 168.3  >60: 7
+flipLR  pairs 31878  median PCE 30.9  99.9% 54.4  max 130.4  >60: 13
+flipUD  pairs 31878  median PCE 30.8  99.9% 53.9  max 136.1  >60: 13
+rot90   pairs 31878  median PCE 29.2  99.9% 48.8  max 58.4  >60: 0
+rot270  pairs 31878  median PCE 29.2  99.9% 48.1  max 62.3  >60: 1
+done

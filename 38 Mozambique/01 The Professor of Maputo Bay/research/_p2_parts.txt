@@ -1,0 +1,305 @@
+"""Mozambique - The Professor of Maputo Bay. Submission: this file only (stdlib, PyPy 3.10).
+
+Beam search over our own actions (one action per round for the whole player) on a local
+copy of the rules. Every contract is valued by the expected score margin of delivering it
+at a given round, using survival tables of the Professor's delivery round (measured on
+10000 unopposed Professor games, per contract slot and distance from its home). States are
+ranked by delivered value plus a time-based estimate of the manufacturing pipeline.
+The search budget is counted in node expansions, so the agent plays the same game on any
+machine; the wall clock is only a safety net. The serve() loop is the template's.
+"""
+import json
+import sys
+import time
+
+T, F, P = 0, 1, 2
+CAP = 3
+ROUNDS = 80
+INF = 10 ** 6
+
+PR = {
+    'rho': 1.0,         # weight of denying the Professor a contract it would otherwise take
+    'rawv': 1.0,        # multiplier on raw contract value
+    'gam': 0.995,       # mild per-round discount (breaks ties towards acting sooner)
+    'k_boat': 0.97,     # confidence factors of products by stage: on a boat,
+    'k_prod': 0.92,     # in the workshop warehouse or in production,
+    'k_mat': 0.82,      # still materials that exist (at the workshop or on a boat),
+    'k_pro': 0.62,      # materials that still have to be fetched
+    'kr': 0.9,          # carried raw goods matched to a raw contract
+    'kraw': 0.0,        # raw contracts that could be served from home stock / natural sites
+    'rgate': 2.0,       # minimum value for a carried pair of goods to count for a raw contract
+    'trip': 4,          # player actions assumed per future fetch trip
+    'ntrip': 3,         # future fetch trips considered in the estimate
+    'shift': 0,         # rounds subtracted from the Professor's delivery rounds (safety margin)
+    'H': 14,            # search horizon
+    'W': 24,            # beam width
+    'ebud': 90000,      # node expansions per game
+    'e0': 4000,         # expansions of each round-0 workshop-site search
+    'dl_f': 1.5,        # a decision may use this multiple of the even share of the budget
+    'hard': 8.5,        # seconds per game after which we stop searching (limit is 10)
+}
+
+# op codes
+WAIT, SAIL, LOAD, UNLOAD, GATHER, BUILD, CRAFT, DELIVER = range(8)
+
+#@@TABLES@@
+
+
+class Static(object):
+    def __init__(self, obs):
+        m = obs['map']
+        self.routes = routes = m['routes']
+        self.n = n = len(routes)
+        self.roles = m['roles']
+        self.contracts = m['contracts']
+        self.nc = len(self.contracts)
+        self.home = obs['own']['home']
+        self.seat = obs['seat']
+        homes = m.get('homes') or [self.home, self.home]
+        self.ohome = homes[1 - self.seat] if len(homes) > 1 else self.home
+        self.adj = [[w for w in range(n) if routes[v][w]] for v in range(n)]
+        dist = [[INF] * n for _ in range(n)]
+        nxt = [[-1] * n for _ in range(n)]
+        for s in range(n):
+            best = {s: (0, 0)}
+            first = {s: -1}
+            done = set()
+            while True:
+                cur, cb = None, None
+                for v, c in best.items():
+                    if v not in done and (cb is None or c < cb):
+                        cur, cb = v, c
+                if cur is None:
+                    break
+                done.add(cur)
+                for w in self.adj[cur]:
+                    if w in done:
+                        continue
+                    cand = (cb[0] + routes[cur][w], cb[1] + 1)
+                    if w not in best or cand < best[w]:
+                        best[w] = cand
+                        first[w] = w if cur == s else first[cur]
+            for v, (ct, ch) in best.items():
+                dist[s][v] = ct
+                nxt[s][v] = first[v]
+        self.dist, self.nxt = dist, nxt
+        self.tsites = [s for s in range(n) if self.roles[s] == T]
+        self.fsites = [s for s in range(n) if self.roles[s] == F]
+        self.msites = [s for s in range(n) if self.roles[s] == 2]
+        self.natural = [s for s in range(n) if self.roles[s] in (T, F)]
+        self.cdest = [c['destination'] for c in self.contracts]
+        self.cgood = [c['good'] for c in self.contracts]
+        self.cqty = [c['quantity'] for c in self.contracts]
+        self.cpts = [c['points'] for c in self.contracts]
+        self.cdl = [c['deadline'] for c in self.contracts]
+        self.manuf = [c for c in range(self.nc) if self.cgood[c] == P]
+        self.raws = [c for c in range(self.nc) if self.cgood[c] != P]
+        self.dest_contracts = [[c for c in range(self.nc) if self.cdest[c] == s] for s in range(n)]
+        self.surv = [self.professor(c) for c in range(self.nc)]
+
+    def professor(self, c):
+        """P(the Professor has not delivered contract c before round t), t = 0..ROUNDS."""
+        oh = self.ohome
+        d = self.dist
+        if self.cgood[c] == P:
+            slots = [x for x in self.manuf]
+            k = 4 + min(3, slots.index(c))
+            f = min([d[oh][m] + d[m][self.cdest[c]] for m in self.msites] or [MHI])
+            f = max(MLO, min(MHI, f)) - MLO
+        else:
+            k = min(3, self.raws.index(c))
+            f = max(RLO, min(RHI, d[oh][self.cdest[c]])) - RLO
+        row = SURV[k][f] if k < len(SURV) and f < len(SURV[k]) else [1000] * 81
+        sh = PR['shift']
+        out = []
+        for t in range(ROUNDS + 2):
+            tt = min(80, max(0, t + sh))
+            out.append(row[tt] / 1000.0)
+        return out
+
+
+def pick_workshop(S):
+    best, bs = None, None
+    for s in S.msites:
+        sc = 2.0 * S.dist[S.home][s]
+        for c in S.manuf:
+            sc += 0.4 * S.dist[s][S.cdest[c]]
+        nt = min([S.dist[s][x] for x in S.tsites] or [9])
+        nf = min([S.dist[s][x] for x in S.fsites] or [9])
+        sc += 1.0 * nt + 0.6 * nf
+        if bs is None or sc < bs:
+            best, bs = s, sc
+    return best
+
+
+class Planner(object):
+    def __init__(self, S, M, nb, r0, claims=None):
+        self.S = S
+        self.M = M
+        self.nb = nb
+        self.r0 = r0
+        n = S.n
+        self.WH = 4 + 6 * nb
+        self.JB = self.WH + 3 * n
+        self.ST = self.JB + n
+        self.size = self.ST + n
+        # value of delivering contract c in round t, seen from round r0
+        rho = PR['rho']
+        gam = PR['gam']
+        self.Wt = Wt = []
+        for c in range(S.nc):
+            sv = S.surv[c]
+            s0 = max(0.05, sv[min(r0, ROUNDS)])
+            sinf = min(sv[ROUNDS], s0) / s0
+            pts = S.cpts[c] * (PR['rawv'] if S.cgood[c] != P else 1.0)
+            dl = S.cdl[c]
+            row = []
+            for t in range(ROUNDS + 1):
+                if t >= dl or t >= ROUNDS or t < r0:
+                    row.append(0.0)
+                    continue
+                st = min(sv[t], s0) / s0
+                w = pts * ((1.0 + rho) * st - rho * min(sinf, st)) * gam ** (t - r0)
+                row.append(max(w, 0.02 * pts))
+            Wt.append(row)
+
+    # ------------------------------------------------------------ encoding
+    def encode(self, obs, mem):
+        S = self.S
+        own = obs['own']
+        L = [0] * self.size
+        L[0] = obs['round']
+        L[1] = 0.0
+        wsm = 0
+        for s, x in enumerate(own['workshops']):
+            if x:
+                wsm |= 1 << s
+        L[2] = wsm
+        cm = 0
+        for c, x in enumerate(obs['claims']):
+            if x != -1:
+                cm |= 1 << c
+        L[3] = cm
+        for b, bt in enumerate(own['boats'][:self.nb]):
+            i = 4 + 6 * b
+            L[i] = bt['position']
+            L[i + 1] = bt['destination']
+            L[i + 2] = bt['eta']
+            L[i + 3], L[i + 4], L[i + 5] = bt['cargo']
+        WH = self.WH
+        for s, w in enumerate(own['warehouses']):
+            L[WH + 3 * s], L[WH + 3 * s + 1], L[WH + 3 * s + 2] = w
+        for s, j in enumerate(own['jobs']):
+            L[self.JB + s] = j
+        for s in range(S.n):
+            if S.roles[s] in (T, F):
+                L[self.ST + s] = est_stock(mem, s, L[0])
+        return L
+
+
+#@@SPLIT@@
+    def apply(self, L, a):
+        S = self.S
+        L = L[:]
+        op, b, x, q = a
+        i = 4 + 6 * b
+        WH, JB, ST = self.WH, self.JB, self.ST
+        r = L[0]
+        if op == SAIL:
+            L[i + 1] = x
+            L[i + 2] = S.routes[L[i]][x]
+        elif op == LOAD:
+            L[WH + 3 * L[i] + x] -= q
+            L[i + 3 + x] += q
+        elif op == UNLOAD:
+            L[WH + 3 * L[i] + x] += q
+            L[i + 3 + x] -= q
+        elif op == GATHER:
+            L[ST + L[i]] -= q
+            L[i + 3 + x] += q
+        elif op == BUILD:
+            w = WH + 3 * L[i]
+            L[w] -= 2
+            L[w + 1] -= 1
+            L[2] |= 1 << L[i]
+        elif op == CRAFT:
+            w = WH + 3 * L[i]
+            L[w] -= 2
+            L[w + 1] -= 1
+            L[JB + L[i]] = 3
+        elif op == DELIVER:
+            c = x
+            L[i + 3 + S.cgood[c]] -= S.cqty[c]
+            L[3] |= 1 << c
+            L[1] += self.Wt[c][r]
+        # tick
+        for b2 in range(self.nb):
+            j = 4 + 6 * b2
+            if L[j + 2]:
+                L[j + 2] -= 1
+                if L[j + 2] == 0:
+                    L[j] = L[j + 1]
+                    L[j + 1] = -1
+        for s in S.msites:
+            if L[JB + s]:
+                L[JB + s] -= 1
+                if L[JB + s] == 0:
+                    L[WH + 3 * s + 2] += 1
+        r += 1
+        L[0] = r
+        if r % 4 == 0:
+            for s in S.natural:
+                if L[ST + s] < 6:
+                    L[ST + s] += 1
+        return L
+
+
+#@@SPLIT@@
+def est_stock(mem, site, rnd):
+    seen = mem['seen'].get(site)
+    if seen is None:
+        r0, v0 = 0, 4
+    else:
+        r0, v0 = seen
+    regen = rnd // 4 - r0 // 4
+    if regen < 0:
+        regen = 0
+    v = v0 + regen
+    return 6 if v > 6 else v
+
+
+def to_json(a):
+    op, b, x, q = a
+    if op == WAIT:
+        return {'op': 'wait'}
+    if op == SAIL:
+        return {'op': 'sail', 'boat': b, 'destination': x}
+    if op == LOAD:
+        return {'op': 'load', 'boat': b, 'good': x, 'quantity': q}
+    if op == UNLOAD:
+        return {'op': 'unload', 'boat': b, 'good': x, 'quantity': q}
+    if op == GATHER:
+        return {'op': 'gather', 'boat': b, 'good': x, 'quantity': q}
+    if op == BUILD:
+        return {'op': 'build_workshop', 'boat': b}
+    if op == CRAFT:
+        return {'op': 'craft', 'boat': b}
+    return {'op': 'deliver', 'boat': b, 'contract': x}
+
+
+
+#@@SPLIT@@
+def serve():
+    protocol = sys.stdout
+    sys.stdout = sys.stderr          # print() for debugging goes to stderr, not the protocol
+    memory = {}
+    for line in sys.stdin:
+        observation = json.loads(line)['observation']
+        if observation['round'] == 0:
+            memory = {}
+        protocol.write(json.dumps(agent(observation, memory)) + '\n')
+        protocol.flush()
+
+
+if __name__ == '__main__':
+    serve()

@@ -1,0 +1,43 @@
+mms:voice_note_clean                     ekisu:-23.6  elishe:-20.5  elisha:-20.2  efisi:-20.2  elisho:-20.1  esishi:-19.5
+mms:voice_note_clean_strong              efisi:-24.6  ekisu:-24.0  esishi:-23.4  esisho:-22.7  ifishu:-21.6  isisi:-21.5
+mms:voice_note_clean_voiceband           esishi:-26.1  esisho:-25.4  efisi:-24.3  isisi:-23.4  isisho:-22.3  ekisu:-22.1
+mms:clean__demucs                        ekisu:5.3  okusho:5.4  ifu:5.8  isisi:6.9  ekhaya:7.1  esisho:7.5
+mms:clean__metricgan                     ekisu:9.7  okusho:10.6  ekhaya:11.8  elishe:12.2  ngisho:12.2  elisho:12.3
+mms:clean__sepdns                        ngisho:-17.0  isifiso:-14.0  esisho:-13.8  isisho:-13.7  isisi:-13.1  ekisu:-12.3
+mms:clean__sepwham                       ekhaya:7.5  ifu:9.3  elisho:9.3  ngisho:9.5  ekisu:9.5  isisi:9.6
+mms:raw__demucs+metricgan                ifu:12.1  ekhaya:12.3  ngisho:13.7  isisi:13.7  isisho:13.9  okusho:13.9
+mms:raw__demucs+sepdns                   esisho:2.5  elisho:3.0  ekisu:3.6  elishe:3.6  elihle:3.7  elisha:3.7
+mms:raw__demucs                          elihle:-5.4  elishe:-1.4  elisha:-1.1  esishi:-0.5  elisho:0.2  esisho:1.0
+mms:raw__metricgan                       ifu:20.2  emuva:31.1  ekisu:31.4  isisi:32.6  efisi:34.1  isifo:34.3
+mms:raw__sepdns                          ifu:17.8  emuva:25.8  ekisu:26.8  ekhaya:27.3  elihle:28.0  isisi:28.2
+mms:raw__sepwham                         ifu:17.3  ekhaya:20.7  emuva:21.3  ekisu:21.8  elihle:22.1  elisha:22.2
+w2vbert:voice_note_clean                 elishe:-15.3  elisha:-10.5  elisho:-9.8  elihle:-5.1  esishi:-5.1  esisho:-4.3
+w2vbert:voice_note_clean_strong          elishe:-12.4  elisha:-12.0  esishi:-11.8  elisho:-11.6  efisi:-7.7  ifishi:-7.4
+w2vbert:voice_note_clean_voiceband       esishi:-9.0  elishe:-6.9  elisha:-6.8  elisho:-6.2  efisi:-5.5  ekisu:-4.8
+w2vbert:clean__demucs                    isisi:5.7  ifu:10.6  isisho:11.1  esishi:11.3  isifo:11.4  esisho:11.9
+w2vbert:clean__metricgan                 ekisu:5.1  elishe:5.1  ifu:6.8  okusho:6.8  elihle:7.0  efisi:7.9
+w2vbert:clean__sepdns                    isisi:-5.6  elisha:-4.7  esishi:-2.7  ngisho:-1.0  isisho:-0.9  elishe:-0.7
+w2vbert:clean__sepwham                   ifu:12.9  isifo:18.9  isisi:22.0  ekisu:22.4  efisi:23.4  emuva:24.5
+w2vbert:raw__demucs+metricgan            isisi:12.8  ifu:13.3  efisi:14.1  isifo:15.4  ekisu:17.2  esishi:17.9
+w2vbert:raw__demucs+sepdns               isicelo:-11.4  ifihlo:-9.5  ifu:-5.6  isisho:-5.5  isifo:-5.4  elihle:-5.2
+w2vbert:raw__demucs                      ekisu:0.2  efisi:2.0  ifu:3.9  elishe:4.1  elisha:4.1  isisi:4.2
+w2vbert:raw__metricgan                   ifu:24.1  ekisu:33.3  isisi:33.6  efisi:35.9  emuva:36.4  isifo:36.5
+w2vbert:raw__sepdns                      ifu:22.7  ekisu:31.7  isisi:32.1  efisi:34.3  emuva:34.7  isifo:34.7
+w2vbert:raw__sepwham                     ifu:22.1  ekisu:30.6  isisi:30.8  efisi:33.2  isifo:33.5  emuva:33.7
+
+== SUM of (delta - best) over 26 versions, lower=better ==
+  ekisu             134.1   (per-char  26.82)
+  ifu               137.5   (per-char  45.83)
+  isisi             146.0   (per-char  29.21)
+  elishe            168.7   (per-char  28.11)
+  elisha            174.3   (per-char  29.05)
+  esishi            181.3   (per-char  30.22)
+  elisho            181.4   (per-char  30.23)
+  efisi             186.4   (per-char  37.27)
+  esisho            188.2   (per-char  31.36)
+  isisho            212.8   (per-char  35.46)
+  elihle            214.0   (per-char  35.67)
+  isifo             228.2   (per-char  45.64)
+  ngisho            246.6   (per-char  41.09)
+  ifishi            277.5   (per-char  46.25)
+  okusho            279.4   (per-char  46.56)

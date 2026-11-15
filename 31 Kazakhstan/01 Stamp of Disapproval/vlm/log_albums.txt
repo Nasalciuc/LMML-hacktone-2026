@@ -1,0 +1,464 @@
+W1114 19:32:22.573000 39264 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+[ERROR] `loss` is part of Qwen2_5_VLCausalLMOutputWithPast.__init__'s signature, but not documented. Make sure to add it to the docstring of the function in C:\Users\user\miniconda3\Lib\site-packages\transformers\models\qwen2_5_vl\modeling_qwen2_5_vl.py.
+[ERROR] `logits` is part of Qwen2_5_VLCausalLMOutputWithPast.__init__'s signature, but not documented. Make sure to add it to the docstring of the function in C:\Users\user\miniconda3\Lib\site-packages\transformers\models\qwen2_5_vl\modeling_qwen2_5_vl.py.
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   0%|          | 1/729 [00:00<11:06,  1.09it/s]Loading weights:   0%|          | 2/729 [00:02<15:03,  1.24s/it]Loading weights:   1%|          | 4/729 [00:06<22:03,  1.83s/it]Loading weights:   1%|          | 5/729 [00:06<15:54,  1.32s/it]Loading weights:   1%|          | 6/729 [00:07<11:44,  1.03it/s]Loading weights:   2%|▏         | 12/729 [00:07<03:21,  3.56it/s]Loading weights:   2%|▏         | 16/729 [00:07<02:13,  5.33it/s]Loading weights:   3%|▎         | 19/729 [00:07<02:01,  5.84it/s]Loading weights:   3%|▎         | 24/729 [00:07<01:16,  9.26it/s]Loading weights:   4%|▍         | 28/729 [00:08<01:04, 10.90it/s]Loading weights:   4%|▍         | 31/729 [00:08<01:12,  9.65it/s]Loading weights:   5%|▍         | 36/729 [00:08<00:51, 13.55it/s]Loading weights:   5%|▌         | 40/729 [00:08<00:45, 15.08it/s]Loading weights:   6%|▌         | 43/729 [00:09<00:57, 11.94it/s]Loading weights:   7%|▋         | 49/729 [00:09<00:38, 17.80it/s]Loading weights:   7%|▋         | 53/729 [00:09<00:45, 14.87it/s]Loading weights:   8%|▊         | 56/729 [00:09<00:45, 14.84it/s]Loading weights:   8%|▊         | 61/729 [00:10<00:33, 19.77it/s]Loading weights:   9%|▉         | 65/729 [00:10<00:42, 15.59it/s]Loading weights:   9%|▉         | 68/729 [00:10<00:43, 15.20it/s]Loading weights:  10%|▉         | 72/729 [00:10<00:34, 18.79it/s]Loading weights:  10%|█         | 76/729 [00:11<00:35, 18.65it/s]Loading weights:  11%|█         | 79/729 [00:11<00:46, 13.97it/s]Loading weights:  12%|█▏        | 84/729 [00:11<00:34, 18.57it/s]Loading weights:  12%|█▏        | 88/729 [00:11<00:34, 18.78it/s]Loading weights:  12%|█▏        | 91/729 [00:12<00:47, 13.53it/s]Loading weights:  13%|█▎        | 98/729 [00:12<00:30, 20.92it/s]Loading weights:  14%|█▍        | 102/729 [00:12<00:47, 13.13it/s]Loading weights:  15%|█▍        | 108/729 [00:12<00:34, 18.15it/s]Loading weights:  15%|█▌        | 112/729 [00:13<00:34, 18.09it/s]Loading weights:  16%|█▌        | 115/729 [00:13<00:44, 13.95it/s]Loading weights:  16%|█▋        | 120/729 [00:13<00:33, 18.37it/s]Loading weights:  17%|█▋        | 124/729 [00:13<00:32, 18.44it/s]Loading weights:  17%|█▋        | 127/729 [00:14<00:45, 13.37it/s]Loading weights:  18%|█▊        | 132/729 [00:14<00:34, 17.35it/s]Loading weights:  19%|█▊        | 136/729 [00:14<00:33, 17.47it/s]Loading weights:  19%|█▉        | 139/729 [00:15<00:46, 12.80it/s]Loading weights:  20%|█▉        | 144/729 [00:15<00:33, 17.23it/s]Loading weights:  20%|██        | 148/729 [00:15<00:34, 16.70it/s]Loading weights:  21%|██        | 151/729 [00:15<00:46, 12.52it/s]Loading weights:  22%|██▏       | 157/729 [00:16<00:31, 18.25it/s]Loading weights:  22%|██▏       | 160/729 [00:16<00:33, 16.91it/s]Loading weights:  22%|██▏       | 163/729 [00:16<00:44, 12.74it/s]Loading weights:  23%|██▎       | 168/729 [00:16<00:32, 17.27it/s]Loading weights:  24%|██▎       | 172/729 [00:17<00:31, 17.72it/s]Loading weights:  24%|██▍       | 175/729 [00:17<00:41, 13.45it/s]Loading weights:  25%|██▍       | 180/729 [00:17<00:30, 18.10it/s]Loading weights:  25%|██▌       | 184/729 [00:17<00:30, 17.86it/s]Loading weights:  26%|██▌       | 187/729 [00:18<00:40, 13.49it/s]Loading weights:  26%|██▋       | 192/729 [00:18<00:29, 17.99it/s]Loading weights:  27%|██▋       | 196/729 [00:18<00:28, 18.43it/s]Loading weights:  27%|██▋       | 199/729 [00:18<00:37, 14.02it/s]Loading weights:  28%|██▊       | 204/729 [00:18<00:28, 18.64it/s]Loading weights:  29%|██▊       | 208/729 [00:19<00:28, 18.42it/s]Loading weights:  29%|██▉       | 211/729 [00:19<00:37, 13.87it/s]Loading weights:  30%|██▉       | 216/729 [00:19<00:28, 18.19it/s]Loading weights:  30%|███       | 220/729 [00:19<00:27, 18.82it/s]Loading weights:  31%|███       | 223/729 [00:20<00:37, 13.64it/s]Loading weights:  31%|███▏      | 228/729 [00:20<00:27, 17.99it/s]Loading weights:  32%|███▏      | 232/729 [00:20<00:26, 18.51it/s]Loading weights:  32%|███▏      | 235/729 [00:21<00:36, 13.48it/s]Loading weights:  33%|███▎      | 241/729 [00:21<00:25, 19.50it/s]Loading weights:  34%|███▎      | 245/729 [00:21<00:31, 15.40it/s]Loading weights:  34%|███▍      | 248/729 [00:21<00:31, 15.51it/s]Loading weights:  35%|███▍      | 254/729 [00:21<00:21, 21.95it/s]Loading weights:  35%|███▌      | 258/729 [00:22<00:33, 14.03it/s]Loading weights:  36%|███▌      | 264/729 [00:22<00:24, 18.96it/s]Loading weights:  37%|███▋      | 268/729 [00:22<00:24, 18.46it/s]Loading weights:  37%|███▋      | 271/729 [00:23<00:32, 13.92it/s]Loading weights:  38%|███▊      | 276/729 [00:23<00:24, 18.28it/s]Loading weights:  38%|███▊      | 280/729 [00:23<00:23, 19.26it/s]Loading weights:  39%|███▉      | 283/729 [00:23<00:30, 14.56it/s]Loading weights:  40%|███▉      | 288/729 [00:23<00:23, 19.03it/s]Loading weights:  40%|████      | 292/729 [00:24<00:23, 18.84it/s]Loading weights:  40%|████      | 295/729 [00:24<00:32, 13.31it/s]Loading weights:  41%|████      | 300/729 [00:24<00:24, 17.84it/s]Loading weights:  42%|████▏     | 304/729 [00:24<00:23, 17.86it/s]Loading weights:  42%|████▏     | 307/729 [00:25<00:33, 12.41it/s]Loading weights:  43%|████▎     | 312/729 [00:25<00:25, 16.48it/s]Loading weights:  43%|████▎     | 316/729 [00:25<00:26, 15.66it/s]Loading weights:  44%|████▍     | 319/729 [00:26<00:35, 11.58it/s]Loading weights:  44%|████▍     | 324/729 [00:26<00:26, 15.53it/s]Loading weights:  45%|████▍     | 328/729 [00:26<00:26, 15.04it/s]Loading weights:  45%|████▌     | 331/729 [00:27<00:36, 10.99it/s]Loading weights:  46%|████▌     | 336/729 [00:27<00:26, 14.95it/s]Loading weights:  47%|████▋     | 345/729 [00:27<00:15, 24.65it/s]Loading weights:  49%|████▊     | 355/729 [00:27<00:10, 35.83it/s]Loading weights:  50%|████▉     | 364/729 [00:27<00:08, 45.18it/s]Loading weights:  51%|█████     | 371/729 [00:27<00:07, 50.03it/s]Loading weights:  53%|█████▎    | 383/729 [00:27<00:05, 65.20it/s]Loading weights:  54%|█████▍    | 392/729 [00:27<00:04, 69.95it/s]Loading weights:  55%|█████▌    | 401/729 [00:28<00:04, 74.27it/s]Loading weights:  57%|█████▋    | 413/729 [00:28<00:03, 84.32it/s]Loading weights:  58%|█████▊    | 423/729 [00:28<00:03, 82.60it/s]Loading weights:  59%|█████▉    | 432/729 [00:28<00:03, 84.11it/s]Loading weights:  60%|██████    | 441/729 [00:28<00:03, 84.03it/s]Loading weights:  62%|██████▏   | 451/729 [00:28<00:03, 87.52it/s]Loading weights:  63%|██████▎   | 460/729 [00:28<00:03, 87.80it/s]Loading weights:  64%|██████▍   | 469/729 [00:28<00:03, 80.96it/s]Loading weights:  66%|██████▌   | 481/729 [00:28<00:02, 89.79it/s]Loading weights:  67%|██████▋   | 491/729 [00:29<00:02, 81.78it/s]Loading weights:  69%|██████▊   | 501/729 [00:29<00:02, 83.57it/s]Loading weights:  70%|███████   | 511/729 [00:29<00:02, 86.20it/s]Loading weights:  71%|███████▏  | 520/729 [00:29<00:02, 82.97it/s]Loading weights:  73%|███████▎  | 529/729 [00:29<00:02, 81.73it/s]Loading weights:  74%|███████▍  | 540/729 [00:29<00:02, 88.27it/s]Loading weights:  75%|███████▌  | 549/729 [00:29<00:02, 69.38it/s]Loading weights:  77%|███████▋  | 561/729 [00:29<00:02, 79.31it/s]Loading weights:  78%|███████▊  | 570/729 [00:30<00:01, 79.67it/s]Loading weights:  79%|███████▉  | 579/729 [00:30<00:01, 81.13it/s]Loading weights:  81%|████████  | 589/729 [00:30<00:01, 82.66it/s]Loading weights:  82%|████████▏ | 599/729 [00:30<00:01, 84.69it/s]Loading weights:  84%|████████▎ | 609/729 [00:30<00:01, 86.89it/s]Loading weights:  85%|████████▌ | 621/729 [00:30<00:01, 90.54it/s]Loading weights:  87%|████████▋ | 631/729 [00:30<00:01, 90.96it/s]Loading weights:  88%|████████▊ | 641/729 [00:30<00:01, 83.52it/s]Loading weights:  89%|████████▉ | 652/729 [00:31<00:00, 89.46it/s]Loading weights:  91%|█████████ | 662/729 [00:31<00:00, 85.99it/s]Loading weights:  92%|█████████▏| 671/729 [00:31<00:00, 82.87it/s]Loading weights:  94%|█████████▎| 683/729 [00:31<00:00, 90.40it/s]Loading weights:  95%|█████████▌| 693/729 [00:31<00:00, 83.73it/s]Loading weights:  96%|█████████▋| 703/729 [00:31<00:00, 87.60it/s]Loading weights:  98%|█████████▊| 715/729 [00:31<00:00, 93.26it/s]Loading weights:  99%|█████████▉| 725/729 [00:31<00:00, 91.20it/s]Loading weights: 100%|██████████| 729/729 [00:32<00:00, 22.76it/s]
+album_1_page_1759_0 0.378 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "250"   ],   "years": [     "2012"   ],   "other_text": [    
+album_1_page_1759_1 0.349 ```json {   "country": ["Казахстан", "Kazakhstan"],   "denominations": ["202"],   "years": ["2014"],   "other_text": ["Жылкы жаныбы"] } ```
+album_1_page_1759_2 0.438 ```json {   "country": ["Astana-Almaty"],   "denominations": [],   "years": ["2010", "2011"],   "other_text": ["7th ASIAN WINTER GAMES"] } ```
+album_1_page_2079_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1936", "2005", "2011"],   "other_text": [     "Өмірзак Сұл
+album_1_page_2079_1 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "50"   ],   "years": [     "2012"   ],   "other_text": [     
+album_1_page_2079_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00"],   "years": ["1997"],   "other_text": ["KAPAKYPT", "LARODECTUS PALLID
+## 6/394  6.8s/stamp
+album_1_page_2898_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2014"],   "other_text": ["ЖОШЫ ХАН КЕСЕСІ"] } ```
+album_1_page_2898_1 0.731 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": [],   "other_text": [] } ```
+album_1_page_2898_2 0.651 ```json {   "country": [     "ПАВЛОДАР ОБЛ.",     "КИМЕШК."   ],   "denominations": [     "271"   ],   "years": [     "2014"   ],   "other_text": [   
+album_1_page_2898_3 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "188"   ],   "years": [     "2009"   ],   "other_text": [    
+album_1_page_2932_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["2015", "1915", "1983"],   "other_text": ["Илияс Есенберлин 
+album_1_page_2932_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25"],   "years": ["2008"],   "other_text": ["Э. Кастеев \"Кенесарының портрет
+## 12/394  5.5s/stamp
+album_1_page_2932_2 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["A"],   "years": ["2019"],   "other_text": [     "Казақстандың мемлекет",     
+album_1_page_3114_0 0.469 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100",     "100",     "100",     "100",     "100",     "100",
+album_1_page_3114_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2012"],   "other_text": [     "Калканкулак кирпi Hemiechi
+album_1_page_3114_2 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["1.00", "2.00", "3.00", "4.00", "5.00", "6.00", "7.00", "8.00", "9.00", "10.00
+album_1_page_3151_0 0.002 ```json {   "country": ["ҚАЗАҚСТАН"],   "denominations": [],   "years": [],   "other_text": [] } ```
+album_1_page_3151_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["60"],   "years": ["2013"],   "other_text": ["Кабылан", "Acinonyx jubatus"] } 
+## 18/394  5.1s/stamp
+album_1_page_3151_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500T"],   "years": ["2025", "2024-2026"],   "other_text": [     "INTERNATIONA
+album_1_page_3656_0 0.245 ```json {   "country": [     "ҚАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200",     "200",     "200",     "200",     "200",     "200",
+album_1_page_3656_1 0.407 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "202"   ],   "years": [     "2014"   ],   "other_text": [    
+album_1_page_3656_2 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["600"],   "years": ["2023"],   "other_text": [     "Уимблдон-2022 турнирінің ж
+album_1_page_4114_0 0.469 ```json {   "country": ["Қазақстан", "Kazakhstan"],   "denominations": ["200"],   "years": ["2013"],   "other_text": ["Сол жак"] } ```
+album_1_page_4114_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "Kazakhstan"],   "denominations": ["50"],   "years": ["1912-1957"],   "other_text": [     "Күлгөм Байсейімова",  
+## 24/394  5.6s/stamp
+album_1_page_4114_2 0.202 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["105"],   "years": ["2007"],   "other_text": ["Казақстан Халыктары"] } ```
+album_1_page_4264_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["3.00"],   "years": ["2003"],   "other_text": ["ИНТЕЛСАТ"] } ```
+album_1_page_4264_1 0.469 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2014"   ],   "other_text": [    
+album_1_page_4264_2 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["33"],   "years": ["2010"],   "other_text": [     "ЕКҮЙ САММИТІ",     "АСТАНА"
+album_1_page_4382_0 0.321 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["25", "100"],   "years": ["2008", "2008"],   "other_text": [     "Callisthenes
+album_1_page_4382_1 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "72",     "72",     "72",     "72",     "72",     "72",     "
+## 30/394  5.5s/stamp
+album_1_page_4382_2 0.407 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "250"   ],   "years": [     "2012"   ],   "other_text": [    
+album_1_page_4579_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": ["1909-1998", "2009"],   "other_text": [     "Өбілдә Тәжіба
+album_1_page_4579_1 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2012"],   "other_text": ["Наурыз мерекесімен!"] } ```
+album_1_page_4579_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2009"],   "other_text": ["БАТЫРДЫҢ КАЛКАНЫ. XVIII F.", "М
+album_1_page_5338_0 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "180"   ],   "years": [     "2009"   ],   "other_text": [    
+album_1_page_5338_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": [],   "other_text": ["Тәуелсіздік сарайы"] } ```
+## 36/394  5.3s/stamp
+album_1_page_5338_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["2020"],   "other_text": ["Alosa kessleri volgensis"] } ```
+album_1_page_5426_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2012"],   "other_text": [     "Шара Жиенқұлова",     "(19
+album_1_page_5426_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": [],   "other_text": ["НАУРЫЗ - ХАЛЫКТЫҢ БІРЛІГІ"] } ```
+album_1_page_5426_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2010", "2011"],   "other_text": ["2011 жылғы 7-кысқы Азия
+album_1_page_6205_0 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "50"   ],   "years": [     "2014"   ],   "other_text": [     
+album_1_page_6205_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2010"],   "other_text": ["ЕКӨЙ САММИТI", "АСТАНА", "1-2 ж
+## 42/394  4.9s/stamp
+album_1_page_6205_2 0.202 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["C"],   "years": ["2019", "1894", "1938"],   "other_text": ["Бейімбет Майлин",
+album_1_page_6760_0 0.269 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_1_page_6760_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2019"],   "other_text": [     "Казак акыны, драматург",   
+album_1_page_6760_2 0.269 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_1_page_6852_0 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["2010"],   "other_text": ["КӨПИСТЕР"] } ```
+album_1_page_6852_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["2225"],   "other_text": ["Глadiолус imbricatus"] } ```
+## 48/394  4.6s/stamp
+album_1_page_6852_2 0.321 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["65.00", "65.00"],   "years": ["2004", "2004"],   "other_text": ["Казақстан Ха
+album_1_page_6945_0 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["220"],   "years": ["2015"],   "other_text": ["70", "Мәншүк Мәметова"] } ```
+album_1_page_6945_1 0.407 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2016"   ],   "other_text": [    
+album_1_page_6945_2 0.321 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_1_page_7418_0 0.223 ```json {   "country": [     "ҚАЗАҚСТАН"   ],   "denominations": [],   "years": [     "1993"   ],   "other_text": [] } ```
+album_1_page_7418_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00"],   "years": [],   "other_text": ["КОЖА АЛМЕТ ЯССАУИ МАЗАРЫ, XIV"] } `
+## 54/394  4.5s/stamp
+album_1_page_7418_2 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32"   ],   "years": [     "2010"   ],   "other_text": [     
+album_1_page_7501_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": [],   "other_text": ["ЖИТС", "пен куреске", "30 жыл"] } ```
+album_1_page_7501_1 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50.00"],   "years": ["2002"],   "other_text": ["Халықаралық таулар жылы", "Ме
+album_1_page_7501_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2016", "1891-1942"],   "other_text": ["Файзулла Галымжано
+album_1_page_8208_0 0.679 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2008", "2008"],   "other_text": ["ЯЗДО", "ГАНДБОЛ", "Beij
+album_1_page_8208_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2013"],   "other_text": ["Жыланжегiш буркiт Circaetus gal
+## 60/394  4.4s/stamp
+album_1_page_8208_2 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["Майя Манеза"] } ```
+album_1_page_8370_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["9.00"],   "years": [],   "other_text": ["ИНТЕЛСАТ"] } ```
+album_1_page_8370_1 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100",     "100",     "100",     "100"   ],   "years": [],   
+album_1_page_8370_2 0.438 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["50.00"],   "years": ["1996"],   "other_text": ["ATLANTA", "100", "Atlanta 199
+album_1_page_8525_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25"],   "years": ["1909-1976"],   "other_text": ["Телеу Бәсенов", "(1909-1976
+album_1_page_8525_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2012"],   "other_text": ["Л.Н. Гумилёв атындағы Еуразия ұ
+## 66/394  4.3s/stamp
+album_1_page_8525_2 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2014"],   "other_text": [     "Кулахмет Кожыков (1914-1986
+album_1_page_8991_0 0.378 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["600", "600"],   "years": ["2013", "2023"],   "other_text": [     "Шахматы чем
+album_1_page_8991_1 0.321 ```json {   "country": [     "ҚАЗАҚСТАН"   ],   "denominations": [     "7.00"   ],   "years": [     "1994"   ],   "other_text": [     "Сары жылан / Op
+album_1_page_8991_2 0.593 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2007"],   "other_text": ["КЛАССИКАЛЫК КУРЕС", "Юрий Мельн
+album_1_page_9335_0 0.202 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": [],   "other_text": ["Жұбан Молдагалиев", "Казак ақыны, жау
+album_1_page_9335_1 0.593 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2005"],   "other_text": ["ЖЕҢІЛ АТЛЕТИКА", "Виталий Савин
+## 72/394  4.3s/stamp
+album_1_page_9335_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН"   ],   "denominations": [     "12.00"   ],   "years": [     "1994",     "1994"   ],   "other_text": [     "XV
+album_1_page_9528_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["2011"],   "other_text": ["КАЗАКСТАН тәуелсіздігіне"] } ```
+album_1_page_9528_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["2010"],   "other_text": ["Шымкент каласынын телтандасы"] } 
+album_1_page_9528_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2014"],   "other_text": [     "Кең орнындағы фарсыш кемес
+album_1_page_9862_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2012", "1912", "1993"],   "other_text": ["Дінмұхамед Кона
+album_1_page_9862_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500"],   "years": ["2007", "1957"],   "other_text": ["ЖЕРДІН АЛҒАШКЫ ЖАСАНДЫ 
+## 78/394  4.2s/stamp
+album_1_page_9862_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": ["2011"],   "other_text": ["Turdus merula"] } ```
+album_2_page_1120_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["2013"],   "other_text": ["Акбөген", "Saiga Tatarica Tatari
+album_2_page_1120_1 0.469 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "550"   ],   "years": [     "2014"   ],   "other_text": [    
+album_2_page_1120_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["70", "100"],   "years": [],   "other_text": ["Kazakhstan", "Kazakhstani", "Mi
+album_2_page_1245_0 0.438 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2016"],   "other_text": ["Rio 2016", "Дмитрий Баландин", 
+album_2_page_1245_1 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["2019"],   "other_text": ["БКК25", "25", "БКК25", "25", "БКК25"
+## 84/394  4.1s/stamp
+album_2_page_1245_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["Серик Сәпиев"] } ```
+album_2_page_1475_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2012"],   "other_text": [     "Еуропалык кирпi Erinaceus 
+album_2_page_1475_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300"],   "years": [],   "other_text": ["Фарыштык байланысқа 10 жыл"] } ```
+album_2_page_1475_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500"],   "years": ["2022", "1922-2011"],   "other_text": [     "Казақстандың 
+album_2_page_1771_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100.00"],   "years": ["2004", "1904-2004"],   "other_text": ["FEDERATION INTE
+album_2_page_1771_1 0.165 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": [],   "other_text": ["Kazpost"] } ```
+## 90/394  4.0s/stamp
+album_2_page_1771_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140", "200"],   "years": ["2019", "1904"],   "other_text": [     "Байтерек", 
+album_2_page_2062_0 0.349 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["С"],   "years": ["2018"],   "other_text": [     "ЖУМАБАЕВІ БІН ТУГАНЫНА 125 Ж
+album_2_page_2062_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["2025"],   "other_text": ["Gladiolus imbricatus"] } ```
+album_2_page_2062_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100", "100"],   "years": ["2004", "2004"],   "other_text": ["Адирма", "Гижақ"
+album_2_page_2279_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["65"],   "years": ["2005"],   "other_text": ["Бейбітшілік және Келісім Сарайын
+album_2_page_2279_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": ["2009"],   "other_text": ["Мария Лизогуб", "Казак КСР енбе
+## 96/394  4.0s/stamp
+album_2_page_2279_2 0.562 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2016"],   "other_text": ["Rio 2016", "KAZAKHSTAN OLYMPIC 
+album_2_page_3255_0 0.223 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["60"],   "years": [],   "other_text": ["Tulipa ostrowskiana Regel"] } ```
+album_2_page_3255_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["1841-1889", "2016"],   "other_text": ["Казактын агартушы-педаг
+album_2_page_3255_2 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["-7.10.00"],   "other_text": ["АЛМАТЫ", "ПОЧТАСЫ", "00020"] } `
+album_2_page_3385_0 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2010"],   "other_text": [     "ОСЕ КАЗАХСТАН 2010",     "
+album_2_page_3385_1 0.202 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": [],   "other_text": ["ПОЛУ-ЦЕНТЫ", "МЕЖДУ СТРАНАМИ", "09032
+## 102/394  3.9s/stamp
+album_2_page_3385_2 0.407 ```json {   "country": ["Қазақстан", "Kazakhstan"],   "denominations": ["50"],   "years": ["2014"],   "other_text": ["Василенко Раиса", "«Красавица Ку
+album_2_page_4413_0 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32"   ],   "years": [     "2010"   ],   "other_text": [     
+album_2_page_4413_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["2022"],   "other_text": ["Salmo trutta caspius"] } ```
+album_2_page_4413_2 0.531 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["23.00"],   "years": ["1923", "2003"],   "other_text": [     "КАЗАКСТАН ХАЛИК 
+album_2_page_4698_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["240"],   "years": ["2010"],   "other_text": ["Балалар кітаптары", "EUROPA"] }
+album_2_page_4698_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50.", "00"],   "years": ["1999"],   "other_text": ["Казакстанның түнгыш фарыш
+## 108/394  3.9s/stamp
+album_2_page_4698_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["88"],   "years": ["2011"],   "other_text": ["РАСПОДА", "КАЗАҚСТАН РЕСПУБЛИКАС
+album_2_page_4917_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": ["2009"],   "other_text": ["Күмәнді долана (Crataegus ambig
+album_2_page_4917_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["1"],   "years": ["1892-1937"],   "other_text": ["Мемлекет кайраткерi, диплома
+album_2_page_4917_2 0.679 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["Илья Ильин"] } ```
+album_2_page_5593_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["2016", "1916-2004"],   "other_text": ["Кайым Мухамедханов", "ф
+album_2_page_5593_1 0.349 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "155"   ],   "years": [     "2013"   ],   "other_text": [    
+## 114/394  3.8s/stamp
+album_2_page_5593_2 0.531 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["2010"],   "other_text": ["«Хан Шатыр» кешені"] } ```
+album_2_page_5806_0 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["380"],   "years": ["2015"],   "other_text": ["«Союз TMA-18M»", "Айдын Айымбет
+album_2_page_5806_1 0.706 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "10"   ],   "years": [     "2013"   ],   "other_text": [     
+album_2_page_5806_2 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "25",     "150",     "25",     "150",     "25",     "150",   
+album_2_page_6294_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["72", "22"],   "years": ["2004", "2004"],   "other_text": ["соукеле", "аксүйек
+album_2_page_6294_1 0.5 ```json {   "country": ["Қазақстан", "Kazakhstan"],   "denominations": ["200"],   "years": ["2013"],   "other_text": ["Теп"] } ```
+## 120/394  3.8s/stamp
+album_2_page_6294_2 0.165 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["90", "90", "90", "90"],   "years": ["1835-1865", "1894-1938", "1893-1937", "1
+album_2_page_6885_0 0.133 ```json {   "country": ["КАЗАХСТАН"],   "denominations": ["75"],   "years": [],   "other_text": ["ВОДНЫЙ КОРОВИК", "75"] } ```
+album_2_page_6885_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": [],   "other_text": ["Сарыбауыр шымшык", "Parus major", "Д.
+album_2_page_6885_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2014"],   "other_text": ["РСС", "Допты хоккей"] } ```
+album_2_page_7217_0 0.378 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "150"   ],   "years": [     "2013"   ],   "other_text": [    
+album_2_page_7217_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150", "150"],   "years": ["2017", "2017"],   "other_text": ["Поляктар", "Түрк
+## 126/394  3.8s/stamp
+album_2_page_7217_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140"],   "years": ["2010"],   "other_text": ["Біріккен басылым. Қазақстан - Ә
+album_2_page_7660_0 0.378 ```json {   "country": ["Қазақстан", "Kazakhstan"],   "denominations": ["50"],   "years": ["2014"],   "other_text": ["Сидоров Александр «Алдар-Косе. Ч
+album_2_page_7660_1 0.378 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "250"   ],   "years": [     "2014"   ],   "other_text": [    
+album_2_page_7660_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": [],   "other_text": ["А.Меликовтың \"МАХАББАТ МУРАЛЫ АНБІЗ\
+album_2_page_7711_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2010"],   "other_text": ["Желкенді зебрасома (Zebrasoma v
+album_2_page_7711_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["2019", "1894", "1939"],   "other_text": [     "Сәкен Сейфу
+## 132/394  3.8s/stamp
+album_2_page_7711_2 0.202 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": [],   "other_text": ["Сауықтан", "Pica pica", "Д. Мухамеджа
+album_2_page_8598_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140"],   "years": ["2010"],   "other_text": [     "Біріккен басылым. Казақста
+album_2_page_8598_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["1912", "1992", "2012"],   "other_text": ["Лев Гумилёв", "
+album_2_page_8598_2 0.469 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [     "2014"   ],   "other_text": [    
+album_2_page_8632_0 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": ["1973", "2012"],   "other_text": ["П.Зальцман \"Жаңыгерлер
+album_2_page_8632_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2013"],   "other_text": ["Байқоңыр ғарыш алаңынан алгашты
+## 138/394  3.8s/stamp
+album_2_page_8632_2 0.407 ```json {   "country": [     "Казахстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [     "2013"   ],   "other_text": [    
+album_2_page_9755_0 0.5 ```json {   "country": ["ҚАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["66"],   "years": ["1889", "1977", "2014"],   "other_text": ["ЧАРЛИ", "ИЛИН", 
+album_2_page_9755_1 0.245 ```json {   "country": [     "Казакстан",     "KAZAKHSTAN"   ],   "denominations": [     "32",     "190"   ],   "years": [     "2010",     "2010"   ],
+album_2_page_9755_2 0.531 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["900"],   "years": ["2025"],   "other_text": ["TECHNO", "WOMEN", "Цифрлы болаш
+album_2_page_9764_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2025"],   "other_text": ["Gladiolus imbricatus"] } ```
+album_2_page_9764_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["60"],   "years": [],   "other_text": ["Tulipa behmiana Regel"] } ```
+## 144/394  3.7s/stamp
+album_2_page_9764_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00"],   "years": ["1997"],   "other_text": ["АНОМАЛОБУТНС РИКМЕРСИ КРАЕПЕЛ
+album_2_page_9765_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": [],   "other_text": [] } ```
+album_2_page_9765_1 0.269 ```json {   "country": ["КХАМТЫК МУЗЫКАЛЫК АСПАНТАР"],   "denominations": [],   "years": [],   "other_text": ["EUROPA"] } ```
+album_2_page_9765_2 0.867 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "0",     "2",     "9"   ],   "years": [     "1997",     "2015
+album_2_page_9765_3 0.294 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["30.00", "30.00", "30.00"],   "years": ["1997", "1997", "1997"],   "other_text
+album_2_page_9798_0 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300", "300", "300", "300"],   "years": ["2020", "2020", "2020", "2020"],   "o
+## 150/394  3.7s/stamp
+album_2_page_9798_1 0.321 ```json {   "country": [     "Казақстан",     "Kazakhstan"   ],   "denominations": [     "244"   ],   "years": [     "2010",     "2005"   ],   "other_
+album_2_page_9798_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["1912-1966"],   "other_text": ["Зейін Шашкин", "(1912-1966)"
+album_2_page_9876_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1936-2007"],   "other_text": ["Исатай Исабаев (1936-2007) 
+album_2_page_9876_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": ["2009"],   "other_text": ["Галилейдің бірінші телескопына 
+album_2_page_9876_2 0.349 ```json {   "country": ["ҚАЗАКХСТАН"],   "denominations": ["В"],   "years": ["2015"],   "other_text": [     "90-ЖЫЛ",     "ҰЛЫ БТАН СОБЫТЫНЫҢ ЖЕҢИСИНЕ
+album_2_page_9880_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["2010"],   "other_text": ["трамплиннен секіру", "Д МУХАМЕДЖ
+## 156/394  3.7s/stamp
+album_2_page_9880_1 0.294 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_2_page_9880_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "500",     "60"   ],   "years": [     "2013"   ],   "other_te
+album_3_page_1367_0 0.5 ```json {   "country": ["Казахстан", "KAZAKHSTAN"],   "denominations": ["9.00", "12.00", "25.00", "60.00", "90.00", "100.00"],   "years": ["2007", "20
+album_3_page_1367_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25"],   "years": ["2009"],   "other_text": [     "Казақстан почтасына 15 жыл"
+album_3_page_1367_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["33"],   "years": ["2011"],   "other_text": ["Тараздың шекімесі, күміс, XIV г.
+album_3_page_2027_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25"],   "years": ["1834-1897"],   "other_text": ["Біржан сал Кожағұлұлы", "(1
+## 162/394  3.7s/stamp
+album_3_page_2027_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["110", "110"],   "years": ["2008", "2008"],   "other_text": [     "Марал cerus
+album_3_page_2027_2 0.469 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "240"   ],   "years": [     "2010",     "2011"   ],   "other_
+album_3_page_2284_0 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "180"   ],   "years": [     "2009"   ],   "other_text": [    
+album_3_page_2284_1 0.5 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["2013"],   "other_text": ["2013", "ТЕҢГЕЛЕ ЖЫЛ", "2013", "6
+album_3_page_2284_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["155"],   "years": ["2014"],   "other_text": ["Байқоңыр", "«Союз TMA-11M»"] } 
+album_3_page_2333_0 0.245 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "250"   ],   "years": [     "2013"   ],   "other_text": [    
+## 168/394  3.7s/stamp
+album_3_page_2333_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300"],   "years": ["2016", "2017"],   "other_text": ["28TH WINTER UNIVERSIADE
+album_3_page_2333_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["66"],   "years": ["1889", "1966", "2014"],   "other_text": ["Акын, жазушы", "
+album_3_page_3191_0 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2014"   ],   "other_text": [    
+album_3_page_3191_1 0.294 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "20'00",     "20'00",     "20'00",     "20'00",     "20'00", 
+album_3_page_3191_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["202"],   "years": ["2011"],   "other_text": ["КАЗАКСТАН РЕСПУБЛИКАСЫНЫҢ МЕМЛЕ
+album_3_page_3301_0 0.269 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "40.00"   ],   "years": [     "2003"   ],   "other_text": [  
+## 174/394  3.7s/stamp
+album_3_page_3301_1 0.407 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2016"   ],   "other_text": [    
+album_3_page_3301_2 0.378 ```json {   "country": ["ҚАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["25"],   "years": ["2009"],   "other_text": ["Наурыз мерекесімен!"] } ```
+album_3_page_3327_0 0.593 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2007"],   "other_text": [     "ШАНГЫ ЖАРЫСЫ",     "Владим
+album_3_page_3327_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140"],   "years": ["1910-1982"],   "other_text": ["Бауыржан Момышұлы", "(1910
+album_3_page_3327_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "25"   ],   "years": [     "2009"   ],   "other_text": [     
+album_3_page_3612_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2014"],   "other_text": ["THE ATOM PROJECT", "ATOM Жобасы
+## 180/394  3.7s/stamp
+album_3_page_3612_1 0.562 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "900"   ],   "years": [     "2018"   ],   "other_text": [    
+album_3_page_3612_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "60"   ],   "years": [     "1871-1948",     "2015"   ],   "ot
+album_3_page_4903_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["2010"],   "other_text": ["Муся Байжанұлы (1835-1929) Халық ком
+album_3_page_4903_1 0.378 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "550"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_4903_2 0.294 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_5023_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["1910-1995"],   "other_text": ["Мұхамеджан Қаратаев", "(191
+## 186/394  3.7s/stamp
+album_3_page_5023_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["80"],   "years": ["2006"],   "other_text": ["\"Кыз-Жүбек\" операсы"] } ```
+album_3_page_5023_2 0.378 ```json {   "country": ["KAZAKHSTAN", "КАЗАКСТАН"],   "denominations": ["60"],   "years": ["2013"],   "other_text": ["TENGE"] } ```
+album_3_page_5037_0 0.269 ```json {   "country": [     "ҚАЗАҚСТАН",     "Kazakhstan"   ],   "denominations": [     "250",     "250",     "250",     "250",     "250",     "250",
+album_3_page_5037_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["1912-1976", "2012"],   "other_text": ["Жамал Омарова", "(1
+album_3_page_5037_2 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "101"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_5075_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["66"],   "years": ["2014", "1814", "1841"],   "other_text": ["М.Ю. Лермонтов (
+## 192/394  3.8s/stamp
+album_3_page_5075_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["35"],   "years": ["2005"],   "other_text": ["Казак халык ертегілері", "Алдар 
+album_3_page_5075_2 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["Светлана Подобедова"] } ```
+album_3_page_5540_0 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2010"],   "other_text": ["БАЙКОНЫР КАЛАСЫНА 55 ЖЫЛ"] } ``
+album_3_page_5540_1 0.407 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "22"   ],   "years": [     "2010"   ],   "other_text": [     
+album_3_page_5540_2 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["1912", "1961"],   "other_text": ["Жұмағали Саин", "(1912-1
+album_3_page_5591_0 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "180"   ],   "years": [     "2009"   ],   "other_text": [    
+## 198/394  3.9s/stamp
+album_3_page_5591_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2014"],   "other_text": ["Nymphaea candida J. Presl"] } `
+album_3_page_5591_2 0.269 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_5611_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": ["2011"],   "other_text": ["Ала қарға Corvus cornix", "Д. М
+album_3_page_5611_1 0.407 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["200", "200"],   "years": ["2020", "2020"],   "other_text": ["TOKIO 2020 XVI Ж
+album_3_page_5611_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["252"],   "years": ["1986-1987", "2012"],   "other_text": ["Э. Сыдыханов \"Кыз
+album_3_page_5637_0 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32"   ],   "years": [],   "other_text": [     "Наурыз мейеке
+## 204/394  3.9s/stamp
+album_3_page_5637_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25", "150"],   "years": ["2006", "2006"],   "other_text": [     "Ошеке. Тар у
+album_3_page_5637_2 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2014"],   "other_text": ["Иляс Жансуғиров (1894-1938)", "
+album_3_page_5853_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300"],   "years": [],   "other_text": ["Кармин бояуын өндіруші ақмия сымыры P
+album_3_page_5853_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100", "100"],   "years": ["2008", "2008"],   "other_text": ["Венг 2008", "Вен
+album_3_page_5853_2 0.321 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2014"],   "other_text": ["Наурыз мейрамымен!"] } ```
+album_3_page_6284_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["A"],   "years": [],   "other_text": ["Геннадий Головкин"] } ```
+## 210/394  3.9s/stamp
+album_3_page_6284_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1911-1969"],   "other_text": ["Габдол Сланов", "(1911-1969
+album_3_page_6284_2 0.469 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2016"   ],   "other_text": [    
+album_3_page_6324_0 0.531 ```json {   "country": ["КАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["600"],   "years": ["2023"],   "other_text": [     "Шахматтан Элем чемпионы", 
+album_3_page_6324_1 0.321 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_6324_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["80"],   "years": ["2012", "1912", "2001"],   "other_text": ["Дмитрий Снегин (
+album_3_page_6332_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["C"],   "years": ["2020"],   "other_text": ["Батырхан Шукенов"] } ```
+## 216/394  4.2s/stamp
+album_3_page_6332_1 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": [],   "other_text": ["Итаю (Mellivora capensis)"] } ```
+album_3_page_6332_2 0.349 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [     "1916",     "2013"   ],   "other_
+album_3_page_6626_0 0.378 ```json {   "country": ["КАЗАХСТАН"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["РСС", "УЛТТЫК КИЙМДЕР"] } ```
+album_3_page_6626_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50.00"],   "years": ["2004"],   "other_text": ["12 СЭУЙР КОСМОНАВТУКА КЫНГИ \
+album_3_page_6626_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2025"],   "other_text": ["Көңмандай Porphyrio porphyrio"]
+album_3_page_7747_0 0.531 ```json {   "country": ["KAZAKHSTAN", "ҚАЗАҚСТАН"],   "denominations": ["500"],   "years": ["2017"],   "other_text": ["Андерс әскери", "WA"] } ```
+## 222/394  4.2s/stamp
+album_3_page_7747_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1911-1989", "2011"],   "other_text": ["Орымбек Жәутіков", 
+album_3_page_7747_2 0.407 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2016"   ],   "other_text": [    
+album_3_page_7956_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["15.00", "20.00", "20.00", "15.00"],   "years": ["1997", "1997", "1997", "1997
+album_3_page_7956_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500т"],   "years": ["2025"],   "other_text": [     "\"БІРТҰС ЕЛ-БІРТҰС ЖЕР\""
+album_3_page_7956_2 0.294 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "140",     "140",     "140",     "140",     "140",     "140",
+album_3_page_8206_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100.00"],   "years": ["1998"],   "other_text": ["Казақстан альпинистері Евере
+## 228/394  4.3s/stamp
+album_3_page_8206_1 0.622 ```json {   "country": ["ЗАПОРОЖСТАЛЬ"],   "denominations": ["0", "1", "4"],   "years": ["1993"],   "other_text": ["ЮЖНОЕ ШОССЕ,/2", "ЗАВОД \"ЗАПОРОЖС
+album_3_page_8206_2 0.269 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["30.00", "30.00", "20.00"],   "years": ["2001", "2001", "2001"],   "other_text
+album_3_page_9115_0 0.202 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "1992"   ],   "other_text": [    
+album_3_page_9115_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["110"],   "years": ["2013"],   "other_text": ["Ақорда сарайы"] } ```
+album_3_page_9115_2 0.5 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "150"   ],   "years": [     "2013"   ],   "other_text": [    
+album_3_page_9655_0 0.223 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["1866-1937"],   "other_text": ["Мемлекет қайраткері, энцикло
+## 234/394  4.5s/stamp
+album_3_page_9655_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": ["2009"],   "other_text": ["АСТРОНОМИЯЛЫҚ ОБСЕРВАТОРИЯ", "(
+album_3_page_9655_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500т"],   "years": ["1994", "2024"],   "other_text": ["ҚАЗАКСТАН РЕСПУБЛИКАСЫ
+album_4_page_1089_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["2015"],   "other_text": [     "Мәлік Ғабдуллин (1915-1973)
+album_4_page_1089_1 0.321 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [],   "other_text": [     "Скелетон"   
+album_4_page_1089_2 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200", "200", "200"],   "years": ["2013", "2013", "2013"],   "other_text": [  
+album_4_page_1302_0 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2014"],   "other_text": ["Талғам Мұсабаев", "«Союз ТМ-19»
+## 240/394  4.5s/stamp
+album_4_page_1302_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["88"],   "years": ["2012"],   "other_text": ["ДИЗАЙНЕРЛЕРДІҢ ҚАЗАКСТАНДЫК ОДАҒ
+album_4_page_1302_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32",     "32",     "32",     "32",     "32",     "32",     "
+album_4_page_1518_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["110", "110"],   "years": ["2006", "2006"],   "other_text": [     "Шыңжыр білг
+album_4_page_1518_1 0.202 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": [],   "other_text": ["Якобсон филлоргериусы Phyllorgerius jac
+album_4_page_1518_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2013"],   "other_text": ["2013", "ЖЫЛЫ"] } ```
+album_4_page_1727_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200т"],   "years": ["1916", "1873", "1919", "2023"],   "other_text": [     "К
+## 246/394  4.5s/stamp
+album_4_page_1727_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["202"],   "years": ["2013"],   "other_text": ["Байконыр гарыш аланынан алгашкы
+album_4_page_1727_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["900"],   "years": ["2013"],   "other_text": ["Дипломатиялык", "Катынаска 20 ж
+album_4_page_2045_0 0.349 ```json {   "country": ["КАЗАКХСТАН", "KAZAKHSTAN"],   "denominations": ["550т"],   "years": ["1465", "2015"],   "other_text": ["THE 550TH ANNIVERSARY
+album_4_page_2045_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": [],   "other_text": ["П. Чайковскийнің \"АККУ КӨЛІ\" БАЛЕТІ
+album_4_page_2045_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["400"],   "years": ["1923-2022"],   "other_text": [     "Померанцев Юрий Борис
+album_4_page_2146_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50", "50", "50"],   "years": ["2004", "2004", "2004"],   "other_text": [     
+## 252/394  4.5s/stamp
+album_4_page_2146_1 0.378 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["50.00", "70.00"],   "years": ["1322-1329 г.", "1340 г.", "1226-1233 г."],   "
+album_4_page_2146_2 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300", "300", "300", "300"],   "years": ["2018"],   "other_text": ["«Атаманның
+album_4_page_2624_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2014"],   "other_text": [     "КП 1992/2. Кимешек",     "К
+album_4_page_2624_1 0.407 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [     "2014"   ],   "other_text": [    
+album_4_page_2624_2 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2019"],   "other_text": [     "Казак улкысы, Кенес",     
+album_4_page_3496_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2016"],   "other_text": [     "Rio2016",     "PARALYMPIC 
+## 258/394  4.5s/stamp
+album_4_page_3496_1 0.438 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["303"],   "years": ["2016"],   "other_text": [     "28th Winter Universiade", 
+album_4_page_3496_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["1889", "1977", "2014"],   "other_text": ["ЧАРЛИ ЧАПЛИН"] 
+album_4_page_3861_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["3"],   "years": ["2013"],   "other_text": ["Өміре Қашаубаев (1888-1938) Өнші,
+album_4_page_3861_1 0.321 ```json {   "country": [     "КАЗАКСТАН"   ],   "denominations": [     "15.00"   ],   "years": [     "1993",     "1668-1781"   ],   "other_text": [   
+album_4_page_3861_2 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["55"],   "years": ["2011"],   "other_text": ["КАЗАКСТАН РЕСПУБЛИКАСЫНЫҢ МЕМЛЕК
+album_4_page_4575_0 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "101"   ],   "years": [     "2013",     "2017"   ],   "other_
+## 264/394  4.5s/stamp
+album_4_page_4575_1 0.407 ```json {   "country": [     "ҚАЗАКСТАН"   ],   "denominations": [     "10"   ],   "years": [],   "other_text": [     "КӨНЕ ЗАМАН ХАЙУАНДАРЫ",     "Ko
+album_4_page_4575_2 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "150",     "150",     "150",     "150",     "150",     "150",
+album_4_page_4775_0 0.531 ```json {   "country": ["KAZAKSTAH", "KAZAKHSTAN"],   "denominations": ["20.00"],   "years": ["1874", "1999"],   "other_text": ["Kazakhstan est membre
+album_4_page_4775_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": [],   "other_text": ["Б. Асафьевтің \"БАКШАСАРАЛ БУРКАТЫ\" 
+album_4_page_4775_2 0.269 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["250", "140"],   "years": ["2021", "2021"],   "other_text": [     "Сырымбет(Ай
+album_4_page_5387_0 0.679 ```json {   "country": ["К.ЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["00900"],   "years": ["2018"],   "other_text": ["И. АЛМАГЫ ПОЧТЭМЕТЫ", "ПОЧТАС
+## 270/394  4.5s/stamp
+album_4_page_5387_1 0.407 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "212"   ],   "years": [     "2010",     "2011",     "2011"   
+album_4_page_5387_2 0.245 ```json {   "country": [     "КАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_4_page_5414_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": [],   "years": ["1872", "1937", "2022"],   "other_text": ["150 жыл", "Ахмет Бай
+album_4_page_5414_1 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300"],   "years": ["2020"],   "other_text": [] } ```
+album_4_page_5414_2 0.349 ```json {   "country": [     "Қазақстан",     "Kazakhstan"   ],   "denominations": [     "110"   ],   "years": [     "2013"   ],   "other_text": [    
+album_4_page_5425_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["110"],   "years": ["2008"],   "other_text": [     "марал cervus elaphus",    
+## 276/394  4.6s/stamp
+album_4_page_5425_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["700"],   "years": [],   "other_text": ["30 жыл", "Казақстанның БҰҰ-ға мүшеліг
+album_4_page_5425_2 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2014"],   "other_text": ["КП 13975. Кимешек.", "Алматы обл
+album_4_page_5451_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": [],   "other_text": ["EUROPA", "Ормандар"] } ```
+album_4_page_5451_1 0.622 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["300"],   "years": ["2020"],   "other_text": [     "АТАМАННЫҢ АКЫРЫ",     "The
+album_4_page_5451_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["1885-1935"],   "other_text": ["Міржақып Дулатов", "(1885-1
+album_4_page_5593_0 0.438 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": ["1809", "1852", "2009"],   "other_text": ["Луи Брайль", "(
+## 282/394  4.5s/stamp
+album_4_page_5593_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["1"],   "years": ["1913-1960"],   "other_text": ["Муках Телебаев", "Сазер, арм
+album_4_page_5593_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00", "30.00"],   "years": ["1998", "1998"],   "other_text": [     "12 ОСЕН
+album_4_page_5716_0 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32"   ],   "years": [     "2011"   ],   "other_text": [     
+album_4_page_5716_1 0.269 ```json {   "country": ["КАЗАХСТАН"],   "denominations": [],   "years": [],   "other_text": ["A", "KAZPOST"] } ```
+album_4_page_5716_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["70.00", "115.00"],   "years": ["2004"],   "other_text": ["ATHENS 2004", "Олим
+album_4_page_6447_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200", "200"],   "years": ["1945-2015", "2015", "2015", "2015"],   "other_text
+## 288/394  4.6s/stamp
+album_4_page_6447_1 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["240"],   "years": ["2011", "2010"],   "other_text": ["2011 жылғы 7-күнсі Азия
+album_4_page_6447_2 0.349 ```json {   "country": ["Казақстан", "Kazakhstan"],   "denominations": ["240"],   "years": ["1810-1849", "2010"],   "other_text": ["Фридерик Шопен"] }
+album_4_page_7168_0 0.469 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2016"   ],   "other_text": [    
+album_4_page_7168_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": [],   "other_text": ["«Қазақ елі» монументі"] } ```
+album_4_page_7168_2 0.294 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "25",     "25",     "25",     "25",     "25",     "25",     "
+album_4_page_7495_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": [],   "other_text": ["Ат омырауластыру", "Д. Мухамеджанов"]
+## 294/394  4.6s/stamp
+album_4_page_7495_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2013"],   "other_text": ["Мешін жылы"] } ```
+album_4_page_7495_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00"],   "years": ["1997"],   "other_text": ["ОКУЛКОЗА OCULJCOZA SUPERMJRAB
+album_4_page_8533_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500т"],   "years": ["2024"],   "other_text": ["Отты жылдардан елемен еле дейі
+album_4_page_8533_1 0.407 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["20.00", "50.00", "15.00"],   "years": ["2001", "2001", "2001"],   "other_text
+album_4_page_8533_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["50"],   "years": ["2017"],   "other_text": ["EXPO 2017", "Future Energy", "As
+album_4_page_8809_0 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["900", "900", "900"],   "years": ["2025", "2025", "2025"],   "other_text": [  
+## 300/394  4.7s/stamp
+album_4_page_8809_1 0.407 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "232"   ],   "years": [     "2010",     "2009"   ],   "other_
+album_4_page_8809_2 0.469 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "150"   ],   "years": [     "2014",     "2020"   ],   "other_
+album_4_page_8871_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2012"],   "other_text": ["Оқушылар сарайы"] } ```
+album_4_page_8871_1 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "180"   ],   "years": [],   "other_text": [     "БІРІККЕН БАС
+album_4_page_8871_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2013"],   "other_text": ["астана"] } ```
+album_4_page_8892_0 0.245 ```json {   "country": [     "КАЗАКСТАН",     "КАЗАКСТАН",     "КАЗАКСТАН",     "КАЗАКСТАН"   ],   "denominations": [     "6·80",     "6·80",     "6·8
+## 306/394  4.7s/stamp
+album_4_page_8892_1 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["70.00"],   "years": ["2002"],   "other_text": ["Таңыз қаласына 2000 жыл", "КА
+album_4_page_8892_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["44"],   "years": ["2005"],   "other_text": ["Казак халык ертегілері · Аңдар к
+album_4_page_8988_0 0.407 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "200"   ],   "years": [     "2014"   ],   "other_text": [    
+album_4_page_8988_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["80"],   "years": [],   "other_text": ["Ужымдық қауіпсіздік туралы шарт үйримі
+album_4_page_8988_2 0.622 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "24.00",     "24.00",     "24.00",     "24.00",     "24.00", 
+album_4_page_9373_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["25", "150"],   "years": ["2008", "2008"],   "other_text": [     "Ордесі. Төу 
+## 312/394  4.8s/stamp
+album_4_page_9373_1 0.531 ```json {   "country": ["Казахстан", "KAZ"],   "denominations": ["50.00"],   "years": ["1993"],   "other_text": ["Казахстан етеп таңылды", "Kazakhstan
+album_4_page_9373_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["5"],   "years": ["2013"],   "other_text": [     "Байқоңыр ғарыш алаңынан алға
+album_5_page_2263_0 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190", "140", "32"],   "years": ["2010", "2010", "2010"],   "other_text": [   
+album_5_page_2263_1 0.438 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200",     "200"   ],   "years": [     "2016",     "2016",   
+album_5_page_2263_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140"],   "years": ["2010", "1835-1865"],   "other_text": ["Шокан Уэлиханов", 
+album_5_page_2520_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["40.00"],   "years": ["2003"],   "other_text": [     "12 сәуір Космонавтика кү
+## 318/394  4.8s/stamp
+album_5_page_2520_1 0.223 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": [],   "other_text": ["Улкен тормаңы қоңызы Capnodis miliaris
+album_5_page_2520_2 0.245 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "180"   ],   "years": [     "2009",     "1884",     "1976"   
+album_5_page_3095_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["202"],   "years": ["1993-2013", "2013"],   "other_text": ["АКЦИОНЕРНАЯ", "ЖЫЛ
+album_5_page_3095_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1945-2010", "2010"],   "other_text": ["ҰЛЫ ЖЕНІСКЕ 65 ЖЫЛ"
+album_5_page_3095_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32", "190", "140"],   "years": ["2010", "2010", "2010"],   "other_text": [   
+album_5_page_3292_0 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": ["2010"],   "other_text": ["шанғымен шапшан тусу", "vancouv
+## 324/394  4.8s/stamp
+album_5_page_3292_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["500", "500", "500", "500"],   "years": ["2025", "2025", "2025", "2025"],   "o
+album_5_page_3292_2 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "200"   ],   "years": [     "2013"   ],   "other_text": [    
+album_5_page_3356_0 0.593 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["500"],   "years": ["2025", "2024-2026"],   "other_text": [     "INTERNATIONAL
+album_5_page_3356_1 0.755 ```json {   "country": ["КУСТАНАЙ", "КАЗАХСТАН"],   "denominations": ["120"],   "years": ["1985"],   "other_text": ["458000Кустанай,", "Баймагамбетова
+album_5_page_3356_2 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["C"],   "years": ["2017"],   "other_text": ["EXPO 2017", "Future Energy", "Ast
+album_5_page_4023_0 0.378 ```json {   "country": ["Қазақстан", "Kazakhstan"],   "denominations": ["55"],   "years": ["2014"],   "other_text": ["Талипов Дмитрий", "«Алламыс баты
+## 330/394  4.9s/stamp
+album_5_page_4023_1 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012", "1912", "1984"],   "other_text": [     "Уфа Ахмедс
+album_5_page_4023_2 0.469 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2013"],   "other_text": ["Бақыт Сәрсекбаев"] } ```
+album_5_page_4494_0 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_5_page_4494_1 0.531 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2007"],   "other_text": ["Ермохан Саги улы Ыбраимов", "ОЛ
+album_5_page_4494_2 0.294 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "35.00",     "35.00",     "35.00"   ],   "years": [     "2003
+album_5_page_4792_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2014"],   "other_text": ["THE ATOM PROJECT", "ATOM ЖОБАСЫ
+## 336/394  4.9s/stamp
+album_5_page_4792_1 0.5 ```json {   "country": ["ҚАЗАҚСТАН"],   "denominations": ["10"],   "years": ["1994"],   "other_text": ["Бауырымен жоргалаушылар", "Кесел", "/Varanus g
+album_5_page_4792_2 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": [],   "other_text": ["Дала шегірмекесi", "Saga pedo Pallas"
+album_5_page_4945_0 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["250"],   "years": ["2012"],   "other_text": ["АШЫҚ ФАРЫШ КЕНІСТІГІ", "Н. Соко
+album_5_page_4945_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["99"],   "years": ["2013"],   "other_text": [] } ```
+album_5_page_4945_2 0.321 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["600т", "600т", "600т", "600т"],   "years": ["1925-1998", "1925-1998", "1925-1
+album_5_page_5084_0 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100",     "100",     "100",     "100",     "100",     "100",
+## 342/394  4.9s/stamp
+album_5_page_5084_1 0.294 ```json {   "country": ["КАЗАХСТАН"],   "denominations": [],   "years": [],   "other_text": [     "БАЙЛАНС САЛАСЫНДАҒЫ АЙМАКТЫК ДОСТАРЫНЫҢ 15 ЖЫЛ",   
+album_5_page_5084_2 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["40.00"],   "years": ["2003"],   "other_text": ["АЛГАР НОЛЕ МЕҢ КАРЫНБАЙ", "Ка
+album_5_page_5255_0 0.438 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "190"   ],   "years": [     "2011"   ],   "other_text": [    
+album_5_page_5255_1 0.349 ```json {   "country": [     "ҚАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "250"   ],   "years": [     "2012"   ],   "other_text": [    
+album_5_page_5255_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["20"],   "years": ["1897", "1961", "2022"],   "other_text": ["125 жыл", "Каіра
+album_5_page_5323_0 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["230"],   "years": ["2009"],   "other_text": ["Халықаралык астрономия жылы", "
+## 348/394  4.9s/stamp
+album_5_page_5323_1 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10"],   "years": ["1869"],   "other_text": ["АКТЕБЕ КАЛАСЫНЫҢ", "ТЕЛТАҢБАСЫ",
+album_5_page_5323_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2014"],   "other_text": ["Alces alces (Linnaeus, 1758)"] 
+album_5_page_5870_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["30.00"],   "years": ["2003"],   "other_text": ["АЛДАР КӨСЕ ЛЕЙ АЛАША ХАР", "К
+album_5_page_5870_1 0.294 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "A"   ],   "years": [     "1912-1957"   ],   "other_text": [ 
+album_5_page_5870_2 0.469 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "72",     "72",     "72"   ],   "years": [     "2003",     "2
+album_5_page_5937_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": ["2009"],   "other_text": ["А. Сержебаевтын \"Шлем Пен Сары
+## 354/394  4.9s/stamp
+album_5_page_5937_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["140"],   "years": ["2009"],   "other_text": ["Тымак Уру", "Д. Мухамеджанов"] 
+album_5_page_5937_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": [],   "other_text": [] } ```
+album_5_page_5937_3 0.182 ```json {   "country": ["Казахстан"],   "denominations": [],   "years": [],   "other_text": ["EUROPA", "Улттык музыкалык аспаптар"] } ```
+album_5_page_5937_4 0.469 ```json {   "country": ["Казақстан"],   "denominations": ["200"],   "years": [],   "other_text": ["Музыкалык аспанын"] } ```
+album_5_page_6421_0 0.407 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["600", "600", "600"],   "years": ["2017", "2001", "2017"],   "other_text": ["Ю
+album_5_page_6421_1 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "155"   ],   "years": [     "2013"   ],   "other_text": [    
+## 360/394  4.8s/stamp
+album_5_page_6421_2 0.407 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "15.00",     "45.00",     "60.00"   ],   "years": [],   "othe
+album_5_page_6435_0 0.593 ```json {   "country": ["КАЗАХСТАН"],   "denominations": ["035"],   "years": [],   "other_text": ["472300 г.Темиртау-", "Карагандинское производственн
+album_5_page_6435_1 0.469 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAHSTAN"],   "denominations": ["0.50"],   "years": ["2012"],   "other_text": [     "АЛТЫН САРБАЗ",     "ЕСКИ К
+album_5_page_6435_2 0.294 ```json {   "country": [     "КАЗАКСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "100"   ],   "years": [     "2013"   ],   "other_text": [    
+album_5_page_6610_0 0.294 ```json {   "country": ["ҚАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["60.00"],   "years": ["2000"],   "other_text": ["АБЫЛАЙ ХАН (1711-1781ж)"] } `
+album_5_page_6610_1 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["33"],   "years": ["2011"],   "other_text": ["Ясъын (Түркістанның) шекімесі, м
+## 366/394  4.8s/stamp
+album_5_page_6610_2 0.562 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2012"],   "other_text": ["Зульфия Чиншанло", "Londom 2012
+album_5_page_6991_0 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["15.00", "50.00"],   "years": ["2000", "2000"],   "other_text": [     "Бірікке
+album_5_page_6991_1 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "25"   ],   "years": [     "1909",     "1995",     "2009"   ]
+album_5_page_6991_2 0.349 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "150"   ],   "years": [     "2011"   ],   "other_text": [    
+album_5_page_7271_0 0.294 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "32"   ],   "years": [     "2011",     "1861",     "1955"   ]
+album_5_page_7271_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["190"],   "years": [],   "other_text": ["БЕЛОРУСТАР"] } ```
+## 372/394  4.8s/stamp
+album_5_page_7271_2 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["600"],   "years": ["2026", "1926", "2013"],   "other_text": ["Ермек Серкебаев
+album_5_page_7409_0 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["180"],   "years": ["2009", "1909", "1993"],   "other_text": ["Fарифолла Күрма
+album_5_page_7409_1 0.469 ```json {   "country": ["Казакстан", "Kazakhstan"],   "denominations": ["250"],   "years": ["2011"],   "other_text": ["Уй топтамы", "Резон", "Д. Мухам
+album_5_page_7409_2 0.378 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2025"],   "other_text": ["Порфирый порфирый", "Көңмандай"
+album_5_page_7510_0 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["2023"],   "other_text": ["Якобсон филлоргериусы Phyllorge
+album_5_page_7510_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["70", "30", "50", "20", "35", "20", "35", "60", "15", "30"],   "years": ["1929
+## 378/394  4.8s/stamp
+album_5_page_7510_2 0.294 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": ["1911", "1955"],   "other_text": ["Аманжолов", "(1911-1955)
+album_5_page_7788_0 0.294 ```json {   "country": ["КАЗАКСТАН", "KAZAKHSTAN"],   "denominations": ["30.00", "30.00"],   "years": ["1998", "1998"],   "other_text": ["Бурабай", "Т
+album_5_page_7788_1 0.245 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32"],   "years": [],   "other_text": ["ЕврАзЭС- ЕурАзЭК- Еуразиялык экономика
+album_5_page_7788_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2014"],   "other_text": ["АЛМАТЫ", "2014", "IWF", "WORLD"
+album_5_page_7831_0 0.321 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "140"   ],   "years": [     "2009"   ],   "other_text": [    
+album_5_page_7831_1 0.321 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["32", "190"],   "years": ["2010", "2010"],   "other_text": ["Астанадагы Мухитт
+## 384/394  4.8s/stamp
+album_5_page_7831_2 0.593 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "250"   ],   "years": [     "2012"   ],   "other_text": [    
+album_5_page_8176_0 0.407 ```json {   "country": [     "Казакстан",     "Kazakhstan"   ],   "denominations": [     "250"   ],   "years": [     "2014"   ],   "other_text": [    
+album_5_page_8176_1 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["100"],   "years": ["1889", "1977", "2014"],   "other_text": ["ЧАРЛИ", "ИДИН"]
+album_5_page_8176_2 0.349 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["90"],   "years": ["1922-1978", "2012"],   "other_text": [     "ъегалин",     
+album_5_page_9370_0 0.438 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["202"],   "years": ["2013"],   "other_text": ["PCC", "@"] } ```
+album_5_page_9370_1 0.679 ```json {   "country": ["КАЗАХСТАН", "KAZAKHSTAN"],   "denominations": ["800", "900"],   "years": ["2018", "2018"],   "other_text": [     "PyeongChang
+## 390/394  4.8s/stamp
+album_5_page_9370_2 0.269 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["10т"],   "years": ["2023"],   "other_text": ["Улкен тамыр жегіш қоңыз", "Dorc
+album_5_page_9628_0 0.378 ```json {   "country": [     "ҚАЗАҚСТАН",     "KAZAKHSTAN"   ],   "denominations": [     "190"   ],   "years": [     "2011"   ],   "other_text": [    
+album_5_page_9628_1 0.562 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["200"],   "years": ["2014"],   "other_text": ["Жошы хан кесенесі"] } ```
+album_5_page_9628_2 0.5 ```json {   "country": ["ҚАЗАҚСТАН", "KAZAKHSTAN"],   "denominations": ["150"],   "years": ["2007"],   "other_text": [     "ЖЕНІЛ АТЛЕТИКА",     "XXVI
+## 394/394  4.7s/stamp

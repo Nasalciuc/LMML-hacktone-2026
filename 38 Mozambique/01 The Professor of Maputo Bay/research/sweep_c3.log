@@ -1,0 +1,16 @@
+== open=0
+SCORE 0.370  games won 331/480 (0.690) draws 46  me 36.2 opp 28.0  slowest 4.79s illegal 0 wall 84s open=0
+  by group 0:0.33 1:0.54 2:0.46 3:0.38 4:0.38 5:0.42 6:0.17 7:0.29
+== open=1
+SCORE 0.214  games won 279/480 (0.581) draws 28  me 33.9 opp 29.6  slowest 3.42s illegal 0 wall 67s open=1
+  by group 0:0.17 1:0.21 2:0.29 3:0.29 4:0.17 5:0.17 6:0.25 7:0.17
+== open=1 gm=0.96
+SCORE 0.161  games won 259/480 (0.540) draws 41  me 33.3 opp 30.7  slowest 3.62s illegal 0 wall 71s open=1 gm=0.96
+  by group 0:0.08 1:0.21 2:0.29 3:0.08 4:0.12 5:0.25 6:0.17 7:0.08
+== open=1 gm=0.93
+SCORE 0.156  games won 216/480 (0.450) draws 40  me 31.6 opp 32.0  slowest 3.02s illegal 0 wall 64s open=1 gm=0.93
+  by group 0:0.08 1:0.17 2:0.21 3:0.12 4:0.12 5:0.21 6:0.21 7:0.12
+== open=0 gm=0.96
+SCORE 0.380  games won 302/480 (0.629) draws 79  me 35.8 opp 28.7  slowest 3.97s illegal 0 wall 80s open=0 gm=0.96
+  by group 0:0.08 1:0.42 2:0.46 3:0.33 4:0.50 5:0.50 6:0.33 7:0.42
+SWEEPDONE

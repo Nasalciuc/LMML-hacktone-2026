@@ -1,0 +1,122 @@
+{
+"exhibit_01": {
+"year_missing": 0.9998204720322974,
+"small_missing": 0.562176525592804
+},
+"exhibit_02": {
+"year_missing": 0.08509904146194458,
+"small_missing": 0.562176525592804
+},
+"exhibit_03": {
+"year_missing": 0.2227001190185547,
+"small_missing": 0.43782350420951843
+},
+"exhibit_04": {
+"year_missing": 0.9820137899369001,
+"small_missing": 0.622459352016449
+},
+"exhibit_05": {
+"year_missing": 0.9324533045291901,
+"small_missing": 0.5
+},
+"exhibit_06": {
+"year_missing": 0.9998415637819562,
+"small_missing": 0.531209409236908
+},
+"exhibit_07": {
+"year_missing": 0.16451644897460938,
+"small_missing": 0.4687906503677368
+},
+"exhibit_08": {
+"year_missing": 0.9997040428570472,
+"small_missing": 0.531209409236908
+},
+"exhibit_09": {
+"year_missing": 0.43782347440719604,
+"small_missing": 0.5
+},
+"exhibit_10": {
+"year_missing": 0.9997388097108342,
+"small_missing": 0.6791787147521973
+},
+"exhibit_11": {
+"year_missing": 0.6224593222141266,
+"small_missing": 0.5926666259765625
+},
+"exhibit_12": {
+"year_missing": 0.29421496391296387,
+"small_missing": 0.6791787147521973
+},
+"exhibit_13": {
+"year_missing": 0.09534949064254761,
+"small_missing": 0.622459352016449
+},
+"exhibit_14": {
+"year_missing": 0.9997040428570472,
+"small_missing": 0.5926666259765625
+},
+"exhibit_15": {
+"year_missing": 0.10669058561325073,
+"small_missing": 0.531209409236908
+},
+"exhibit_16": {
+"year_missing": 0.9982992773875594,
+"small_missing": 0.7549149990081787
+},
+"exhibit_17": {
+"year_missing": 0.2227001190185547,
+"small_missing": 0.7057850360870361
+},
+"exhibit_18": {
+"year_missing": 0.9997388097108342,
+"small_missing": 0.622459352016449
+},
+"exhibit_19": {
+"year_missing": 0.7549149841070175,
+"small_missing": 0.562176525592804
+},
+"exhibit_20": {
+"year_missing": 0.9996200154710095,
+"small_missing": 0.562176525592804
+},
+"exhibit_21": {
+"year_missing": 0.999373665836174,
+"small_missing": 0.7057850360870361
+},
+"exhibit_22": {
+"year_missing": 0.377540647983551,
+"small_missing": 0.5
+},
+"exhibit_23": {
+"year_missing": 0.5,
+"small_missing": 0.622459352016449
+},
+"exhibit_24": {
+"year_missing": 0.2018132209777832,
+"small_missing": 0.6513549089431763
+},
+"exhibit_25": {
+"year_missing": 0.6791786849498749,
+"small_missing": 0.562176525592804
+},
+"exhibit_26": {
+"year_missing": 0.9980732653057203,
+"small_missing": 0.622459352016449
+},
+"exhibit_27": {
+"year_missing": 0.5312093496322632,
+"small_missing": 0.4687906503677368
+},
+"exhibit_28": {
+"year_missing": 0.9997388097108342,
+"small_missing": 0.5926666259765625
+},
+"exhibit_29": {
+"year_missing": 0.9995121428219136,
+"small_missing": 0.562176525592804
+},
+"exhibit_30": {
+"year_missing": 0.32082128524780273,
+"small_missing": 0.622459352016449
+}
+}

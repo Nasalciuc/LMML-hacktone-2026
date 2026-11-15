@@ -1,2 +1,4 @@
 results/ckpt/
 __pycache__/
+cache/
+*.pth

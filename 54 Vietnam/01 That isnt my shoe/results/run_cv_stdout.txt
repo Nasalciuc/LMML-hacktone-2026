@@ -1,0 +1,6 @@
+== Sat Nov 14 22:55:52 2026 {'tag': 'b0_hfk_r256_e25', 'arch': 'efficientnet_b0', 'epochs': 25, 'hf_known': 3600, 'no_oe': False, 'u_ratio': 1.0, 'lr': 0.0004, 'folds': '0,1,2,3,4', 'res': 256, 'feats': 1}
+fold 0: hold-out brand puma (1200 imgs), train knowns 3619, train outliers 9450
+  ep 1/25 loss 1.2012 train acc 0.513
+  ep 2/25 loss 0.8374 train acc 0.742
+  ep 3/25 loss 0.6669 train acc 0.842
+  ep 4/25 loss 0.6004 train acc 0.879

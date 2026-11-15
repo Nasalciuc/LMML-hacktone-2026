@@ -1,61 +1,50 @@
-# South Africa — Ngiyakuzwa?
+# Africa de Sud: Ngiyakuzwa?
 
-Flag: not found yet. The word after *ikhodi* has to be found by ear in the cleaned audio.
+**Flag: `SIGMOID_ULWAZI`**
 
-## What to play, in order
+*Ulwazi* înseamnă „cunoaștere, informație” în isiZulu.
 
-1. `ikhodi_candidates/rank01_*.wav` … `rank10_*.wav` — 10 s clips (3 s before a likely
-   "kh" burst, 7 s after). Listen for *i-KHO-di* and write down the next word.
-   `candidates.csv` has the times. The ranking is a rough acoustic guess, not a detection.
-2. `cleaned/voice_note_clean.wav` — whole note, horns and crowd floor removed. Best overall.
-3. `cleaned/voice_note_clean_strong.wav` — harder noise removal. Less crowd, more "underwater"
-   sound on the voice. Try it where (2) is still too noisy.
-4. `cleaned/voice_note_clean_voiceband.wav` — (2) limited to 250–3800 Hz.
-5. `segments/NNN_<start>-<end>.wav` — 138 phrases cut from (2), in order, with a
-   spectrogram `.png` each (cleaned on top, original below). `segments/index.csv` lists them.
-   If no candidate has *ikhodi*, go through these in order.
+## Ce cere taskul
 
-The candidate clips and segments are taken from `voice_note_clean.wav`; times in file names are
-positions in the original note.
+Avem un mesaj vocal de 10 minute și jumătate. O femeie citește propoziții scurte în isiZulu pe un stadion foarte zgomotos, cu vuvuzele. Undeva spune cuvântul *ikhodi* („cod”). Cuvântul de imediat după el e flag-ul.
 
-## Noise found in the note
+## Ideea
 
-- Two horns (vuvuzela-like), steady harmonic combs at 217.5 Hz × k and 233.1 Hz × k, switching
-  on and off in blocks of a few seconds (69 switches). They mask most of the voice band.
-- Other steady whistles / tones, some gliding slowly.
-- Crowd roar (broadband) and a hiss band around 5–7 kHz; short claps.
+Nu am încercat să înțelegem tot mesajul. Am aflat de unde vin propozițiile și am căutat doar pe cele care conțin *ikhodi*.
 
-## Cleaning (`clean.py`)
+Propozițiile citite de femeie sunt luate dintr-o colecție publică de vorbire în isiZulu (NCHLT). Colecția are și textul scris. Deci textul se poate căuta, nu trebuie ghicit după ureche.
 
-STFT, 64 ms window, 8 ms hop.
-
-- Noise floor per frequency bin = running 25th percentile over 3 s. Speech syllables are short
-  and move in frequency, so they stay above it; horns and roar do not.
-- Steady tonal lines removed: a bin that is a spectral peak for most of 0.6 s is noise (speech
-  harmonics glide). Plus the two horn combs explicitly, in frames where the horn is on.
-  Those bins are cut by ~30 dB.
-- Wiener-type gain (over-subtraction 2, floor −24 dB), smoothed over 3 bins × 5 frames.
-- 120–7000 Hz kept.
-
-Strong version: over-subtraction 4, floor −34 dB, 35th percentile, 200–5000 Hz.
-
-## Segments and candidates (`segment.py`)
-
-- Speech activity: cleaned energy in 250–3500 Hz more than 6 dB above its 6 s running 20th
-  percentile. Gaps < 0.25 s are joined into words, < 0.7 s into phrases, phrases ≥ 0.4 s kept,
-  0.25 s padding. Result: 267 s active, 332 word chunks, 138 phrases.
-- *ikhodi* score per word chunk: front vowel (i, high F2) → short dip → 40–120 ms aspiration
-  (2.5–6.5 kHz dominant, the "kh") → back vowel (o, low F2) → closure → front vowel (i).
-  Bursts within 0.2 s of a horn on/off switch are ignored (the switch clicks look like bursts).
-  The score is weak: top 10 are close together (10.4–13.1), so treat the order loosely.
-
-## Run
+## Pașii
 
 ```
-python -m venv .venv
-.venv\Scripts\pip install numpy scipy matplotlib soundfile
-.venv\Scripts\python clean.py      # ~3 min, writes cleaned/
-.venv\Scripts\python segment.py    # ~3 min, writes segments/ and ikhodi_candidates/
+mesaj -> 138 de propoziții -> care dintre ele e una din cele 3 propoziții cu "ikhodi"? -> propoziția 097 -> cuvântul de după
 ```
 
-Input: `../task_south_african_republic/voice_note.wav`. No speech recognition model is used.
+1. Mesajul a fost curățat de zgomot și tăiat în 138 de propoziții.
+2. În colecția publică, *ikhodi* apare în doar trei propoziții diferite.
+3. Două modele care recunosc vorbirea în isiZulu au dat fiecărei perechi (propoziție scrisă, bucată de sunet) o notă: cât de bine se potrivesc.
+4. Propoziția „wentela uzosebenzisa ikhodi” se potrivește clar cu bucata 097, între 07:14,78 și 07:20,75. Celelalte două propoziții nu se potrivesc cu nimic.
+5. În aceeași respirație, după *ikhodi*, urmează încă un cuvânt. Dintre cuvintele reale încercate, *ulwazi* se potrivește cel mai bine.
+
+Ca să fim siguri că metoda merge, am încercat-o pe o propoziție pe care o știam deja. A găsit-o corect.
+
+## Prima greșeală
+
+Primul răspuns a fost ISISHO și era greșit. Venea din bucata 067, unde femeia spune *ikhono* („pricepere”), nu *ikhodi*. Cele două cuvinte sună aproape la fel în zgomot. Bucata aceea e o capcană.
+
+## Cât de sigur e
+
+Sigur: locul. Propoziția cu *ikhodi* e la 07:14.
+
+Mai puțin sigur: scrierea exactă a ultimului cuvânt. Modelele au auzit variante ca „uluwazi”, „ulwasi”, „ulazi”. Niciuna nu e cuvânt real. *Ulwazi* e forma standard și singurul cuvânt din dicționar printre ele.
+
+## Fișiere
+
+- `clean.py`, `segment.py`: curățarea zgomotului și tăierea în propoziții. Bucățile sunt în `segments/`.
+- `corpus_ikhodi.py`: caută *ikhodi* în colecția publică.
+- `find_phrase.py`: potrivește cele trei propoziții cu cele 138 de bucăți.
+- `next_word.py`: compară cuvintele posibile de după *ikhodi*.
+- `mms_check.py`: a doua verificare, cu un model care citește literă cu literă.
+- [DETALII.md](DETALII.md): descrierea lungă, cu toate cifrele și cu prima încercare, cea greșită.
+
+Clipurile pregătite pentru ascultat (propoziția întreagă și cuvântul de după *ikhodi*) nu sunt în repo.

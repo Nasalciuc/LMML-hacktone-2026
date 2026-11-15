@@ -1,4 +1,12 @@
-"""Zemí: hybrid passage retriever (BM25 + static embeddings) over the Cuba library."""
+"""Zemi v4: hybrid retriever over the Cuba library.
+
+BM25 over 200-word passages (title prepended, stemmed) and whole documents, plus the
+gte-small bi-encoder (int8 ONNX, one forward pass per query on one thread) scored
+against precomputed passage vectors (PCA-reduced, int8). Doc score = weighted sum of
+median/max-normalised signals, best passage per doc. Query side: typo fix against the corpus
+vocabulary, glued-word split, small Spanish word list; the cleaned query feeds both BM25 and
+the encoder. Exact duplicate docs are stored once and returned together.
+"""
 from __future__ import annotations
 
 import json
@@ -132,58 +140,33 @@ class Speller:
         return [w]
 
 
-def layer_norm(x, g, b, eps=1e-12):
-    m = x.mean(-1, keepdims=True)
-    v = ((x - m) ** 2).mean(-1, keepdims=True)
-    return (x - m) / np.sqrt(v + eps) * g + b
-
-
 class Encoder:
-    """Small BERT sentence encoder run with plain numpy (weights stored as int8 rows + scales)."""
+    """Query encoder (int8 ONNX) on one onnxruntime thread; CLS or mean pooling, L2-normalised."""
 
-    def __init__(self, path: str, heads: int, pool: str) -> None:
-        z = np.load(path)
-        self.w = {}
-        for k in z.files:
-            if k.endswith(".scale"):
-                continue
-            a = z[k]
-            self.w[k] = a.astype(np.float32) * z[k + ".scale"][:, None] if a.dtype == np.int8 else a.astype(np.float32)
-        self.layers = sum(1 for k in self.w if k.endswith("attention.self.query.weight"))
-        for i in range(self.layers):
-            p = f"encoder.layer.{i}."
-            for name in ("attention.self.query", "attention.self.key", "attention.self.value",
-                         "attention.output.dense", "intermediate.dense", "output.dense"):
-                self.w[p + name + ".weight"] = np.ascontiguousarray(self.w[p + name + ".weight"].T)
-        self.heads, self.pool = heads, pool
+    def __init__(self, index_dir: str, pool: str = "mean", prefix: str = "", maxlen: int = 128) -> None:
+        import onnxruntime as ort
+        from tokenizers import Tokenizer
 
-    def __call__(self, ids: list[int]) -> np.ndarray:
-        w = self.w
-        x = (w["embeddings.word_embeddings.weight"][ids] + w["embeddings.position_embeddings.weight"][:len(ids)]
-             + w["embeddings.token_type_embeddings.weight"][0])
-        x = layer_norm(x, w["embeddings.LayerNorm.weight"], w["embeddings.LayerNorm.bias"])
-        n, h = x.shape
-        dh = h // self.heads
-        for i in range(self.layers):
-            p = f"encoder.layer.{i}."
+        so = ort.SessionOptions()
+        so.intra_op_num_threads = 1
+        so.inter_op_num_threads = 1
+        self.sess = ort.InferenceSession(os.path.join(index_dir, "encoder.onnx"), so,
+                                         providers=["CPUExecutionProvider"])
+        self.tok = Tokenizer.from_file(os.path.join(index_dir, "qtokenizer.json"))
+        self.tok.no_padding()
+        self.tok.no_truncation()
+        self.sep = self.tok.token_to_id("[SEP]")
+        self.maxlen, self.pool, self.prefix = maxlen, pool, prefix
 
-            def lin(t, name):
-                return t @ w[p + name + ".weight"] + w[p + name + ".bias"]
-
-            q = lin(x, "attention.self.query").reshape(n, self.heads, dh).transpose(1, 0, 2)
-            k = lin(x, "attention.self.key").reshape(n, self.heads, dh).transpose(1, 2, 0)
-            v = lin(x, "attention.self.value").reshape(n, self.heads, dh).transpose(1, 0, 2)
-            a = q @ k / np.sqrt(dh)
-            a = np.exp(a - a.max(-1, keepdims=True))
-            a /= a.sum(-1, keepdims=True)
-            c = (a @ v).transpose(1, 0, 2).reshape(n, h)
-            x = layer_norm(x + lin(c, "attention.output.dense"),
-                           w[p + "attention.output.LayerNorm.weight"], w[p + "attention.output.LayerNorm.bias"])
-            m = lin(x, "intermediate.dense")
-            m = 0.5 * m * (1 + np.tanh(0.7978845608 * (m + 0.044715 * m ** 3)))
-            x = layer_norm(x + lin(m, "output.dense"), w[p + "output.LayerNorm.weight"], w[p + "output.LayerNorm.bias"])
-        v = x[0] if self.pool == "cls" else x.mean(0)
-        return v / (np.linalg.norm(v) + 1e-9)
+    def __call__(self, text: str) -> np.ndarray:
+        ids = self.tok.encode(self.prefix + text, add_special_tokens=True).ids
+        if len(ids) > self.maxlen:
+            ids = ids[:self.maxlen - 1] + [self.sep]  # keep the end marker after truncation
+        ii = np.array([ids], dtype=np.int64)
+        out = self.sess.run(None, {"input_ids": ii, "attention_mask": np.ones_like(ii),
+                                   "token_type_ids": np.zeros_like(ii)})[0][0]
+        v = out[0] if self.pool == "cls" else out.mean(0)
+        return (v / (np.linalg.norm(v) + 1e-9)).astype(np.float32)
 
 
 class Retriever:
@@ -213,15 +196,18 @@ class Retriever:
         self.d_idf = self._idf(self.d_indptr, self.n_docs)
 
         dense = np.load(os.path.join(index_dir, "dense.npz"))
-        self.emb = dense["emb"]
-        self.emb_scale = dense["emb_scale"]
         self.pv = dense["pv"].astype(np.float32) * dense["pv_scale"][:, None]
-        self.dv = dense["dv"].astype(np.float32)
-        self.tok = Tokenizer.from_file(os.path.join(index_dir, "tokenizer.json"))
-        self.unk = self.tok.token_to_id("[UNK]")
-        self.w = self.cfg.get("weights", {"p": 0.35, "d": 0.25, "e": 0.25, "ed": 0.15})
+        # PCA projection applied to the query vector (passage vectors are stored already projected)
+        self.proj = dense["proj"] if "proj" in dense.files else None
+        # document vector = normalised sum of its passage vectors; cheap to rebuild, so not stored
+        self.dv = np.add.reduceat(self.pv, self.doc_start, axis=0)
+        self.dv /= np.linalg.norm(self.dv, axis=1, keepdims=True) + 1e-9
+        self.encoder = Encoder(index_dir, self.cfg.get("pool", "mean"), self.cfg.get("query_prefix", ""))
+
+        self.w = self.cfg.get("weights", {"p": 0.4, "d": 0.1, "e": 0.5, "ed": 0.2})
         spell = os.path.join(index_dir, "words.txt")
-        known = {t for t in self.tok.get_vocab() if len(t) > 3 and t.isalpha()}
+        qtok = Tokenizer.from_file(os.path.join(index_dir, "qtokenizer.json"))
+        known = {t for t in qtok.get_vocab() if len(t) > 3 and t.isalpha()}
         self.speller = Speller(spell, known) if os.path.exists(spell) and self.cfg.get("spell", True) else None
 
     @staticmethod
@@ -248,9 +234,6 @@ class Retriever:
         terms = [self.terms[t] for t in STEM.stemWords(lex) if t in self.terms]
         return terms, " ".join(words)
 
-    def _query_terms(self, query: str) -> list[int]:
-        return self._prepare(query)[0]
-
     def _bm25(self, terms, indptr, idx, tf, norm, idf, n):
         s = np.zeros(n, np.float32)
         for j in terms:
@@ -260,25 +243,21 @@ class Retriever:
             s[ii] += idf[j] * t * (self.k1 + 1) / (t + norm[ii])
         return s
 
-    def _embed(self, text: str) -> np.ndarray:
-        ids = [i for i in self.tok.encode(text, add_special_tokens=False).ids if i != self.unk]
-        if not ids:
-            return np.zeros(self.pv.shape[1], np.float32)
-        v = (self.emb[ids].astype(np.float32) * self.emb_scale[ids, None]).mean(axis=0)
-        return v / (np.linalg.norm(v) + 1e-9)
-
     def components(self, query: str) -> dict[str, np.ndarray]:
         terms, text = self._prepare(query)
         p = self._bm25(terms, self.p_indptr, self.p_idx, self.p_tf, self.p_norm, self.p_idf, len(self.p_norm))
         d = self._bm25(terms, self.d_indptr, self.d_idx, self.d_tf, self.d_norm, self.d_idf, self.n_docs)
-        q = self._embed(text if self.cfg.get("dense_clean", True) else query)
+        # the spell-fixed text helps the encoder too (+1.5 to +3 points in CV)
+        q = self.encoder(query if self.cfg.get("dense_raw", False) else text)
+        if self.proj is not None:
+            q = q @ self.proj
+            q /= np.linalg.norm(q) + 1e-9
         e = self.pv @ q
         return {
             "p": np.maximum.reduceat(p, self.doc_start),
             "d": d,
             "e": np.maximum.reduceat(e, self.doc_start),
             "ed": self.dv @ q,
-            "pe": np.maximum.reduceat(self._norm(p) + self._norm(e), self.doc_start),
         }
 
     @staticmethod

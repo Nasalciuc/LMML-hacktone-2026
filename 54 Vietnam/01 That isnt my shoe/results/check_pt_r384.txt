@@ -1,0 +1,36 @@
+torch 2.11.0+cu128 | torchvision 0.26.0+cu128 | file C:\Users\user\projects\LMML-hacktone-2026\54 Vietnam\01 That isnt my shoe\results\vietnam_model_r384.pt 8155929 bytes = 8.16 MB (7.78 MiB)
+torch.jit.load -> RecursiveScriptModule | torch.load(weights_only=False) -> RecursiveScriptModule
+classes ['adidas', 'converse', 'nike', 'unknown'] | class_to_idx {'adidas': 0, 'converse': 1, 'nike': 2, 'unknown': 3} | score maxlogit | thr 1.072 | input_size 384
+torch.load(path) with the default weights_only=True: fails, as for every TorchScript file -> Cannot use ``weights_only=True`` with TorchScript archives passed to ``torch.loa
+-- 100 training photos, 256x256: reference = uint8 B,3,H,W; accuracy 1.00, labelled unknown 0.00
+   uint8 B,H,W,3                          same answer as reference 1.00
+   float 0-1 B,3,H,W                      same answer as reference 1.00
+   float 0-255 B,3,H,W                    same answer as reference 1.00
+   float 0-1 B,H,W,3                      same answer as reference 1.00
+   float64 0-1 B,3,H,W                    same answer as reference 1.00
+   float16 0-1 B,3,H,W                    same answer as reference 1.00
+   ImageNet-normalised B,3,H,W            same answer as reference 1.00
+   (x-0.5)/0.5 B,3,H,W                    same answer as reference 1.00
+   RGBA uint8 B,4,H,W                     same answer as reference 1.00
+   float 0-1, caller resized to 224       same answer as reference 1.00
+   ImageNet-norm., caller resized to 224  same answer as reference 1.00
+   single (H,W,3) uint8 / single (3,H,W) float: same answer 1.0 / 1.0
+-- their 204x204 centre crops: reference = uint8 B,3,H,W; accuracy 1.00, labelled unknown 0.00
+   uint8 B,H,W,3                          same answer as reference 1.00
+   float 0-1 B,3,H,W                      same answer as reference 1.00
+   float 0-255 B,3,H,W                    same answer as reference 1.00
+   float 0-1 B,H,W,3                      same answer as reference 1.00
+   float64 0-1 B,3,H,W                    same answer as reference 1.00
+   float16 0-1 B,3,H,W                    same answer as reference 1.00
+   ImageNet-normalised B,3,H,W            same answer as reference 1.00
+   (x-0.5)/0.5 B,3,H,W                    same answer as reference 1.00
+   RGBA uint8 B,4,H,W                     same answer as reference 1.00
+   float 0-1, caller resized to 224       same answer as reference 1.00
+   ImageNet-norm., caller resized to 224  same answer as reference 1.00
+   single (H,W,3) uint8 / single (3,H,W) float: same answer 1.0 / 1.0
+grayscale (B,1,H,W) runs: ['adidas', 'nike', 'adidas']
+non-square 300x400 runs: ['adidas']
+random noise / flat grey: ['nike', 'nike'] ['unknown']
+forward -> (100, 4) torch.float32 | rows sum to 1.0 | min 0.0007 max 0.9709 | 56 ms/image on CPU (4 threads)
+argmax(forward) == predict: True | predict_index: [0, 2, 0, 0, 1]
+logits_and_score -> (3, 3) (3,) [1.919, 2.247, 2.534]

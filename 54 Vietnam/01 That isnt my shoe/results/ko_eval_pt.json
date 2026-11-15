@@ -1,0 +1,39 @@
+{
+ "file": "results/vietnam_model_r384.pt",
+ "score": "maxlogit",
+ "thr": 1.072,
+ "training_photos": {
+  "acc": 1.0,
+  "rejected": 0.0
+ },
+ "web_known": {
+  "acc": 0.8133333333333334,
+  "rejected": 0.12533333333333332,
+  "by_brand": {
+   "adidas": {
+    "acc": 0.796,
+    "rejected": 0.136
+   },
+   "converse": {
+    "acc": 0.886,
+    "rejected": 0.092
+   },
+   "nike": {
+    "acc": 0.758,
+    "rejected": 0.148
+   }
+  }
+ },
+ "rejection": {
+  "puma": 0.29333333333333333,
+  "reebok": 0.37833333333333335,
+  "vans": 0.37083333333333335,
+  "asics": 0.32083333333333336
+ },
+ "rejection_other": 0.426,
+ "vs_fp32": {
+  "max_logit_diff": 0.08497726917266846,
+  "mean_logit_diff": 0.004082175903022289,
+  "same_argmax": 0.9995525479316711
+ }
+}

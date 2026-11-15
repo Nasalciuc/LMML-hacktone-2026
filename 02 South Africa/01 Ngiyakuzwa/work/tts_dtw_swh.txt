@@ -1,0 +1,43 @@
+isisho       phrase=6.449  word=6.512
+esisho       phrase=6.363  word=6.381
+imfihlo      phrase=6.084  word=6.417
+eyimfihlo    phrase=6.073  word=6.515
+ifishu       phrase=6.166  word=6.446
+ifishi       phrase=6.266  word=6.738
+elisha       phrase=6.278  word=6.422
+elihle       phrase=6.404  word=6.335
+isifiso      phrase=6.198  word=6.347
+isicelo      phrase=6.076  word=6.734
+ngisho       phrase=6.228  word=6.282
+isifo        phrase=6.329  word=6.327
+ifu          phrase=6.042  word=5.923
+
+== ranked by phrase DTW ==
+  ifu          6.042
+  eyimfihlo    6.073
+  isicelo      6.076
+  imfihlo      6.084
+  ifishu       6.166
+  isifiso      6.198
+  ngisho       6.228
+  ifishi       6.266
+  elisha       6.278
+  isifo        6.329
+  esisho       6.363
+  elihle       6.404
+  isisho       6.449
+
+== ranked by word-only DTW ==
+  ifu          5.923
+  ngisho       6.282
+  isifo        6.327
+  elihle       6.335
+  isifiso      6.347
+  esisho       6.381
+  imfihlo      6.417
+  elisha       6.422
+  ifishu       6.446
+  isisho       6.512
+  eyimfihlo    6.515
+  isicelo      6.734
+  ifishi       6.738

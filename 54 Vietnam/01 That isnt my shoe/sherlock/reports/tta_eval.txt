@@ -1,0 +1,11 @@
+fold 0 done
+fold 1 done
+fold 2 done
+fold 3 done
+fold 4 done
+full                 OOF acc=0.9061 (n=735)
+up288                OOF acc=0.9075 (n=735)
+up320                OOF acc=0.9034 (n=735)
+full+up288           OOF acc=0.9075 (n=735)
+up288+up320          OOF acc=0.9061 (n=735)
+full+up288+up320     OOF acc=0.9088 (n=735)

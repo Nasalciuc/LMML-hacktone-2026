@@ -1,0 +1,29 @@
+izulu voice_note_clean.wav           kucin ifu:0.0  isisho:1.3  isisi:1.9  esisi:3.5  ifusi:3.7  elisha:4.0
+izulu voice_note_clean.wav           kutsh ifu:0.0  isisho:2.4  ifisho:2.4  isisi:2.9  ifusi:3.0  ifiso:4.0
+izulu voice_note_clean_strong.wav    kucin isisi:0.0  isisho:2.3  ifu:2.3  esisi:2.5  ifiso:4.8  isiswe:5.5
+izulu voice_note_clean_strong.wav    kutsh isisi:0.0  isisho:1.7  esisi:3.0  ifiso:3.1  ifu:3.7  ifusi:4.9
+izulu voice_note_clean_voiceband.wav kucin esisi:0.0  isisi:0.9  isisho:3.9  ifu:4.8  elisha:6.9  isiswe:8.4
+izulu voice_note_clean_voiceband.wav kutsh isisi:0.0  esisi:1.3  isisho:2.9  ifu:5.9  ifiso:7.3  ifisho:8.4
+noisy voice_note_clean.wav           kucin isisi:0.0  esisi:1.7  isiswe:2.0  isisho:3.3  elisha:4.2  ifiso:4.4
+noisy voice_note_clean.wav           kutsh isisho:0.0  isisi:0.1  ifishu:1.2  esisi:1.5  ifisho:1.5  ifiso:2.4
+noisy voice_note_clean_strong.wav    kucin isisi:0.0  esisi:2.0  ifiso:3.6  isiswe:3.9  isisho:4.7  ifu:5.9
+noisy voice_note_clean_strong.wav    kutsh isisi:0.0  isisho:0.6  esisi:1.1  ifiso:2.2  ifisho:3.5  ifishu:4.1
+noisy voice_note_clean_voiceband.wav kucin isisi:0.0  esisi:0.5  isiswe:3.7  isisho:5.4  elisha:6.1  ifu:6.6
+noisy voice_note_clean_voiceband.wav kutsh isisi:0.0  esisi:0.0  isisho:1.7  isiswe:2.9  ifiso:6.0  ifishu:6.6
+
+SUM of (score - best), lower is better:
+  isisi                 5.7
+  esisi                21.5
+  isisho               30.1
+  ifu                  56.9
+  ifiso                59.0
+  isiswe               62.7
+  ifisho               70.3
+  elisha               78.0
+  ifusi                80.5
+  ifishi               81.3
+  ifishu               81.4
+  enisu               100.2
+  isiphi              115.1
+  ibhola              116.6
+  ibhishi             124.0

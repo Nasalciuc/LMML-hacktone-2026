@@ -1,0 +1,5 @@
+training photos (seen by the network, optimistic): accuracy 1.000, labelled unknown 0.000
+web photos of adidas/converse/nike (1500, never trained on): accuracy 0.813, labelled unknown 0.125 {'adidas': 0.796, 'converse': 0.886, 'nike': 0.758}
+rejection on web photos of the unseen brands: {'puma': 0.293, 'reebok': 0.378, 'vans': 0.371, 'asics': 0.321}
+rejection on web photos of other brands (new balance, saucony, ...): 0.426
+packed file vs fp32 checkpoint (735 + 1500 photos): {'max_logit_diff': 0.08497726917266846, 'mean_logit_diff': 0.004082175903022289, 'same_argmax': 0.9995525479316711}

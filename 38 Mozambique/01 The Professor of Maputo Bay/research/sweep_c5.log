@@ -1,0 +1,10 @@
+== c5 tieb=50
+SCORE 0.339  games won 648/960 (0.675) draws 78  me 36.0 opp 28.2  slowest 15.65s illegal 0 wall 263s tieb=50
+  by group 0:0.35 1:0.31 2:0.25 3:0.25 4:0.27 5:0.52 6:0.44 7:0.31
+== c5 tieb=60
+SCORE 0.349  games won 652/960 (0.679) draws 76  me 36.1 opp 28.2  slowest 5.36s illegal 0 wall 213s tieb=60
+  by group 0:0.35 1:0.27 2:0.25 3:0.23 4:0.35 5:0.56 6:0.44 7:0.33
+== c5 tieb=70
+SCORE 0.258  games won 612/960 (0.637) draws 78  me 35.3 opp 28.9  slowest 20.21s illegal 0 wall 458s tieb=70
+  by group 0:0.23 1:0.25 2:0.19 3:0.25 4:0.21 5:0.42 6:0.40 7:0.12
+SWEEPDONE

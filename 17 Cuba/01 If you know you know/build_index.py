@@ -1,35 +1,24 @@
-"""Builds index/ for main.py from the task corpus.
+"""Builds index/ for main.py.
 
-    python build_index.py [--data ../task_cuba/data] [--model .models/potion-retrieval-32M] [--out index]
+    python build_index.py [--pv _onnx/pv_gte.npy] [--onnx _onnx/gte_int8_pc.onnx] [--pca 256] [--out index]
 
-Needs numpy, tokenizers, safetensors and PyStemmer (the same tokeniser code as main.py).
+Needs numpy, tokenizers, PyStemmer, onnxruntime (the venv). Run export_onnx.py and encode_passages.py first.
 """
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import shutil
 
 import numpy as np
-from safetensors.numpy import load_file
-from tokenizers import Tokenizer
 
-from main import analyse, normalise, Retriever
+from encode_passages import load_corpus, passages
+from main import Retriever, analyse, normalise
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-
-
-def chunk(words, size, step):
-    if len(words) <= size:
-        return [words]
-    out = []
-    for s in range(0, len(words), step):
-        out.append(words[s:s + size])
-        if s + size >= len(words):
-            break
-    return out
+# gte-small takes the bare query; bge-small and arctic-embed need this prefix (pass it with --prefix, with --pool cls)
+BGE_ARCTIC_PREFIX = "Represent this sentence for searching relevant passages: "
 
 
 def postings(token_lists, dtype_tf):
@@ -66,36 +55,21 @@ def gaps(idx, indptr):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--data", default=os.path.join(HERE, "..", "task_cuba", "data"))
-    ap.add_argument("--model", default=os.path.join(HERE, ".models", "potion-retrieval-32M"))
-    ap.add_argument("--out", default=os.path.join(HERE, "index"))
+    ap.add_argument("--pv", default=os.path.join(HERE, "_onnx", "pv_gte.npy"))
+    ap.add_argument("--onnx", default=os.path.join(HERE, "_onnx", "gte_int8_pc.onnx"))
+    ap.add_argument("--tokenizer", default=os.path.join(HERE, ".models", "gte-small", "tokenizer.json"))
+    ap.add_argument("--pool", default="mean")
+    ap.add_argument("--prefix", default="")
+    ap.add_argument("--pca", type=int, default=256, help="passage vector dims kept (0 = no projection)")
+    ap.add_argument("--weights", default='{"p": 0.4, "d": 0.1, "e": 0.5, "ed": 0.2}')
     ap.add_argument("--size", type=int, default=200)
     ap.add_argument("--step", type=int, default=100)
-    ap.add_argument("--dim", type=int, default=256)
-    ap.add_argument("--min-word", type=int, default=1)
-    ap.add_argument("--idf-alpha", type=float, default=0.5)
+    ap.add_argument("--out", default=os.path.join(HERE, "index"))
     args = ap.parse_args()
 
-    meta = [json.loads(l) for l in open(os.path.join(args.data, "corpus_meta.jsonl"), encoding="utf-8")]
-    texts, ids, titles, groups = [], [], [], {}
-    for m in meta:
-        with open(os.path.join(args.data, "corpus", m["id"] + ".txt"), encoding="utf-8") as f:
-            text = f.read()
-        h = hashlib.sha1(text.encode("utf-8")).hexdigest()
-        if h in groups:
-            groups[h].append(m["id"])
-            continue
-        groups[h] = [m["id"]]
-        ids.append(groups[h])
-        texts.append(text)
-        titles.append(m["title"] if m["kind"] == "wiki_article" else m["title"].split(".", 1)[-1] if "." in m["title"] else "")
-    print("documents", len(meta), "unique", len(texts))
-
-    p_doc, p_text = [], []
-    for d, text in enumerate(texts):
-        for c in chunk(text.split(), args.size, args.step):
-            p_doc.append(d)
-            p_text.append(" ".join(c))
-    p_doc = np.array(p_doc)
+    texts, ids, titles, n_meta = load_corpus(args.data)
+    print("documents", n_meta, "unique", len(texts))
+    p_doc, p_text = passages(texts, args.size, args.step)
     print("passages", len(p_doc))
 
     out = args.out
@@ -103,6 +77,7 @@ def main():
         shutil.rmtree(out)
     os.makedirs(out)
 
+    # BM25 postings for passages and whole documents
     p_toks = [analyse(titles[d] + " " + t) for d, t in zip(p_doc, p_text)]
     d_toks = [analyse(titles[d] + " " + t) for d, t in enumerate(texts)]
     vocab_p, ip, ix, tf, plen = postings(p_toks, np.uint8)
@@ -131,48 +106,30 @@ def main():
         for w in normalise(text).split():
             counts[w] = counts.get(w, 0) + 1
     with open(os.path.join(out, "words.txt"), "w", encoding="utf-8") as f:
-        f.write("".join(f"{w}\t{n}\n" for w, n in sorted(counts.items()) if n >= args.min_word and not w.isdigit()))
+        f.write("".join(f"{w}\t{n}\n" for w, n in sorted(counts.items()) if not w.isdigit()))
 
-    tok = Tokenizer.from_file(os.path.join(args.model, "tokenizer.json"))
-    emb = load_file(os.path.join(args.model, "model.safetensors"))
-    emb = next(iter(emb.values())).astype(np.float32)[:, :args.dim]
-    unk = tok.token_to_id("[UNK]")
+    # Dense: passage vectors from encode_passages.py, PCA-reduced, stored int8 with one scale per row
+    pv = np.load(args.pv).astype(np.float32)
+    assert len(pv) == len(p_doc), f"passage vectors {len(pv)} != passages {len(p_doc)}; re-run encode_passages.py"
+    dense = {}
+    if args.pca and args.pca < pv.shape[1]:
+        # uncentred PCA (SVD on every 3rd passage): keeps the directions that carry the cosine
+        _, _, vt = np.linalg.svd(pv[::3].astype(np.float64), full_matrices=False)
+        dense["proj"] = np.ascontiguousarray(vt[:args.pca].T.astype(np.float32))
+        pv = pv @ dense["proj"]
+        pv /= np.linalg.norm(pv, axis=1, keepdims=True) + 1e-9
+    scale = np.abs(pv).max(axis=1, keepdims=True) / 127.0 + 1e-12
+    np.savez(os.path.join(out, "dense.npz"), pv=np.round(pv / scale).astype(np.int8),
+             pv_scale=scale.astype(np.float32).ravel(), **dense)
+    shutil.copy(args.onnx, os.path.join(out, "encoder.onnx"))
+    shutil.copy(args.tokenizer, os.path.join(out, "qtokenizer.json"))
 
-    def encode(batch):
-        encs = tok.encode_batch(batch, add_special_tokens=False)
-        res = np.zeros((len(batch), emb.shape[1]), np.float32)
-        for i, e in enumerate(encs):
-            t = [x for x in e.ids if x != unk]
-            if t:
-                res[i] = emb[t].mean(axis=0)
-        return res / (np.linalg.norm(res, axis=1, keepdims=True) + 1e-9)
-
-    if args.idf_alpha:
-        df = np.zeros(len(emb))
-        for i in range(0, len(p_text), 2048):
-            for e in tok.encode_batch(p_text[i:i + 2048], add_special_tokens=False):
-                df[np.unique(e.ids)] += 1
-        emb *= (np.log((len(p_text) + 1) / (df + 1)) ** args.idf_alpha)[:, None].astype(np.float32)
-
-    pv = np.concatenate([encode(p_text[i:i + 2048]) for i in range(0, len(p_text), 2048)])
-    dv = np.zeros((len(texts), pv.shape[1]), np.float32)
-    np.add.at(dv, p_doc, pv)
-    dv /= np.linalg.norm(dv, axis=1, keepdims=True) + 1e-9
-
-    def q8(m):
-        s = np.abs(m).max(axis=1, keepdims=True) / 127.0 + 1e-12
-        return np.round(m / s).astype(np.int8), s.astype(np.float32).ravel()
-
-    ev, es = q8(emb)
-    pq, ps = q8(pv)
-    np.savez(os.path.join(out, "dense.npz"), emb=ev, emb_scale=es, pv=pq, pv_scale=ps,
-             dv=dv.astype(np.float16))
-    shutil.copy(os.path.join(args.model, "tokenizer.json"), os.path.join(out, "tokenizer.json"))
     with open(os.path.join(out, "docs.json"), "w", encoding="utf-8") as f:
         json.dump(ids, f)
     with open(os.path.join(out, "config.json"), "w", encoding="utf-8") as f:
-        json.dump({"size": args.size, "step": args.step, "dim": args.dim, "model": os.path.basename(args.model),
-                   "k1": 1.2, "b": 0.75, "weights": {"p": 0.4, "d": 0.2, "e": 0.2, "ed": 0.2, "pe": 0.4}}, f)
+        json.dump({"size": args.size, "step": args.step, "model": os.path.basename(os.path.dirname(args.tokenizer)),
+                   "pool": args.pool, "query_prefix": args.prefix, "k1": 1.2, "b": 0.75, "spell": True,
+                   "dense_raw": False, "weights": json.loads(args.weights)}, f)
 
     total = sum(os.path.getsize(os.path.join(out, x)) for x in os.listdir(out))
     print("index MB", round(total / 1e6, 2))

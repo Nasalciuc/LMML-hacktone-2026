@@ -1,0 +1,16 @@
+== prior(b11)
+SCORE 0.302  games won 541/960 (0.564) draws 179  me 35.2 opp 29.9  slowest 5.93s illegal 0 wall 218s 
+  by group 0:0.27 1:0.19 2:0.29 3:0.27 4:0.33 5:0.38 6:0.40 7:0.29
+== c4 rawv=0.5
+SCORE 0.344  games won 652/960 (0.679) draws 77  me 36.1 opp 28.3  slowest 5.51s illegal 0 wall 218s rawv=0.5
+  by group 0:0.35 1:0.31 2:0.25 3:0.25 4:0.35 5:0.52 6:0.44 7:0.27
+== c4 gm=0.98
+SCORE 0.331  games won 626/960 (0.652) draws 98  me 35.7 opp 28.9  slowest 6.08s illegal 0 wall 226s gm=0.98
+  by group 0:0.38 1:0.31 2:0.25 3:0.25 4:0.33 5:0.46 6:0.46 7:0.21
+== c4 rawr=55
+SCORE 0.276  games won 616/960 (0.642) draws 68  me 35.2 opp 29.2  slowest 6.32s illegal 0 wall 320s rawr=55
+  by group 0:0.31 1:0.21 2:0.15 3:0.19 4:0.27 5:0.50 6:0.35 7:0.23
+== c4 gm=0.98 rawr=55
+SCORE 0.281  games won 598/960 (0.623) draws 85  me 35.1 opp 29.5  slowest 6.46s illegal 0 wall 339s gm=0.98 rawr=55
+  by group 0:0.40 1:0.19 2:0.21 3:0.23 4:0.21 5:0.48 6:0.27 7:0.27
+SWEEPDONE

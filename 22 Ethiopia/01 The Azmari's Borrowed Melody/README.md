@@ -1,9 +1,69 @@
-# The Azmari's Borrowed Melody
+# Etiopia: The Azmari's Borrowed Melody
 
-Train: 14.95-20.95, true 14.96-20.965. Platform: first version (ec2b674) failed test-3, second (b061ff3) failed test-2. This two-pass version hasn't been submitted yet.
+**Ce trimiți: `main.py` din acest folder.**
 
-`python main.py test-1-input.wav` writes `detection.csv`. Needs numpy + scipy only, runs in ~6 s.
-First pass is ec2b674 unchanged (37 chain/colour tracks, 1.5-20 s stretches), and it gives identical answers. Its answer stands when the second pass agrees within 1.5 s, or when it beats every non-overlapping stretch by 1.5x or more. Train scores 2.6x; train-like synthetic splices score 1.56x and up.
-Second pass is b061ff3 without the short-stretch discount. That discount was the only change that pushed edges out on train-like splices (worst edge 1.17 s vs 0.39 s without it), so it's the likely test-2 culprit. The second pass adds Nyquist-band and floor-shape tracks, tuning, 1-30 s stretches, the end-of-file swap and 25 ms edge refinement.
-`python validate.py ../task_ethiopia 20 3 -v` has two sets, both built from train's host with the real splice cut out. "realistic" uses the real phrase, or host pieces with no sub-20 Hz drift and a 20-150 Hz floor raised by 3-25 dB; 3-9 s, 40 % at an edge. "tough" uses resample, codec, EQ, pitch, reverb, hum and hiss changes; 1-30 s.
-Realistic: first 80/80, second 80/80, answer 80/80. Tough: first 111/180, second 149/180, answer 148/180.
+Dacă platforma îl respinge, a doua încercare e `a_doua_incercare/main.py`. Platforma arată doar primul test picat (test-1, test-2 sau test-3), deci contează care anume a picat.
+
+## Ce cere taskul
+
+Primești o înregistrare de 45 până la 60 de secunde cu un instrument etiopian, masenqo (cu arcuș) sau washint (fluier). În ea a fost lipită o bucată de câteva secunde din altă înregistrare. Trebuie să spui la ce secundă începe bucata lipită și la ce secundă se termină.
+
+Treci un test dacă ambele margini sunt la cel mult 1,5 secunde de adevăr. Sunt trei înregistrări ascunse. Avem un singur exemplu cu răspuns: bucata lipită e între 14,96 și 20,97 secunde.
+
+## Ideea
+
+Bucata lipită vine din altă înregistrare. A fost făcută cu alt microfon, în altă cameră, cu alt zgomot de fond. Deci nu căutăm „altă melodie”, căutăm „alt fel de a suna”.
+
+## Pașii
+
+```
+sunet -> bucăți scurte -> pentru fiecare: cum sună înregistrarea -> blocul care diferă cel mai mult de rest -> început, sfârșit
+```
+
+1. Sunetul e tăiat în bucăți scurte, de câteva sutimi de secundă.
+2. Pentru fiecare bucată se calculează măsuri despre cum a fost înregistrată: cât zgomot e pe frecvențele joase, cum e împărțită energia pe frecvențe, cât de tare e fondul.
+3. Se caută blocul continuu, de cel mult 20 de secunde, care diferă cel mai mult de restul fișierului.
+4. Marginile blocului se scriu în CSV.
+
+Față de detectorul primit de la coleg am schimbat două lucruri:
+
+- Am scos din căutare măsurile care urmăresc notele cântate. Pe alte melodii ele mutau marginile sau alegeau un pasaj normal al instrumentului.
+- Blocul căutat are cel mult 20 de secunde, nu 40. Enunțul spune „câteva secunde”, iar blocurile mai lungi au fost mereu alegeri greșite.
+
+## Cât de bine merge
+
+Pe exemplul dat: răspunde 14,965 și 20,912. Adevărul e 14,960 și 20,965.
+
+Am făcut 344 de înregistrări de test cu răspuns cunoscut: 32 din exemplul dat și 312 sintetice.
+
+| Detector | Trecute din 344 |
+|---|---|
+| `main.py` (acesta) | 334 |
+| Cel primit de la coleg, neschimbat | 327 |
+| `a_doua_incercare/main.py` | 312 |
+
+La cazurile trecute, greșeala de margine e de obicei 0,04 secunde.
+
+## Ce nu e sigur
+
+- Bucăți foarte scurte, sub 2,5 secunde: 25 din 30.
+- Același instrument, înregistrat la fel ca restul: 98 din 104. Aici diferă doar felul de a cânta, iar urma e slabă.
+- Dacă fișierul are două zone ciudate, o alege pe cea mai puternică.
+- Detectorul răspunde mereu cu un bloc, chiar dacă nu e nimic lipit.
+- Toate cifrele sunt pe înregistrări făcute de mine, nu pe cele trei ascunse.
+
+## Verificare
+
+Rulare: `python main.py test-1-input.wav`. Scrie un CSV cu începutul și sfârșitul.
+
+- `main.py`: sha256 `55d236f83f1d9c058434f7042c0dd60dd5f4797cfca0d7a17af720f71bf176a1`
+- `a_doua_incercare/main.py`: sha256 `f6e1b1b5a6a40a1c82eb15dd28271afa6b88cd829828cd677632c6209b3d62ba`
+
+## Fișiere
+
+- `main.py`: detectorul de trimis.
+- `a_doua_incercare/main.py`: al doilea detector.
+- `check/`: fac cele 344 de înregistrări de test și compară detectoarele. Rezultatele sunt în `check/results.txt`.
+- `arhiva/`: detectorul primit de la coleg, neschimbat.
+- `varianta_veche/`: detectorul nostru dinainte, în doi pași. Nu a fost trimis. Primele două versiuni ale lui au picat pe platformă la test-3 și la test-2.
+- [DETALII.md](DETALII.md): descrierea lungă, cu toate cifrele.

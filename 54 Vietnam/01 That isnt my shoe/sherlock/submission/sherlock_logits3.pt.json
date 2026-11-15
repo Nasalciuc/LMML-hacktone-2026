@@ -1,0 +1,16 @@
+{
+ "ckpt": "runs/mnv3_full/model.pt",
+ "calib": "runs/calib_v1.npz",
+ "quant": "int8",
+ "output_mode": "logits3",
+ "classes": [
+  "nike",
+  "adidas",
+  "converse"
+ ],
+ "infer_size": 256,
+ "thr_joint": -9.042672157287598,
+ "thr_sem": -3.7887744903564453,
+ "w_trace": 2.0,
+ "size_bytes": 6955933
+}

@@ -1,0 +1,33 @@
+OOF closed-set acc = 0.9061  (n=735)
+w=1.0 keep=0.95: known_acc=0.8694  null-rej (semantic uninformative)=0.889  null-rej (LOCO-like semantic)=0.959  thr=-4.610
+w=1.0 keep=0.97: known_acc=0.8844  null-rej (semantic uninformative)=0.711  null-rej (LOCO-like semantic)=0.905  thr=-5.356
+w=1.0 keep=0.98: known_acc=0.8925  null-rej (semantic uninformative)=0.608  null-rej (LOCO-like semantic)=0.851  thr=-5.772
+w=1.0 keep=0.985: known_acc=0.8966  null-rej (semantic uninformative)=0.559  null-rej (LOCO-like semantic)=0.813  thr=-6.015
+w=1.0 keep=0.99: known_acc=0.9007  null-rej (semantic uninformative)=0.519  null-rej (LOCO-like semantic)=0.779  thr=-6.202
+w=1.5 keep=0.95: known_acc=0.8653  null-rej (semantic uninformative)=0.930  null-rej (LOCO-like semantic)=0.969  thr=-5.801
+w=1.5 keep=0.97: known_acc=0.8830  null-rej (semantic uninformative)=0.889  null-rej (LOCO-like semantic)=0.947  thr=-6.549
+w=1.5 keep=0.98: known_acc=0.8925  null-rej (semantic uninformative)=0.798  null-rej (LOCO-like semantic)=0.910  thr=-7.369
+w=1.5 keep=0.985: known_acc=0.8952  null-rej (semantic uninformative)=0.722  null-rej (LOCO-like semantic)=0.880  thr=-7.707
+w=1.5 keep=0.99: known_acc=0.8980  null-rej (semantic uninformative)=0.573  null-rej (LOCO-like semantic)=0.794  thr=-8.421
+--- more weights / rules
+fisher w=2.0 keep=0.97: known_acc=0.8816  rej(sem-uninf)=0.913  rej(LOCO-sem)=0.952
+fisher w=2.0 keep=0.98: known_acc=0.8912  rej(sem-uninf)=0.861  rej(LOCO-sem)=0.917
+fisher w=2.0 keep=0.985: known_acc=0.8952  rej(sem-uninf)=0.812  rej(LOCO-sem)=0.889
+fisher w=3.0 keep=0.97: known_acc=0.8803  rej(sem-uninf)=0.924  rej(LOCO-sem)=0.948
+fisher w=3.0 keep=0.98: known_acc=0.8912  rej(sem-uninf)=0.867  rej(LOCO-sem)=0.905
+fisher w=3.0 keep=0.985: known_acc=0.8952  rej(sem-uninf)=0.847  rej(LOCO-sem)=0.886
+fisher w=5.0 keep=0.97: known_acc=0.8803  rej(sem-uninf)=0.921  rej(LOCO-sem)=0.937
+fisher w=5.0 keep=0.98: known_acc=0.8912  rej(sem-uninf)=0.879  rej(LOCO-sem)=0.904
+fisher w=5.0 keep=0.985: known_acc=0.8939  rej(sem-uninf)=0.859  rej(LOCO-sem)=0.882
+gate p_tr>=0.01 & p_sem>=0.0: accepted=0.992 known_acc=0.8980  rej(sem-uninf)=0.814  rej(LOCO-sem)=0.814
+gate p_tr>=0.01 & p_sem>=0.005: accepted=0.989 known_acc=0.8966  rej(sem-uninf)=0.815  rej(LOCO-sem)=0.814
+gate p_tr>=0.01 & p_sem>=0.01: accepted=0.984 known_acc=0.8939  rej(sem-uninf)=0.817  rej(LOCO-sem)=0.814
+gate p_tr>=0.015 & p_sem>=0.0: accepted=0.986 known_acc=0.8952  rej(sem-uninf)=0.852  rej(LOCO-sem)=0.852
+gate p_tr>=0.015 & p_sem>=0.005: accepted=0.984 known_acc=0.8939  rej(sem-uninf)=0.853  rej(LOCO-sem)=0.852
+gate p_tr>=0.015 & p_sem>=0.01: accepted=0.978 known_acc=0.8912  rej(sem-uninf)=0.854  rej(LOCO-sem)=0.852
+gate p_tr>=0.02 & p_sem>=0.0: accepted=0.982 known_acc=0.8912  rej(sem-uninf)=0.867  rej(LOCO-sem)=0.867
+gate p_tr>=0.02 & p_sem>=0.005: accepted=0.980 known_acc=0.8898  rej(sem-uninf)=0.868  rej(LOCO-sem)=0.867
+gate p_tr>=0.02 & p_sem>=0.01: accepted=0.974 known_acc=0.8871  rej(sem-uninf)=0.869  rej(LOCO-sem)=0.867
+gate p_tr>=0.03 & p_sem>=0.0: accepted=0.971 known_acc=0.8830  rej(sem-uninf)=0.916  rej(LOCO-sem)=0.916
+gate p_tr>=0.03 & p_sem>=0.005: accepted=0.969 known_acc=0.8816  rej(sem-uninf)=0.917  rej(LOCO-sem)=0.916
+gate p_tr>=0.03 & p_sem>=0.01: accepted=0.963 known_acc=0.8789  rej(sem-uninf)=0.917  rej(LOCO-sem)=0.916

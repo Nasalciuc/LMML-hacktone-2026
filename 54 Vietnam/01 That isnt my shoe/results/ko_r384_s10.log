@@ -1,0 +1,8 @@
+== Sun Nov 15 00:00:26 2026 {'tag': 'r384_s10', 'arch': 'efficientnet_b0', 'res': 384, 'epochs': 40, 'lr': 0.0004, 'smooth': 0.1, 'loss': 'ce'}
+== Sun Nov 15 00:01:57 2026 {'tag': 'r384_s10', 'arch': 'efficientnet_b0', 'res': 384, 'epochs': 40, 'lr': 0.0004, 'smooth': 0.1, 'loss': 'ce'}
+fold 0: closed-set acc task val 0.932 | web photos of the 3 brands 0.863 | 212s
+fold 1: closed-set acc task val 0.939 | web photos of the 3 brands 0.848 | 84s
+fold 2: closed-set acc task val 0.939 | web photos of the 3 brands 0.865 | 95s
+fold 3: closed-set acc task val 0.939 | web photos of the 3 brands 0.863 | 131s
+fold 4: closed-set acc task val 0.932 | web photos of the 3 brands 0.861 | 130s
+done

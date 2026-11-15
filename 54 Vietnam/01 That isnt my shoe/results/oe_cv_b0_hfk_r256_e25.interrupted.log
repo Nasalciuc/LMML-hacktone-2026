@@ -1,0 +1,89 @@
+== Sat Nov 14 22:22:18 2026 {'tag': 'b0_hfk_r256_e25', 'arch': 'efficientnet_b0', 'epochs': 25, 'hf_known': 3600, 'no_oe': False, 'u_ratio': 1.0, 'lr': 0.0004, 'folds': '0,1,2,3,4', 'res': 256}
+fold 0: hold-out brand puma (1200 imgs), train knowns 3619, train outliers 9450
+  ep 1/25 loss 1.2012 train acc 0.513
+  ep 2/25 loss 0.8374 train acc 0.742
+  ep 3/25 loss 0.6669 train acc 0.842
+  ep 4/25 loss 0.6004 train acc 0.879
+  ep 5/25 loss 0.5541 train acc 0.902
+  ep 6/25 loss 0.5224 train acc 0.916
+  ep 7/25 loss 0.5039 train acc 0.929
+  ep 8/25 loss 0.4775 train acc 0.942
+  ep 9/25 loss 0.4530 train acc 0.952
+  ep 10/25 loss 0.4465 train acc 0.956
+  ep 11/25 loss 0.4312 train acc 0.964
+  ep 12/25 loss 0.4485 train acc 0.956
+  ep 13/25 loss 0.4224 train acc 0.969
+  ep 14/25 loss 0.4131 train acc 0.973
+  ep 15/25 loss 0.4072 train acc 0.975
+  ep 16/25 loss 0.4054 train acc 0.976
+  ep 17/25 loss 0.3976 train acc 0.980
+  ep 18/25 loss 0.3923 train acc 0.982
+  ep 19/25 loss 0.3938 train acc 0.981
+  ep 20/25 loss 0.3892 train acc 0.984
+  ep 21/25 loss 0.3858 train acc 0.986
+  ep 22/25 loss 0.3846 train acc 0.987
+  ep 23/25 loss 0.3819 train acc 0.987
+  ep 24/25 loss 0.3830 train acc 0.988
+  ep 25/25 loss 0.3811 train acc 0.988
+  fold 0: web photos of known brands (not trained on): accuracy 0.914, labelled unknown 0.069
+  fold 0 tau 0.0: known acc 0.932  rejection held-out puma 0.853  seen-brand new photos 0.988
+  fold 0 tau 0.5: known acc 0.925  rejection held-out puma 0.886  seen-brand new photos 0.991
+  fold 0 tau 0.7: known acc 0.898  rejection held-out puma 0.945  seen-brand new photos 0.994
+  closed-set acc 0.952  AUROC held-out 0.975  (365s)
+fold 1: hold-out brand reebok (1200 imgs), train knowns 3619, train outliers 9432
+  ep 1/25 loss 1.2325 train acc 0.481
+  ep 2/25 loss 0.8566 train acc 0.738
+  ep 3/25 loss 0.6755 train acc 0.837
+  ep 4/25 loss 0.5949 train acc 0.880
+  ep 5/25 loss 0.5442 train acc 0.907
+  ep 6/25 loss 0.5147 train acc 0.921
+  ep 7/25 loss 0.4916 train acc 0.935
+  ep 8/25 loss 0.4824 train acc 0.937
+  ep 9/25 loss 0.4666 train acc 0.945
+  ep 10/25 loss 0.4504 train acc 0.953
+  ep 11/25 loss 0.4433 train acc 0.958
+  ep 12/25 loss 0.4334 train acc 0.962
+  ep 13/25 loss 0.4158 train acc 0.972
+  ep 14/25 loss 0.4145 train acc 0.974
+  ep 15/25 loss 0.4053 train acc 0.977
+  ep 16/25 loss 0.4013 train acc 0.980
+  ep 17/25 loss 0.4010 train acc 0.979
+  ep 18/25 loss 0.3976 train acc 0.981
+  ep 19/25 loss 0.3903 train acc 0.984
+  ep 20/25 loss 0.3865 train acc 0.986
+  ep 21/25 loss 0.3871 train acc 0.986
+  ep 22/25 loss 0.3842 train acc 0.988
+  ep 23/25 loss 0.3852 train acc 0.987
+  ep 24/25 loss 0.3829 train acc 0.988
+  ep 25/25 loss 0.3844 train acc 0.988
+  fold 1: web photos of known brands (not trained on): accuracy 0.921, labelled unknown 0.070
+  fold 1 tau 0.0: known acc 0.905  rejection held-out reebok 0.846  seen-brand new photos 0.981
+  fold 1 tau 0.5: known acc 0.884  rejection held-out reebok 0.865  seen-brand new photos 0.986
+  fold 1 tau 0.7: known acc 0.850  rejection held-out reebok 0.927  seen-brand new photos 0.990
+  closed-set acc 0.959  AUROC held-out 0.946  (805s)
+fold 2: hold-out brand vans (1200 imgs), train knowns 3619, train outliers 9466
+  ep 1/25 loss 1.2105 train acc 0.501
+  ep 2/25 loss 0.8380 train acc 0.739
+  ep 3/25 loss 0.6654 train acc 0.840
+  ep 4/25 loss 0.5960 train acc 0.876
+  ep 5/25 loss 0.5439 train acc 0.908
+  ep 6/25 loss 0.5111 train acc 0.921
+  ep 7/25 loss 0.4870 train acc 0.938
+  ep 8/25 loss 0.4842 train acc 0.940
+  ep 9/25 loss 0.4594 train acc 0.951
+  ep 10/25 loss 0.4518 train acc 0.954
+  ep 11/25 loss 0.4355 train acc 0.964
+  ep 12/25 loss 0.4300 train acc 0.966
+  ep 13/25 loss 0.4191 train acc 0.971
+  ep 14/25 loss 0.4079 train acc 0.976
+  ep 15/25 loss 0.4055 train acc 0.976
+  ep 16/25 loss 0.3995 train acc 0.979
+  ep 17/25 loss 0.4027 train acc 0.980
+  ep 18/25 loss 0.4024 train acc 0.979
+  ep 19/25 loss 0.3953 train acc 0.981
+  ep 20/25 loss 0.3853 train acc 0.988
+  ep 21/25 loss 0.3900 train acc 0.983
+  ep 22/25 loss 0.3828 train acc 0.989
+  ep 23/25 loss 0.3823 train acc 0.988
+  ep 24/25 loss 0.3834 train acc 0.988
+  ep 25/25 loss 0.3893 train acc 0.983

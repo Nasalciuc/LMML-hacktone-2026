@@ -1,8 +1,19 @@
+v4, 2026-11-15: python ..\task_cuba\local_check.py C:\Users\user\Downloads\LMML_upload\Cuba\cuba_v4.zip  (folder .venv, two runs)
 
 measure                yours         limit   result
-index size          34.79 MB    <= 53.0 MB   PASS
-load time             0.59 s     <= 10.0 s   PASS
-p95 latency           7.8 ms    <= 75.0 ms   PASS
-hit@3                  0.873        >= 0.8   PASS
+index size          51.26 MB    <= 53.0 MB   PASS
+load time             0.86 s     <= 10.0 s   PASS
+p95 latency          17.1 ms    <= 75.0 ms   PASS
+hit@3                  0.940        >= 0.8   PASS
 
 ALL LIMITS PASSED on the sample questions.
+
+measure                yours         limit   result
+index size          51.26 MB    <= 53.0 MB   PASS
+load time             0.88 s     <= 10.0 s   PASS
+p95 latency          21.0 ms    <= 75.0 ms   PASS
+hit@3                  0.940        >= 0.8   PASS
+
+Earlier versions, same checker:
+v2 (arctic-xs, onnxruntime)  45.84 MB  load 0.91 s  p95 16.7 ms  hit@3 0.918  PASS
+v3 (arctic-xs, pure numpy)   45.74 MB  load 0.90 s  p95 40-51 ms hit@3 0.914  PASS (fails p95 when the machine is saturated)

@@ -1,0 +1,63 @@
+unknown-brand photos: {'asics': 300, 'vans': 300, 'puma': 300, 'reebok': 300} | native shorter side: median 237 | share >= 400 px: 0.04
+
+== straight to 256 with pil_bicubic: rejected 0.632 of 1200
+   per brand: {'puma': 0.603, 'reebok': 0.64, 'vans': 0.667, 'asics': 0.617}
+   native shorter side  150-230   n= 366  rejected 0.667  median p_trace 0.0109  share p_trace<0.0154 0.557
+   native shorter side  230-236   n= 193  rejected 0.565  median p_trace 0.0149  share p_trace<0.0154 0.534
+   native shorter side  236-245   n= 159  rejected 0.616  median p_trace 0.0095  share p_trace<0.0154 0.560
+   native shorter side  245-256   n= 195  rejected 0.600  median p_trace 0.0095  share p_trace<0.0154 0.549
+   native shorter side  256-300   n= 219  rejected 0.635  median p_trace 0.0095  share p_trace<0.0154 0.566
+   native shorter side  300-400   n=  20  rejected 0.800  median p_trace 0.0095  share p_trace<0.0154 0.650
+   native shorter side  400-10000 n=  48  rejected 0.729  median p_trace 0.0095  share p_trace<0.0154 0.646
+   square originals n=304 rejected 0.599 | non-square n=896 rejected 0.643
+
+== straight to 256 with pil_bilinear: rejected 0.656 of 1200
+   per brand: {'puma': 0.627, 'reebok': 0.687, 'vans': 0.673, 'asics': 0.637}
+   native shorter side  150-230   n= 366  rejected 0.705  median p_trace 0.0095  share p_trace<0.0154 0.593
+   native shorter side  230-236   n= 193  rejected 0.591  median p_trace 0.0122  share p_trace<0.0154 0.549
+   native shorter side  236-245   n= 159  rejected 0.679  median p_trace 0.0095  share p_trace<0.0154 0.597
+   native shorter side  245-256   n= 195  rejected 0.610  median p_trace 0.0095  share p_trace<0.0154 0.564
+   native shorter side  256-300   n= 219  rejected 0.612  median p_trace 0.0136  share p_trace<0.0154 0.534
+   native shorter side  300-400   n=  20  rejected 0.800  median p_trace 0.0081  share p_trace<0.0154 0.600
+   native shorter side  400-10000 n=  48  rejected 0.792  median p_trace 0.0095  share p_trace<0.0154 0.646
+   square originals n=304 rejected 0.638 | non-square n=896 rejected 0.662
+
+== straight to 256 with cv_area: rejected 0.659 of 1200
+   per brand: {'puma': 0.627, 'reebok': 0.717, 'vans': 0.677, 'asics': 0.617}
+   native shorter side  150-230   n= 366  rejected 0.724  median p_trace 0.0095  share p_trace<0.0154 0.628
+   native shorter side  230-236   n= 193  rejected 0.617  median p_trace 0.0109  share p_trace<0.0154 0.534
+   native shorter side  236-245   n= 159  rejected 0.660  median p_trace 0.0095  share p_trace<0.0154 0.560
+   native shorter side  245-256   n= 195  rejected 0.610  median p_trace 0.0095  share p_trace<0.0154 0.554
+   native shorter side  256-300   n= 219  rejected 0.612  median p_trace 0.0122  share p_trace<0.0154 0.543
+   native shorter side  300-400   n=  20  rejected 0.750  median p_trace 0.0081  share p_trace<0.0154 0.600
+   native shorter side  400-10000 n=  48  rejected 0.708  median p_trace 0.0095  share p_trace<0.0154 0.646
+   square originals n=304 rejected 0.612 | non-square n=896 rejected 0.675
+
+== other thresholds (knowns: package out-of-fold table, n=735; unknowns: these photos, pil_bicubic)
+   rule                 keep   known_acc  unknown_rejected
+   sem + 1 x trace     0.98   0.893      0.483
+   sem + 1 x trace     0.97   0.884      0.575
+   sem + 1 x trace     0.95   0.869      0.733
+   sem + 1 x trace     0.93   0.859      0.781
+   sem + 1 x trace     0.90   0.834      0.834
+   sem + 2 x trace     0.98   0.891      0.632
+   sem + 2 x trace     0.97   0.882      0.733
+   sem + 2 x trace     0.95   0.865      0.825
+   sem + 2 x trace     0.93   0.845      0.867
+   sem + 2 x trace     0.90   0.820      0.903
+   sem + 3 x trace     0.98   0.891      0.623
+   sem + 3 x trace     0.97   0.880      0.730
+   sem + 3 x trace     0.95   0.863      0.818
+   sem + 3 x trace     0.93   0.845      0.880
+   sem + 3 x trace     0.90   0.818      0.920
+   sem + 5 x trace     0.98   0.891      0.630
+   sem + 5 x trace     0.97   0.880      0.710
+   sem + 5 x trace     0.95   0.863      0.797
+   sem + 5 x trace     0.93   0.842      0.886
+   sem + 5 x trace     0.90   0.815      0.921
+   trace only           0.98   0.891      0.614
+   trace only           0.97   0.880      0.704
+   trace only           0.95   0.863      0.806
+   trace only           0.93   0.842      0.862
+   trace only           0.90   0.812      0.919
+saved C:/Users/user/AppData/Local/Temp/claude/ed1cc402544f86e3/f1829eba-eef6-4f45-a143-a9a35335a08f/scratchpad/soles_test/scores3.npz

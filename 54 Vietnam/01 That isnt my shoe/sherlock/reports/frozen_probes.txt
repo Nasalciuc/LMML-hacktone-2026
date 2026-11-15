@@ -1,0 +1,42 @@
+mnv3_miil1k     acc C0.5=0.810 C2.0=0.842 C8.0=0.850
+    msp       AUROC per-held=[0.759 0.598 0.643] mean=0.667 rej@keep95=0.094 rej@keep90=0.204
+    maxlogit  AUROC per-held=[0.759 0.598 0.643] mean=0.667 rej@keep95=0.094 rej@keep90=0.204
+    knn1      AUROC per-held=[0.651 0.712 0.63 ] mean=0.664 rej@keep95=0.129 rej@keep90=0.211
+    knn5      AUROC per-held=[0.606 0.682 0.595] mean=0.628 rej@keep95=0.107 rej@keep90=0.206
+    knn10     AUROC per-held=[0.587 0.659 0.587] mean=0.611 rej@keep95=0.107 rej@keep90=0.195
+mnv3_miil21k    acc C0.5=0.803 C2.0=0.820 C8.0=0.837
+    msp       AUROC per-held=[0.703 0.56  0.521] mean=0.594 rej@keep95=0.076 rej@keep90=0.160
+    maxlogit  AUROC per-held=[0.703 0.56  0.521] mean=0.594 rej@keep95=0.076 rej@keep90=0.160
+    knn1      AUROC per-held=[0.641 0.752 0.565] mean=0.653 rej@keep95=0.100 rej@keep90=0.186
+    knn5      AUROC per-held=[0.595 0.725 0.522] mean=0.614 rej@keep95=0.091 rej@keep90=0.155
+    knn10     AUROC per-held=[0.574 0.71  0.509] mean=0.598 rej@keep95=0.084 rej@keep90=0.141
+effb0_ns        acc C0.5=0.767 C2.0=0.797 C8.0=0.816
+    msp       AUROC per-held=[0.658 0.552 0.634] mean=0.615 rej@keep95=0.102 rej@keep90=0.182
+    maxlogit  AUROC per-held=[0.658 0.552 0.634] mean=0.615 rej@keep95=0.102 rej@keep90=0.182
+    knn1      AUROC per-held=[0.575 0.61  0.629] mean=0.605 rej@keep95=0.090 rej@keep90=0.149
+    knn5      AUROC per-held=[0.529 0.582 0.612] mean=0.574 rej@keep95=0.086 rej@keep90=0.146
+    knn10     AUROC per-held=[0.514 0.568 0.612] mean=0.565 rej@keep95=0.076 rej@keep90=0.144
+effb2_ns        acc C0.5=0.778 C2.0=0.801 C8.0=0.811
+    msp       AUROC per-held=[0.677 0.566 0.616] mean=0.620 rej@keep95=0.076 rej@keep90=0.168
+    maxlogit  AUROC per-held=[0.677 0.566 0.616] mean=0.620 rej@keep95=0.076 rej@keep90=0.168
+    knn1      AUROC per-held=[0.544 0.568 0.665] mean=0.592 rej@keep95=0.085 rej@keep90=0.150
+    knn5      AUROC per-held=[0.507 0.528 0.658] mean=0.564 rej@keep95=0.078 rej@keep90=0.141
+    knn10     AUROC per-held=[0.49  0.518 0.662] mean=0.557 rej@keep95=0.078 rej@keep90=0.147
+edgenext_s      acc C0.5=0.782 C2.0=0.804 C8.0=0.808
+    msp       AUROC per-held=[0.741 0.567 0.594] mean=0.634 rej@keep95=0.100 rej@keep90=0.192
+    maxlogit  AUROC per-held=[0.741 0.567 0.594] mean=0.634 rej@keep95=0.100 rej@keep90=0.192
+    knn1      AUROC per-held=[0.6   0.629 0.571] mean=0.600 rej@keep95=0.081 rej@keep90=0.143
+    knn5      AUROC per-held=[0.566 0.609 0.544] mean=0.573 rej@keep95=0.073 rej@keep90=0.152
+    knn10     AUROC per-held=[0.55  0.595 0.538] mean=0.561 rej@keep95=0.075 rej@keep90=0.149
+convnext_atto   acc C0.5=0.728 C2.0=0.766 C8.0=0.765
+    msp       AUROC per-held=[0.68  0.525 0.528] mean=0.578 rej@keep95=0.093 rej@keep90=0.162
+    maxlogit  AUROC per-held=[0.68  0.525 0.528] mean=0.578 rej@keep95=0.093 rej@keep90=0.162
+    knn1      AUROC per-held=[0.539 0.594 0.557] mean=0.563 rej@keep95=0.081 rej@keep90=0.143
+    knn5      AUROC per-held=[0.503 0.57  0.539] mean=0.537 rej@keep95=0.076 rej@keep90=0.137
+    knn10     AUROC per-held=[0.492 0.563 0.536] mean=0.531 rej@keep95=0.082 rej@keep90=0.125
+convnext_pico   acc C0.5=0.778 C2.0=0.805 C8.0=0.807
+    msp       AUROC per-held=[0.682 0.648 0.657] mean=0.662 rej@keep95=0.105 rej@keep90=0.202
+    maxlogit  AUROC per-held=[0.682 0.648 0.657] mean=0.662 rej@keep95=0.105 rej@keep90=0.202
+    knn1      AUROC per-held=[0.525 0.573 0.614] mean=0.571 rej@keep95=0.072 rej@keep90=0.158
+    knn5      AUROC per-held=[0.489 0.556 0.593] mean=0.546 rej@keep95=0.066 rej@keep90=0.141
+    knn10     AUROC per-held=[0.475 0.544 0.591] mean=0.536 rej@keep95=0.067 rej@keep90=0.142

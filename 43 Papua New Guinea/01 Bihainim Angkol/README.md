@@ -1,23 +1,74 @@
-# Bihainim Angkol
+# Papua Noua Guinee: Bihainim Angkol
 
-Submit `main.py` (made by `python solve.py`, which also writes `policy.csv`).
+**Ce trimiți: `submission/main.py`.** Flag-ul apare singur pe platformă când fișierul trece.
 
-| | fish per day |
+Nu urca `main.py` din folderul organizatorilor (`task_papua_new_guinea`). Acela e șablonul gol, care stă pe loc și prinde 0 pești.
+
+## Ce cere taskul
+
+O barcă pescuiește într-o lagună. O zi are 24 de pași. Barca pleacă de pe plajă cu cala goală, iar în cală încap cel mult 6 pești.
+
+```
+    0 1 2 3 4 5 6
+ 0  . . . . T T .     H  plaja: aici se descarcă peștele
+ 1  # # # # ~ # #     s  iarbă de mare: 20% șansă de pește la o încercare
+ 2  . . . . s s .     T  reciful din larg: 90% șansă de pește
+ 3  . . . . s s .     #  barieră: nu se poate trece
+ 4  . . . . . . .     ~  trecerea prin barieră: valul împinge barca înapoi în 40% din cazuri
+ 5  . . H . . . .     .  apă
+```
+
+La fiecare pas alegi o mișcare: nord, sud, est, vest, pescuiește sau așteaptă. Peștele contează doar dacă ajunge pe plajă. Ce rămâne în barcă la sfârșitul zilei se pierde.
+
+Trebuie să spui ce face barca în orice situație posibilă: poziție, câți pești are în cală și câți pași au rămas. Sunt 6.048 de situații. Treci dacă prinzi în medie de cel puțin 1,5 ori mai mult decât unchiul („angkol”) din jurnalul dat ca exemplu.
+
+## Ce face unchiul
+
+Merge la iarba de mare, la 4 pași de plajă, și pescuiește acolo toată ziua. Nu trece niciodată bariera. Prinde în medie 2,49 pești pe zi.
+
+Greșeala lui: la 3 pași mai departe, dincolo de trecere, peștele mușcă în 90% din cazuri, nu în 20%.
+
+## Soluția
+
+Regulile lagunei sunt cunoscute complet, sunt în fișierul `lagoon.py` al organizatorilor. Am verificat că jurnalul unchiului se poate rejuca exact cu ele: 400 de zile, nicio diferență.
+
+Când regulile sunt cunoscute, cea mai bună mișcare se poate calcula exact, fără nimic învățat. Calculul merge de la sfârșitul zilei spre început:
+
+1. Cu 0 pași rămași nu mai poți câștiga nimic.
+2. Cu 1 pas rămas, pentru fiecare situație alegi mișcarea care aduce cei mai mulți pești în medie.
+3. Cu 2 pași rămași faci la fel, folosind ce ai aflat la pasul anterior.
+4. Continui până la 24 de pași.
+
+Metoda se numește programare dinamică. `main.py` face tot calculul la fiecare rulare, în cam 0,1 secunde, și folosește doar Python simplu.
+
+Ce iese: barca merge direct la trecere, iese în larg, umple cala la recif și se întoarce. Valul împinge doar spre casă, deci drumul înapoi durează cel mult 7 pași și barca nu rămâne niciodată cu pește pe mare.
+
+## Cât de bine merge
+
+| | Pești pe zi |
 |---|---|
-| angkol, logbook days 1-400 | 2.490 |
-| this policy, days 1-400 | 5.963 (2.39x) |
-| this policy, days 401-5400 | 5.965 |
+| Unchiul | 2,490 |
+| Soluția | 5,963 |
+| Raport | 2,395 (trebuie 1,5) |
 
-Angkol only fishes the seagrass flats (4,954 of his FISH actions are on `s`, none on `T`), where a bite is 20 %. The outer reef `T` bites 90 % but sits past the reef passage, where the tide pushes the canoe back south 40 % of the time.
+Măsurat pe cele 400 de zile de practică. Pe 20.000 de zile noi, făcute cu aceleași reguli, barca aduce 6 pești în 97,3% din zile. Calculul fiind exact, în medie nu se poate mai bine.
 
-All rules and odds are in `lagoon.py`, so the best action for every state can be computed exactly: backward induction over (row, col, hold, steps_left), 24 steps, expected fish landed as the value. The result: go out through the passage, fill the hold at `T` (about 7 casts for 6 fish), come back with the tide and land on the beach. Expected catch from the beach: 5.957 fish per day.
+## Ce nu e sigur
 
-Check:
+Aproape nimic. Singura presupunere e că zilele ascunse folosesc aceleași reguli ca `lagoon.py`. Jurnalul confirmă regulile pentru partea de lagună în care a umblat unchiul. Reciful și trecerea nu apar în jurnal, deci șansa de 90% și valul de 40% vin doar din `lagoon.py`.
 
-```
-cp ../task_papua_new_guinea/train-input.csv test-input.csv
-python main.py
-python ../task_papua_new_guinea/lagoon.py --policy test-output.csv --compare ../task_papua_new_guinea/train-output.json
-```
+## Verificare
 
-`main.py` uses only the standard library and runs in about 0.1 s.
+`submission/main.py` are sha256 `d67f8f5d89468224588ca1215cafc8936ecf237bd463e07d6bad3fc7dc8bfd15`.
+
+Rulare: pui `test-input.csv` lângă `main.py`, apoi `python main.py`. Iese `test-output.csv`.
+
+Toate verificările la un loc: `python run_all.py "..\task_papua_new_guinea"`. Durează cam 10 secunde. Rezultatul se compară cu `run_all_output.txt`.
+
+## Fișiere
+
+- `submission/main.py`: fișierul de trimis.
+- `run_all.py`, `check/`: verificările. Rejoacă jurnalul unchiului, verifică exact că soluția e cea mai bună și încearcă intrări stricate.
+- `VERIFICARE.md`: ce a ieșit la o verificare separată.
+- `varianta_veche/`: prima noastră soluție.
+- [DETALII.md](DETALII.md): descrierea lungă, cu toate cifrele.

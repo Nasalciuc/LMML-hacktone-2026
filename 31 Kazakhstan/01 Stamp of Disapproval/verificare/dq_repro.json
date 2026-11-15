@@ -1,0 +1,3295 @@
+{
+ "exhibits": [
+  {
+   "i": 1,
+   "min": -9.352619171142578,
+   "x": 239,
+   "y": 328,
+   "inside": false
+  },
+  {
+   "i": 2,
+   "min": -179.08636474609375,
+   "x": 288,
+   "y": 87,
+   "inside": true
+  },
+  {
+   "i": 3,
+   "min": -19.16205406188965,
+   "x": 323,
+   "y": 284,
+   "inside": false
+  },
+  {
+   "i": 4,
+   "min": -13.036585807800293,
+   "x": 65,
+   "y": 109,
+   "inside": false
+  },
+  {
+   "i": 5,
+   "min": -76.44153594970703,
+   "x": 134,
+   "y": 77,
+   "inside": true
+  },
+  {
+   "i": 6,
+   "min": -0.35744529962539673,
+   "x": 244,
+   "y": 173,
+   "inside": false
+  },
+  {
+   "i": 7,
+   "min": -11.714824676513672,
+   "x": 170,
+   "y": 52,
+   "inside": false
+  },
+  {
+   "i": 8,
+   "min": -93.96923828125,
+   "x": 299,
+   "y": 142,
+   "inside": true
+  },
+  {
+   "i": 9,
+   "min": -90.89842987060547,
+   "x": 294,
+   "y": 56,
+   "inside": true
+  },
+  {
+   "i": 10,
+   "min": -63.79100799560547,
+   "x": 101,
+   "y": 408,
+   "inside": true
+  },
+  {
+   "i": 11,
+   "min": -122.27080535888672,
+   "x": 86,
+   "y": 306,
+   "inside": true
+  },
+  {
+   "i": 12,
+   "min": -135.37901306152344,
+   "x": 129,
+   "y": 134,
+   "inside": true
+  },
+  {
+   "i": 13,
+   "min": 0.0,
+   "x": 0,
+   "y": 0,
+   "inside": false
+  },
+  {
+   "i": 14,
+   "min": -17.69193458557129,
+   "x": 393,
+   "y": 334,
+   "inside": false
+  },
+  {
+   "i": 15,
+   "min": -192.2681121826172,
+   "x": 461,
+   "y": 255,
+   "inside": true
+  },
+  {
+   "i": 16,
+   "min": -2.910102367401123,
+   "x": 133,
+   "y": 531,
+   "inside": false
+  },
+  {
+   "i": 17,
+   "min": -207.9121551513672,
+   "x": 379,
+   "y": 82,
+   "inside": true
+  },
+  {
+   "i": 18,
+   "min": -7.30777645111084,
+   "x": 73,
+   "y": 402,
+   "inside": false
+  },
+  {
+   "i": 19,
+   "min": 0.0,
+   "x": 0,
+   "y": 0,
+   "inside": false
+  },
+  {
+   "i": 20,
+   "min": -55.3100471496582,
+   "x": 253,
+   "y": 411,
+   "inside": true
+  },
+  {
+   "i": 21,
+   "min": -2.529320478439331,
+   "x": 325,
+   "y": 198,
+   "inside": false
+  },
+  {
+   "i": 22,
+   "min": -10.304183006286621,
+   "x": 336,
+   "y": 176,
+   "inside": false
+  },
+  {
+   "i": 23,
+   "min": -38.17100143432617,
+   "x": 508,
+   "y": 64,
+   "inside": true
+  },
+  {
+   "i": 24,
+   "min": -9.983931541442871,
+   "x": 136,
+   "y": 99,
+   "inside": true
+  },
+  {
+   "i": 25,
+   "min": -24.124635696411133,
+   "x": 49,
+   "y": 172,
+   "inside": false
+  },
+  {
+   "i": 26,
+   "min": -153.28497314453125,
+   "x": 103,
+   "y": 293,
+   "inside": true
+  },
+  {
+   "i": 27,
+   "min": -61.131839752197266,
+   "x": 450,
+   "y": 233,
+   "inside": true
+  },
+  {
+   "i": 28,
+   "min": -0.0080419285222888,
+   "x": 45,
+   "y": 452,
+   "inside": false
+  },
+  {
+   "i": 29,
+   "min": -42.183712005615234,
+   "x": 441,
+   "y": 188,
+   "inside": true
+  },
+  {
+   "i": 30,
+   "min": -96.73438262939453,
+   "x": 465,
+   "y": 68,
+   "inside": true
+  }
+ ],
+ "pages": [
+  {
+   "album": "album_1",
+   "page": "page_1759",
+   "n_stamps": 3,
+   "dq_min": -293.2433776855469,
+   "x": 808,
+   "y": 620,
+   "other_stamps_min": -21.50448989868164,
+   "archive_dq_min": -293.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     85
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_1",
+   "page": "page_2079",
+   "n_stamps": 3,
+   "dq_min": -73.35087585449219,
+   "x": 966,
+   "y": 758,
+   "other_stamps_min": -4.250004291534424,
+   "archive_dq_min": -73.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     84
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_1",
+   "page": "page_2898",
+   "n_stamps": 3,
+   "dq_min": -54.12153625488281,
+   "x": 832,
+   "y": 404,
+   "other_stamps_min": 20.37223243713379,
+   "archive_dq_min": -54.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     85
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_1",
+   "page": "page_2932",
+   "n_stamps": 3,
+   "dq_min": -239.6089630126953,
+   "x": 630,
+   "y": 576,
+   "other_stamps_min": -1.4056954383850098,
+   "archive_dq_min": -239.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     91
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_1",
+   "page": "page_3114",
+   "n_stamps": 3,
+   "dq_min": -5.3540263175964355,
+   "x": 708,
+   "y": 432,
+   "other_stamps_min": 0.430795282125473,
+   "archive_dq_min": -5.4,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     84
+    ],
+    [
+     86
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_3151",
+   "n_stamps": 3,
+   "dq_min": -50.40216827392578,
+   "x": 708,
+   "y": 272,
+   "other_stamps_min": -1.9018040895462036,
+   "archive_dq_min": -50.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     91
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_3656",
+   "n_stamps": 3,
+   "dq_min": -97.49412536621094,
+   "x": 776,
+   "y": 836,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -97.5,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     92
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_4114",
+   "n_stamps": 3,
+   "dq_min": -43.95296859741211,
+   "x": 1096,
+   "y": 128,
+   "other_stamps_min": -14.074982643127441,
+   "archive_dq_min": -43.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     87
+    ],
+    [
+     89
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_4264",
+   "n_stamps": 3,
+   "dq_min": -28.195417404174805,
+   "x": 882,
+   "y": 414,
+   "other_stamps_min": -4.83236837387085,
+   "archive_dq_min": -28.2,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     92
+    ],
+    [
+     89
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_4382",
+   "n_stamps": 3,
+   "dq_min": -185.10293579101562,
+   "x": 788,
+   "y": 554,
+   "other_stamps_min": -5.511734485626221,
+   "archive_dq_min": -185.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     85
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_1",
+   "page": "page_4579",
+   "n_stamps": 3,
+   "dq_min": -26.750707626342773,
+   "x": 828,
+   "y": 556,
+   "other_stamps_min": -8.972383499145508,
+   "archive_dq_min": -26.8,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     91
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_1",
+   "page": "page_5338",
+   "n_stamps": 3,
+   "dq_min": -18.677875518798828,
+   "x": 916,
+   "y": 358,
+   "other_stamps_min": 3.9004712104797363,
+   "archive_dq_min": -18.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     83
+    ],
+    [
+     83
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_1",
+   "page": "page_5426",
+   "n_stamps": 3,
+   "dq_min": -49.74613952636719,
+   "x": 1012,
+   "y": 434,
+   "other_stamps_min": -8.986886024475098,
+   "archive_dq_min": -49.8,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     87
+    ],
+    [
+     83
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_6205",
+   "n_stamps": 2,
+   "dq_min": -28.127201080322266,
+   "x": 628,
+   "y": 882,
+   "other_stamps_min": -5.460247039794922,
+   "archive_dq_min": -28.1,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     92,
+     90
+    ]
+   ],
+   "sec": 2.0
+  },
+  {
+   "album": "album_1",
+   "page": "page_6760",
+   "n_stamps": 3,
+   "dq_min": -86.0059585571289,
+   "x": 846,
+   "y": 906,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -86.0,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     88
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_6852",
+   "n_stamps": 3,
+   "dq_min": -10.961183547973633,
+   "x": 876,
+   "y": 862,
+   "other_stamps_min": -6.04571008682251,
+   "archive_dq_min": -11.0,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84
+    ],
+    [
+     89
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_1",
+   "page": "page_6945",
+   "n_stamps": 2,
+   "dq_min": -317.1531066894531,
+   "x": 680,
+   "y": 494,
+   "other_stamps_min": -25.34480857849121,
+   "archive_dq_min": -317.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     92,
+     82
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.6
+  },
+  {
+   "album": "album_1",
+   "page": "page_7418",
+   "n_stamps": 3,
+   "dq_min": -181.2560577392578,
+   "x": 952,
+   "y": 592,
+   "other_stamps_min": -5.516641139984131,
+   "archive_dq_min": -181.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     85
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_1",
+   "page": "page_7501",
+   "n_stamps": 3,
+   "dq_min": -1.5969500541687012,
+   "x": 984,
+   "y": 770,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -1.6,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     84
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_1",
+   "page": "page_8208",
+   "n_stamps": 3,
+   "dq_min": -318.7055969238281,
+   "x": 664,
+   "y": 398,
+   "other_stamps_min": -26.501705169677734,
+   "archive_dq_min": -318.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84
+    ],
+    [
+     82
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_1",
+   "page": "page_8370",
+   "n_stamps": 3,
+   "dq_min": 0.0,
+   "x": 1256,
+   "y": 400,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": 0.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     87
+    ],
+    [
+     86
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_1",
+   "page": "page_8525",
+   "n_stamps": 3,
+   "dq_min": -13.118459701538086,
+   "x": 1248,
+   "y": 888,
+   "other_stamps_min": -0.4991567134857178,
+   "archive_dq_min": -13.1,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     91
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_1",
+   "page": "page_8991",
+   "n_stamps": 3,
+   "dq_min": -18.999536514282227,
+   "x": 930,
+   "y": 904,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -19.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     85
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_9335",
+   "n_stamps": 3,
+   "dq_min": -15.725211143493652,
+   "x": 660,
+   "y": 540,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -15.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     89
+    ],
+    [
+     84
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_1",
+   "page": "page_9528",
+   "n_stamps": 3,
+   "dq_min": -2.280689239501953,
+   "x": 394,
+   "y": 708,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -2.3,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     89
+    ],
+    [
+     85
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_1",
+   "page": "page_9862",
+   "n_stamps": 3,
+   "dq_min": -25.294143676757812,
+   "x": 1038,
+   "y": 836,
+   "other_stamps_min": -2.490663766860962,
+   "archive_dq_min": -25.3,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     92
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_2",
+   "page": "page_1120",
+   "n_stamps": 3,
+   "dq_min": -313.8739013671875,
+   "x": 862,
+   "y": 718,
+   "other_stamps_min": -1.229288101196289,
+   "archive_dq_min": -313.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [],
+    [
+     92
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_2",
+   "page": "page_1245",
+   "n_stamps": 3,
+   "dq_min": -62.634952545166016,
+   "x": 828,
+   "y": 546,
+   "other_stamps_min": -3.0236759185791016,
+   "archive_dq_min": -62.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     92
+    ],
+    [
+     90
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_1475",
+   "n_stamps": 2,
+   "dq_min": -98.69893646240234,
+   "x": 734,
+   "y": 530,
+   "other_stamps_min": -16.726980209350586,
+   "archive_dq_min": -98.7,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     82,
+     89
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.9
+  },
+  {
+   "album": "album_2",
+   "page": "page_1771",
+   "n_stamps": 3,
+   "dq_min": -1.9771775007247925,
+   "x": 466,
+   "y": 656,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -2.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     86
+    ],
+    [
+     85
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_2062",
+   "n_stamps": 3,
+   "dq_min": -230.65554809570312,
+   "x": 800,
+   "y": 384,
+   "other_stamps_min": -9.951412200927734,
+   "archive_dq_min": -230.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     91
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_2",
+   "page": "page_2279",
+   "n_stamps": 3,
+   "dq_min": -44.51421356201172,
+   "x": 1016,
+   "y": 868,
+   "other_stamps_min": -30.16717529296875,
+   "archive_dq_min": -44.5,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     83
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_3255",
+   "n_stamps": 3,
+   "dq_min": -27.365556716918945,
+   "x": 450,
+   "y": 750,
+   "other_stamps_min": -0.6245995759963989,
+   "archive_dq_min": -27.4,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     87
+    ],
+    [
+     85
+    ],
+    []
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_2",
+   "page": "page_3385",
+   "n_stamps": 3,
+   "dq_min": -28.063932418823242,
+   "x": 656,
+   "y": 346,
+   "other_stamps_min": -0.8302670121192932,
+   "archive_dq_min": -28.1,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     84
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_4413",
+   "n_stamps": 3,
+   "dq_min": -51.98281478881836,
+   "x": 784,
+   "y": 808,
+   "other_stamps_min": -2.7083263397216797,
+   "archive_dq_min": -52.0,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     86
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_4698",
+   "n_stamps": 3,
+   "dq_min": -43.160240173339844,
+   "x": 924,
+   "y": 888,
+   "other_stamps_min": -12.13367748260498,
+   "archive_dq_min": -43.2,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     89
+    ],
+    [
+     83
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_2",
+   "page": "page_4917",
+   "n_stamps": 3,
+   "dq_min": -28.85320472717285,
+   "x": 1382,
+   "y": 548,
+   "other_stamps_min": -26.5418758392334,
+   "archive_dq_min": -28.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     82
+    ],
+    [
+     84
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_5593",
+   "n_stamps": 3,
+   "dq_min": -35.88733673095703,
+   "x": 930,
+   "y": 484,
+   "other_stamps_min": -15.91402530670166,
+   "archive_dq_min": -35.9,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84
+    ],
+    [
+     90
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_5806",
+   "n_stamps": 2,
+   "dq_min": -229.4853057861328,
+   "x": 732,
+   "y": 314,
+   "other_stamps_min": 4.251314163208008,
+   "archive_dq_min": -229.5,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83,
+     86
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 2.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_6294",
+   "n_stamps": 3,
+   "dq_min": -83.2969741821289,
+   "x": 710,
+   "y": 682,
+   "other_stamps_min": -14.215770721435547,
+   "archive_dq_min": -83.3,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     91
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_6885",
+   "n_stamps": 3,
+   "dq_min": -25.293956756591797,
+   "x": 1352,
+   "y": 842,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -25.3,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     84
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_2",
+   "page": "page_7217",
+   "n_stamps": 3,
+   "dq_min": -10.7205228805542,
+   "x": 1376,
+   "y": 194,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -10.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     83
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_7660",
+   "n_stamps": 3,
+   "dq_min": -151.14002990722656,
+   "x": 1008,
+   "y": 684,
+   "other_stamps_min": 13.28335189819336,
+   "archive_dq_min": -151.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     87
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_2",
+   "page": "page_7711",
+   "n_stamps": 3,
+   "dq_min": -20.669897079467773,
+   "x": 62,
+   "y": 756,
+   "other_stamps_min": -17.18693733215332,
+   "archive_dq_min": -20.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     82
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_8598",
+   "n_stamps": 3,
+   "dq_min": -1.4889943599700928,
+   "x": 86,
+   "y": 448,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -1.5,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     92
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_8632",
+   "n_stamps": 3,
+   "dq_min": -9.179027557373047,
+   "x": 1296,
+   "y": 158,
+   "other_stamps_min": -4.794948101043701,
+   "archive_dq_min": -9.2,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     90
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_2",
+   "page": "page_9755",
+   "n_stamps": 3,
+   "dq_min": -101.1425552368164,
+   "x": 794,
+   "y": 748,
+   "other_stamps_min": -1.4861817359924316,
+   "archive_dq_min": -101.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     91
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_2",
+   "page": "page_9764",
+   "n_stamps": 3,
+   "dq_min": -7.6091413497924805,
+   "x": 288,
+   "y": 150,
+   "other_stamps_min": -1.6710307598114014,
+   "archive_dq_min": -7.6,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     86
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_2",
+   "page": "page_9765",
+   "n_stamps": 3,
+   "dq_min": -77.26864624023438,
+   "x": 654,
+   "y": 498,
+   "other_stamps_min": -35.428367614746094,
+   "archive_dq_min": -77.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     85
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_2",
+   "page": "page_9798",
+   "n_stamps": 3,
+   "dq_min": -75.76507568359375,
+   "x": 618,
+   "y": 576,
+   "other_stamps_min": -13.801261901855469,
+   "archive_dq_min": -75.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     90
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_2",
+   "page": "page_9876",
+   "n_stamps": 3,
+   "dq_min": -6.692172050476074,
+   "x": 926,
+   "y": 308,
+   "other_stamps_min": -3.5453178882598877,
+   "archive_dq_min": -6.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     86
+    ],
+    [
+     88
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_2",
+   "page": "page_9880",
+   "n_stamps": 3,
+   "dq_min": -12.643844604492188,
+   "x": 504,
+   "y": 920,
+   "other_stamps_min": -3.769669771194458,
+   "archive_dq_min": -12.6,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     86
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_3",
+   "page": "page_1367",
+   "n_stamps": 2,
+   "dq_min": -83.50421905517578,
+   "x": 882,
+   "y": 480,
+   "other_stamps_min": -1.5388339757919312,
+   "archive_dq_min": -83.5,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84,
+     88
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.8
+  },
+  {
+   "album": "album_3",
+   "page": "page_2027",
+   "n_stamps": 3,
+   "dq_min": -12.81352710723877,
+   "x": 1432,
+   "y": 820,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -12.8,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     86
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_2284",
+   "n_stamps": 2,
+   "dq_min": -121.44332122802734,
+   "x": 990,
+   "y": 570,
+   "other_stamps_min": -1.4548604488372803,
+   "archive_dq_min": -121.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     87,
+     89
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 2.4
+  },
+  {
+   "album": "album_3",
+   "page": "page_2333",
+   "n_stamps": 3,
+   "dq_min": -187.76461791992188,
+   "x": 1020,
+   "y": 394,
+   "other_stamps_min": -41.03479766845703,
+   "archive_dq_min": -187.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     87
+    ],
+    [
+     87
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_3",
+   "page": "page_3191",
+   "n_stamps": 3,
+   "dq_min": 0.0,
+   "x": 790,
+   "y": 584,
+   "other_stamps_min": 4.387699127197266,
+   "archive_dq_min": 0.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     87
+    ],
+    [
+     92
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_3",
+   "page": "page_3301",
+   "n_stamps": 3,
+   "dq_min": -121.2035903930664,
+   "x": 894,
+   "y": 796,
+   "other_stamps_min": -2.685197353363037,
+   "archive_dq_min": -121.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     89
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_3",
+   "page": "page_3327",
+   "n_stamps": 3,
+   "dq_min": -12.241323471069336,
+   "x": 912,
+   "y": 442,
+   "other_stamps_min": -0.15765993297100067,
+   "archive_dq_min": -12.2,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     85
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_3612",
+   "n_stamps": 3,
+   "dq_min": -30.371734619140625,
+   "x": 988,
+   "y": 410,
+   "other_stamps_min": 2.38275146484375,
+   "archive_dq_min": -30.4,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     92
+    ],
+    [
+     84
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_3",
+   "page": "page_4903",
+   "n_stamps": 3,
+   "dq_min": -25.516937255859375,
+   "x": 210,
+   "y": 902,
+   "other_stamps_min": -14.267379760742188,
+   "archive_dq_min": -25.5,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     83
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_5023",
+   "n_stamps": 3,
+   "dq_min": -10.121438026428223,
+   "x": 1304,
+   "y": 598,
+   "other_stamps_min": -8.47981071472168,
+   "archive_dq_min": -10.1,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     84
+    ],
+    [
+     83
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_3",
+   "page": "page_5037",
+   "n_stamps": 3,
+   "dq_min": -31.92703628540039,
+   "x": 722,
+   "y": 650,
+   "other_stamps_min": -2.6231629848480225,
+   "archive_dq_min": -31.9,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     92
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_3",
+   "page": "page_5075",
+   "n_stamps": 3,
+   "dq_min": -328.4494323730469,
+   "x": 844,
+   "y": 726,
+   "other_stamps_min": -4.146402835845947,
+   "archive_dq_min": -328.5,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     89
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_3",
+   "page": "page_5540",
+   "n_stamps": 3,
+   "dq_min": -241.27542114257812,
+   "x": 1032,
+   "y": 478,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -241.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     83
+    ],
+    [
+     84
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_5591",
+   "n_stamps": 3,
+   "dq_min": -63.286373138427734,
+   "x": 684,
+   "y": 440,
+   "other_stamps_min": -1.037207007408142,
+   "archive_dq_min": -63.3,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     92
+    ],
+    [
+     89
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_5611",
+   "n_stamps": 3,
+   "dq_min": -6.607757568359375,
+   "x": 1104,
+   "y": 528,
+   "other_stamps_min": -5.8788557052612305,
+   "archive_dq_min": -6.6,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     87
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_3",
+   "page": "page_5637",
+   "n_stamps": 3,
+   "dq_min": -75.61164093017578,
+   "x": 638,
+   "y": 658,
+   "other_stamps_min": 1.3199502229690552,
+   "archive_dq_min": -75.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     85
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_5853",
+   "n_stamps": 3,
+   "dq_min": -2.7107913494110107,
+   "x": 994,
+   "y": 448,
+   "other_stamps_min": -0.530407190322876,
+   "archive_dq_min": -2.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     87
+    ],
+    [
+     92
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_3",
+   "page": "page_6284",
+   "n_stamps": 3,
+   "dq_min": -34.425270080566406,
+   "x": 1322,
+   "y": 496,
+   "other_stamps_min": -25.828147888183594,
+   "archive_dq_min": -34.4,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     84
+    ],
+    [
+     85
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_6324",
+   "n_stamps": 3,
+   "dq_min": -17.66011619567871,
+   "x": 256,
+   "y": 836,
+   "other_stamps_min": -9.919666290283203,
+   "archive_dq_min": -17.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     86
+    ],
+    [
+     89
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_3",
+   "page": "page_6332",
+   "n_stamps": 3,
+   "dq_min": -50.87495040893555,
+   "x": 1030,
+   "y": 892,
+   "other_stamps_min": -1.915304183959961,
+   "archive_dq_min": -50.9,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     90
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_3",
+   "page": "page_6626",
+   "n_stamps": 2,
+   "dq_min": -52.267704010009766,
+   "x": 1018,
+   "y": 364,
+   "other_stamps_min": -5.96535062789917,
+   "archive_dq_min": -52.3,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89,
+     86
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.6
+  },
+  {
+   "album": "album_3",
+   "page": "page_7747",
+   "n_stamps": 2,
+   "dq_min": -53.18178176879883,
+   "x": 856,
+   "y": 430,
+   "other_stamps_min": -1.3604328632354736,
+   "archive_dq_min": -53.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86,
+     86
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.9
+  },
+  {
+   "album": "album_3",
+   "page": "page_7956",
+   "n_stamps": 3,
+   "dq_min": -295.3605651855469,
+   "x": 984,
+   "y": 808,
+   "other_stamps_min": -19.41056251525879,
+   "archive_dq_min": -295.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     82
+    ],
+    [
+     87
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_3",
+   "page": "page_8206",
+   "n_stamps": 3,
+   "dq_min": 0.0,
+   "x": 994,
+   "y": 36,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": 0.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     84
+    ],
+    [
+     87
+    ],
+    []
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_3",
+   "page": "page_9115",
+   "n_stamps": 3,
+   "dq_min": -58.752498626708984,
+   "x": 630,
+   "y": 296,
+   "other_stamps_min": -22.942052841186523,
+   "archive_dq_min": -58.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     82
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_3",
+   "page": "page_9655",
+   "n_stamps": 2,
+   "dq_min": -36.69846725463867,
+   "x": 688,
+   "y": 462,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -36.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     85,
+     91
+    ],
+    []
+   ],
+   "sec": 2.0
+  },
+  {
+   "album": "album_4",
+   "page": "page_1089",
+   "n_stamps": 3,
+   "dq_min": -114.33697509765625,
+   "x": 686,
+   "y": 316,
+   "other_stamps_min": 8.021222114562988,
+   "archive_dq_min": -114.3,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     84
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.6
+  },
+  {
+   "album": "album_4",
+   "page": "page_1302",
+   "n_stamps": 3,
+   "dq_min": -172.41551208496094,
+   "x": 936,
+   "y": 686,
+   "other_stamps_min": -0.6217051148414612,
+   "archive_dq_min": -172.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     91
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_4",
+   "page": "page_1518",
+   "n_stamps": 3,
+   "dq_min": -8.976480484008789,
+   "x": 626,
+   "y": 568,
+   "other_stamps_min": -3.6094584465026855,
+   "archive_dq_min": -9.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     84
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_4",
+   "page": "page_1727",
+   "n_stamps": 3,
+   "dq_min": -118.27552795410156,
+   "x": 1028,
+   "y": 430,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -118.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     85
+    ],
+    [
+     84
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_2045",
+   "n_stamps": 3,
+   "dq_min": -140.927490234375,
+   "x": 682,
+   "y": 456,
+   "other_stamps_min": -39.72624588012695,
+   "archive_dq_min": -140.9,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     89
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_4",
+   "page": "page_2146",
+   "n_stamps": 3,
+   "dq_min": -204.12945556640625,
+   "x": 1006,
+   "y": 864,
+   "other_stamps_min": -17.68705940246582,
+   "archive_dq_min": -204.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     90
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_2624",
+   "n_stamps": 3,
+   "dq_min": -77.82384490966797,
+   "x": 868,
+   "y": 648,
+   "other_stamps_min": 9.611967086791992,
+   "archive_dq_min": -77.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     92
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_3496",
+   "n_stamps": 3,
+   "dq_min": -53.59572982788086,
+   "x": 614,
+   "y": 854,
+   "other_stamps_min": -1.5444718599319458,
+   "archive_dq_min": -53.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     85
+    ],
+    [
+     86
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_3861",
+   "n_stamps": 3,
+   "dq_min": -13.476842880249023,
+   "x": 1022,
+   "y": 660,
+   "other_stamps_min": 6.462841033935547,
+   "archive_dq_min": -13.5,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     87
+    ],
+    [
+     84
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_4575",
+   "n_stamps": 3,
+   "dq_min": -19.51630973815918,
+   "x": 658,
+   "y": 966,
+   "other_stamps_min": 2.281214714050293,
+   "archive_dq_min": -19.5,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     88
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_4775",
+   "n_stamps": 3,
+   "dq_min": -30.62824249267578,
+   "x": 734,
+   "y": 926,
+   "other_stamps_min": -14.984902381896973,
+   "archive_dq_min": -30.6,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     92
+    ],
+    [
+     82
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_5387",
+   "n_stamps": 3,
+   "dq_min": -19.07781982421875,
+   "x": 1240,
+   "y": 754,
+   "other_stamps_min": -1.3252506256103516,
+   "archive_dq_min": -19.1,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [],
+    [
+     83
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_4",
+   "page": "page_5414",
+   "n_stamps": 3,
+   "dq_min": -16.25351905822754,
+   "x": 994,
+   "y": 372,
+   "other_stamps_min": -12.47436809539795,
+   "archive_dq_min": -16.2,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     92
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_5425",
+   "n_stamps": 3,
+   "dq_min": -23.4740047454834,
+   "x": 758,
+   "y": 618,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -23.5,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     82
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_4",
+   "page": "page_5451",
+   "n_stamps": 3,
+   "dq_min": -3.252246618270874,
+   "x": 1014,
+   "y": 190,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -3.3,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     87
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_4",
+   "page": "page_5593",
+   "n_stamps": 3,
+   "dq_min": -44.177581787109375,
+   "x": 846,
+   "y": 494,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -44.2,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     82
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_5716",
+   "n_stamps": 3,
+   "dq_min": -2.208357810974121,
+   "x": 1108,
+   "y": 390,
+   "other_stamps_min": -1.5508623123168945,
+   "archive_dq_min": -2.2,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [],
+    [
+     84
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_4",
+   "page": "page_6447",
+   "n_stamps": 3,
+   "dq_min": -172.42318725585938,
+   "x": 710,
+   "y": 596,
+   "other_stamps_min": -3.2913057804107666,
+   "archive_dq_min": -172.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     84
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_7168",
+   "n_stamps": 3,
+   "dq_min": -135.27940368652344,
+   "x": 726,
+   "y": 528,
+   "other_stamps_min": -42.837890625,
+   "archive_dq_min": -135.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     82
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_4",
+   "page": "page_7495",
+   "n_stamps": 3,
+   "dq_min": -126.02046203613281,
+   "x": 564,
+   "y": 396,
+   "other_stamps_min": -27.75193214416504,
+   "archive_dq_min": -126.0,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     89
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_4",
+   "page": "page_8533",
+   "n_stamps": 3,
+   "dq_min": -72.46836853027344,
+   "x": 536,
+   "y": 516,
+   "other_stamps_min": -5.199136257171631,
+   "archive_dq_min": -72.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     84
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_4",
+   "page": "page_8809",
+   "n_stamps": 3,
+   "dq_min": -60.182411193847656,
+   "x": 758,
+   "y": 262,
+   "other_stamps_min": -39.563228607177734,
+   "archive_dq_min": -60.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     83
+    ],
+    [
+     86
+    ],
+    [
+     91
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_4",
+   "page": "page_8871",
+   "n_stamps": 3,
+   "dq_min": -3.9229726791381836,
+   "x": 922,
+   "y": 646,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -3.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [],
+    [
+     88
+    ],
+    [
+     89
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_4",
+   "page": "page_8892",
+   "n_stamps": 3,
+   "dq_min": -1.8563838005065918,
+   "x": 746,
+   "y": 708,
+   "other_stamps_min": -0.9656073451042175,
+   "archive_dq_min": -1.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     90
+    ],
+    [
+     92
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_4",
+   "page": "page_8988",
+   "n_stamps": 3,
+   "dq_min": -11.171040534973145,
+   "x": 1122,
+   "y": 770,
+   "other_stamps_min": -3.4531688690185547,
+   "archive_dq_min": -11.2,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     88
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_4",
+   "page": "page_9373",
+   "n_stamps": 3,
+   "dq_min": -132.26760864257812,
+   "x": 780,
+   "y": 858,
+   "other_stamps_min": -18.519193649291992,
+   "archive_dq_min": -132.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     89
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_2263",
+   "n_stamps": 3,
+   "dq_min": -84.56802368164062,
+   "x": 1232,
+   "y": 254,
+   "other_stamps_min": -3.3743464946746826,
+   "archive_dq_min": -84.6,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     82,
+     97
+    ],
+    [
+     86
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_5",
+   "page": "page_2520",
+   "n_stamps": 3,
+   "dq_min": -2.5545411109924316,
+   "x": 896,
+   "y": 550,
+   "other_stamps_min": -2.5248594284057617,
+   "archive_dq_min": -2.6,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     82
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_3095",
+   "n_stamps": 3,
+   "dq_min": -6.597895622253418,
+   "x": 296,
+   "y": 558,
+   "other_stamps_min": -0.8753244876861572,
+   "archive_dq_min": -6.6,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     89
+    ],
+    [
+     82
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_3292",
+   "n_stamps": 3,
+   "dq_min": -74.66704559326172,
+   "x": 532,
+   "y": 834,
+   "other_stamps_min": -15.300468444824219,
+   "archive_dq_min": -74.7,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84
+    ],
+    [
+     88
+    ],
+    [
+     88
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_3356",
+   "n_stamps": 3,
+   "dq_min": -15.658223152160645,
+   "x": 1044,
+   "y": 512,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -15.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     83
+    ],
+    [
+     85
+    ],
+    []
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_4023",
+   "n_stamps": 3,
+   "dq_min": -390.75634765625,
+   "x": 658,
+   "y": 456,
+   "other_stamps_min": -14.763808250427246,
+   "archive_dq_min": -390.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     87
+    ],
+    [
+     84
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_5",
+   "page": "page_4494",
+   "n_stamps": 3,
+   "dq_min": -51.20698547363281,
+   "x": 912,
+   "y": 498,
+   "other_stamps_min": -6.977491855621338,
+   "archive_dq_min": -51.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     85
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_4792",
+   "n_stamps": 3,
+   "dq_min": -93.09700775146484,
+   "x": 578,
+   "y": 708,
+   "other_stamps_min": -2.1338114738464355,
+   "archive_dq_min": -93.1,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     91
+    ],
+    [
+     86
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_5",
+   "page": "page_4945",
+   "n_stamps": 3,
+   "dq_min": -209.27447509765625,
+   "x": 874,
+   "y": 536,
+   "other_stamps_min": -27.761518478393555,
+   "archive_dq_min": -209.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     87
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_5",
+   "page": "page_5084",
+   "n_stamps": 3,
+   "dq_min": -3.501481294631958,
+   "x": 1106,
+   "y": 586,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -3.5,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [],
+    [
+     89
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_5255",
+   "n_stamps": 3,
+   "dq_min": -42.07084274291992,
+   "x": 824,
+   "y": 424,
+   "other_stamps_min": -10.240630149841309,
+   "archive_dq_min": -42.1,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     85
+    ],
+    [],
+    [
+     90
+    ]
+   ],
+   "sec": 0.9
+  },
+  {
+   "album": "album_5",
+   "page": "page_5323",
+   "n_stamps": 3,
+   "dq_min": 0.0,
+   "x": 510,
+   "y": 326,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": 0.0,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     83
+    ],
+    [],
+    [
+     91
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_5870",
+   "n_stamps": 3,
+   "dq_min": -2.9232966899871826,
+   "x": 1350,
+   "y": 856,
+   "other_stamps_min": -1.7114821672439575,
+   "archive_dq_min": -2.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     85
+    ],
+    [
+     92
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_5",
+   "page": "page_5937",
+   "n_stamps": 3,
+   "dq_min": -157.42005920410156,
+   "x": 1044,
+   "y": 828,
+   "other_stamps_min": -1.1195966005325317,
+   "archive_dq_min": -157.4,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     85
+    ],
+    [
+     84
+    ],
+    [
+     82
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_5",
+   "page": "page_6421",
+   "n_stamps": 3,
+   "dq_min": -45.90104293823242,
+   "x": 880,
+   "y": 698,
+   "other_stamps_min": -5.191543102264404,
+   "archive_dq_min": -45.9,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     86
+    ],
+    [
+     85
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_5",
+   "page": "page_6435",
+   "n_stamps": 3,
+   "dq_min": -3.2625303268432617,
+   "x": 838,
+   "y": 592,
+   "other_stamps_min": -2.3524723052978516,
+   "archive_dq_min": -3.3,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     92
+    ],
+    [
+     82
+    ],
+    []
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_6610",
+   "n_stamps": 3,
+   "dq_min": -5.93392276763916,
+   "x": 412,
+   "y": 648,
+   "other_stamps_min": -2.1520955562591553,
+   "archive_dq_min": -5.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     89
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_5",
+   "page": "page_6991",
+   "n_stamps": 3,
+   "dq_min": -9.213727951049805,
+   "x": 712,
+   "y": 600,
+   "other_stamps_min": -1.2992885112762451,
+   "archive_dq_min": -9.2,
+   "archive_source": "classifier",
+   "in_archive_box": true,
+   "qf": [
+    [
+     88
+    ],
+    [
+     85
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.1
+  },
+  {
+   "album": "album_5",
+   "page": "page_7271",
+   "n_stamps": 3,
+   "dq_min": -9.780357360839844,
+   "x": 1388,
+   "y": 62,
+   "other_stamps_min": -3.4212985038757324,
+   "archive_dq_min": -9.8,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     86
+    ],
+    [
+     88
+    ],
+    [
+     85
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_7409",
+   "n_stamps": 3,
+   "dq_min": -13.68416976928711,
+   "x": 842,
+   "y": 294,
+   "other_stamps_min": -4.676157474517822,
+   "archive_dq_min": -13.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     86
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_7510",
+   "n_stamps": 3,
+   "dq_min": -40.79961395263672,
+   "x": 622,
+   "y": 300,
+   "other_stamps_min": -24.95706558227539,
+   "archive_dq_min": -40.8,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     91
+    ],
+    [
+     84
+    ]
+   ],
+   "sec": 1.0
+  },
+  {
+   "album": "album_5",
+   "page": "page_7788",
+   "n_stamps": 3,
+   "dq_min": -1.698131799697876,
+   "x": 716,
+   "y": 774,
+   "other_stamps_min": -0.6127166748046875,
+   "archive_dq_min": -1.7,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     82
+    ],
+    [
+     91
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.5
+  },
+  {
+   "album": "album_5",
+   "page": "page_7831",
+   "n_stamps": 3,
+   "dq_min": -11.892510414123535,
+   "x": 612,
+   "y": 624,
+   "other_stamps_min": 0.0,
+   "archive_dq_min": -11.9,
+   "archive_source": "classifier",
+   "in_archive_box": false,
+   "qf": [
+    [
+     91
+    ],
+    [
+     82
+    ],
+    [
+     86
+    ]
+   ],
+   "sec": 1.4
+  },
+  {
+   "album": "album_5",
+   "page": "page_8176",
+   "n_stamps": 3,
+   "dq_min": -130.785400390625,
+   "x": 796,
+   "y": 444,
+   "other_stamps_min": 10.42545223236084,
+   "archive_dq_min": -130.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     90
+    ],
+    [
+     88
+    ],
+    [
+     83
+    ]
+   ],
+   "sec": 1.3
+  },
+  {
+   "album": "album_5",
+   "page": "page_9370",
+   "n_stamps": 3,
+   "dq_min": -150.77748107910156,
+   "x": 624,
+   "y": 832,
+   "other_stamps_min": -0.9482213258743286,
+   "archive_dq_min": -150.8,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     89
+    ],
+    [
+     91
+    ],
+    [
+     90
+    ]
+   ],
+   "sec": 1.2
+  },
+  {
+   "album": "album_5",
+   "page": "page_9628",
+   "n_stamps": 3,
+   "dq_min": -332.21820068359375,
+   "x": 516,
+   "y": 928,
+   "other_stamps_min": 0.09225868433713913,
+   "archive_dq_min": -332.2,
+   "archive_source": "dq",
+   "in_archive_box": true,
+   "qf": [
+    [
+     84
+    ],
+    [
+     90
+    ],
+    [
+     87
+    ]
+   ],
+   "sec": 1.4
+  }
+ ]
+}

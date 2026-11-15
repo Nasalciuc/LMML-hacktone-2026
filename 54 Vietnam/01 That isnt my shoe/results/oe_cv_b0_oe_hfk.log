@@ -1,0 +1,112 @@
+== Sat Nov 14 19:51:03 2026 {'tag': 'b0_oe_hfk', 'arch': 'efficientnet_b0', 'epochs': 15, 'hf_known': 3600, 'no_oe': False, 'u_ratio': 1.0, 'lr': 0.0004, 'folds': '0,1,2,3,4'}
+fold 0: hold-out brand puma (1200 imgs), train knowns 3619, train outliers 9450
+  ep 1/15 loss 1.1577 train acc 0.537
+  ep 2/15 loss 0.7621 train acc 0.793
+  ep 3/15 loss 0.6382 train acc 0.859
+  ep 4/15 loss 0.5740 train acc 0.891
+  ep 5/15 loss 0.5334 train acc 0.914
+  ep 6/15 loss 0.5100 train acc 0.925
+  ep 7/15 loss 0.4922 train acc 0.938
+  ep 8/15 loss 0.4540 train acc 0.956
+  ep 9/15 loss 0.4388 train acc 0.963
+  ep 10/15 loss 0.4274 train acc 0.968
+  ep 11/15 loss 0.4184 train acc 0.972
+  ep 12/15 loss 0.4177 train acc 0.972
+  ep 13/15 loss 0.4054 train acc 0.978
+  ep 14/15 loss 0.4098 train acc 0.975
+  ep 15/15 loss 0.4059 train acc 0.978
+  fold 0 tau 0.0: known acc 0.878  rejection held-out puma 0.882  seen-brand new photos 0.987
+  fold 0 tau 0.5: known acc 0.850  rejection held-out puma 0.909  seen-brand new photos 0.989
+  fold 0 tau 0.7: known acc 0.776  rejection held-out puma 0.957  seen-brand new photos 0.996
+  closed-set acc 0.932  AUROC held-out 0.964  (543s)
+fold 1: hold-out brand reebok (1200 imgs), train knowns 3619, train outliers 9432
+  ep 1/15 loss 1.1939 train acc 0.503
+  ep 2/15 loss 0.7781 train acc 0.778
+  ep 3/15 loss 0.6486 train acc 0.847
+  ep 4/15 loss 0.5673 train acc 0.897
+  ep 5/15 loss 0.5219 train acc 0.922
+  ep 6/15 loss 0.4970 train acc 0.932
+  ep 7/15 loss 0.4751 train acc 0.944
+  ep 8/15 loss 0.4584 train acc 0.953
+  ep 9/15 loss 0.4433 train acc 0.960
+  ep 10/15 loss 0.4291 train acc 0.965
+  ep 11/15 loss 0.4222 train acc 0.968
+  ep 12/15 loss 0.4123 train acc 0.977
+  ep 13/15 loss 0.4056 train acc 0.980
+  ep 14/15 loss 0.4044 train acc 0.979
+  ep 15/15 loss 0.4041 train acc 0.981
+  fold 1 tau 0.0: known acc 0.905  rejection held-out reebok 0.868  seen-brand new photos 0.987
+  fold 1 tau 0.5: known acc 0.884  rejection held-out reebok 0.885  seen-brand new photos 0.987
+  fold 1 tau 0.7: known acc 0.823  rejection held-out reebok 0.934  seen-brand new photos 0.993
+  closed-set acc 0.946  AUROC held-out 0.962  (249s)
+fold 2: hold-out brand vans (1200 imgs), train knowns 3619, train outliers 9466
+  ep 1/15 loss 1.1616 train acc 0.528
+  ep 2/15 loss 0.7660 train acc 0.784
+  ep 3/15 loss 0.6382 train acc 0.858
+  ep 4/15 loss 0.5630 train acc 0.898
+  ep 5/15 loss 0.5282 train acc 0.913
+  ep 6/15 loss 0.5023 train acc 0.929
+  ep 7/15 loss 0.4711 train acc 0.946
+  ep 8/15 loss 0.4595 train acc 0.952
+  ep 9/15 loss 0.4398 train acc 0.961
+  ep 10/15 loss 0.4289 train acc 0.966
+  ep 11/15 loss 0.4203 train acc 0.972
+  ep 12/15 loss 0.4096 train acc 0.975
+  ep 13/15 loss 0.4063 train acc 0.978
+  ep 14/15 loss 0.4050 train acc 0.977
+  ep 15/15 loss 0.4070 train acc 0.977
+  fold 2 tau 0.0: known acc 0.844  rejection held-out vans 0.681  seen-brand new photos 0.987
+  fold 2 tau 0.5: known acc 0.837  rejection held-out vans 0.730  seen-brand new photos 0.990
+  fold 2 tau 0.7: known acc 0.796  rejection held-out vans 0.832  seen-brand new photos 0.995
+  closed-set acc 0.932  AUROC held-out 0.884  (229s)
+fold 3: hold-out brand asics (1200 imgs), train knowns 3619, train outliers 9465
+  ep 1/15 loss 1.1649 train acc 0.534
+  ep 2/15 loss 0.7763 train acc 0.776
+  ep 3/15 loss 0.6461 train acc 0.851
+  ep 4/15 loss 0.5726 train acc 0.891
+  ep 5/15 loss 0.5326 train acc 0.911
+  ep 6/15 loss 0.5038 train acc 0.928
+  ep 7/15 loss 0.4901 train acc 0.935
+  ep 8/15 loss 0.4648 train acc 0.948
+  ep 9/15 loss 0.4479 train acc 0.961
+  ep 10/15 loss 0.4325 train acc 0.965
+  ep 11/15 loss 0.4282 train acc 0.968
+  ep 12/15 loss 0.4211 train acc 0.971
+  ep 13/15 loss 0.4128 train acc 0.976
+  ep 14/15 loss 0.4110 train acc 0.976
+  ep 15/15 loss 0.4083 train acc 0.977
+  fold 3 tau 0.0: known acc 0.864  rejection held-out asics 0.976  seen-brand new photos 0.982
+  fold 3 tau 0.5: known acc 0.850  rejection held-out asics 0.981  seen-brand new photos 0.983
+  fold 3 tau 0.7: known acc 0.816  rejection held-out asics 0.989  seen-brand new photos 0.992
+  closed-set acc 0.925  AUROC held-out 0.981  (990s)
+fold 4: hold-out brand new (1200 imgs), train knowns 3619, train outliers 9465
+  ep 1/15 loss 1.1815 train acc 0.515
+  ep 2/15 loss 0.7823 train acc 0.775
+  ep 3/15 loss 0.6454 train acc 0.855
+  ep 4/15 loss 0.5735 train acc 0.889
+  ep 5/15 loss 0.5344 train acc 0.911
+  ep 6/15 loss 0.5031 train acc 0.928
+  ep 7/15 loss 0.4770 train acc 0.942
+  ep 8/15 loss 0.4585 train acc 0.952
+  ep 9/15 loss 0.4503 train acc 0.955
+  ep 10/15 loss 0.4299 train acc 0.966
+  ep 11/15 loss 0.4190 train acc 0.970
+  ep 12/15 loss 0.4131 train acc 0.975
+  ep 13/15 loss 0.4091 train acc 0.978
+  ep 14/15 loss 0.4044 train acc 0.981
+  ep 15/15 loss 0.4087 train acc 0.974
+  fold 4 tau 0.0: known acc 0.823  rejection held-out new 0.959  seen-brand new photos 0.990
+  fold 4 tau 0.5: known acc 0.810  rejection held-out new 0.966  seen-brand new photos 0.991
+  fold 4 tau 0.7: known acc 0.762  rejection held-out new 0.983  seen-brand new photos 0.996
+  closed-set acc 0.925  AUROC held-out 0.975  (1325s)
+POOLED tau 0.0: known acc 0.863 | held-out rejection mean 0.873 {"puma": 0.882, "reebok": 0.868, "vans": 0.681, "asics": 0.976, "new": 0.959} | seen-brand new photos 0.986
+POOLED tau 0.3: known acc 0.863 | held-out rejection mean 0.873 {"puma": 0.882, "reebok": 0.868, "vans": 0.681, "asics": 0.976, "new": 0.959} | seen-brand new photos 0.986
+POOLED tau 0.4: known acc 0.861 | held-out rejection mean 0.877 {"puma": 0.888, "reebok": 0.873, "vans": 0.69, "asics": 0.977, "new": 0.959} | seen-brand new photos 0.987
+POOLED tau 0.5: known acc 0.846 | held-out rejection mean 0.894 {"puma": 0.909, "reebok": 0.885, "vans": 0.73, "asics": 0.981, "new": 0.966} | seen-brand new photos 0.988
+POOLED tau 0.6: known acc 0.826 | held-out rejection mean 0.919 {"puma": 0.937, "reebok": 0.912, "vans": 0.782, "asics": 0.984, "new": 0.978} | seen-brand new photos 0.991
+POOLED tau 0.7: known acc 0.795 | held-out rejection mean 0.939 {"puma": 0.957, "reebok": 0.934, "vans": 0.832, "asics": 0.989, "new": 0.983} | seen-brand new photos 0.995
+POOLED tau 0.75: known acc 0.780 | held-out rejection mean 0.950 {"puma": 0.968, "reebok": 0.946, "vans": 0.858, "asics": 0.993, "new": 0.987} | seen-brand new photos 0.995
+POOLED tau 0.8: known acc 0.750 | held-out rejection mean 0.961 {"puma": 0.978, "reebok": 0.957, "vans": 0.887, "asics": 0.993, "new": 0.993} | seen-brand new photos 0.996
+POOLED tau 0.85: known acc 0.697 | held-out rejection mean 0.974 {"puma": 0.988, "reebok": 0.968, "vans": 0.926, "asics": 0.997, "new": 0.995} | seen-brand new photos 0.997
+POOLED tau 0.9: known acc 0.576 | held-out rejection mean 0.987 {"puma": 0.998, "reebok": 0.982, "vans": 0.958, "asics": 0.999, "new": 0.998} | seen-brand new photos 0.999
+POOLED tau 0.95: known acc 0.116 | held-out rejection mean 0.997 {"puma": 0.999, "reebok": 0.998, "vans": 0.992, "asics": 1.0, "new": 0.999} | seen-brand new photos 1.000

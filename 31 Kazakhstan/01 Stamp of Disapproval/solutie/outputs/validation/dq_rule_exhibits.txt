@@ -1,0 +1,31 @@
+exhibit 01  min -9.4 at (239,328)  outside
+exhibit 02  min -179.1 at (288,87)  inside mask  [rule fires]
+exhibit 03  min -19.2 at (323,284)  outside
+exhibit 04  min -13.0 at (65,109)  outside
+exhibit 05  min -76.4 at (134,77)  inside mask  [rule fires]
+exhibit 06  min -0.4 at (244,173)  outside
+exhibit 07  min -11.7 at (170,52)  outside
+exhibit 08  min -94.0 at (299,142)  inside mask  [rule fires]
+exhibit 09  min -90.9 at (294,56)  inside mask  [rule fires]
+exhibit 10  min -63.8 at (101,408)  inside mask  [rule fires]
+exhibit 11  min -122.3 at (86,306)  inside mask  [rule fires]
+exhibit 12  min -135.4 at (129,134)  inside mask  [rule fires]
+exhibit 13  min 0.0 at (0,0)  outside
+exhibit 14  min -17.7 at (393,334)  outside
+exhibit 15  min -192.3 at (461,255)  inside mask  [rule fires]
+exhibit 16  min -2.9 at (133,531)  outside
+exhibit 17  min -207.9 at (379,82)  inside mask  [rule fires]
+exhibit 18  min -7.3 at (73,402)  outside
+exhibit 19  min 0.0 at (0,0)  outside
+exhibit 20  min -55.3 at (253,411)  inside mask  [rule fires]
+exhibit 21  min -2.5 at (325,198)  outside
+exhibit 22  min -10.3 at (336,176)  outside
+exhibit 23  min -38.2 at (508,64)  inside mask
+exhibit 24  min -10.0 at (136,99)  inside mask
+exhibit 25  min -24.1 at (49,172)  outside
+exhibit 26  min -153.3 at (103,293)  inside mask  [rule fires]
+exhibit 27  min -61.1 at (450,233)  inside mask  [rule fires]
+exhibit 28  min -0.0 at (45,452)  outside
+exhibit 29  min -42.2 at (441,188)  inside mask
+exhibit 30  min -96.7 at (465,68)  inside mask  [rule fires]
+rule fired on 13 exhibits, correct 13

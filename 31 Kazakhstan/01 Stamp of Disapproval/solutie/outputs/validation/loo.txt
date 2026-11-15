@@ -1,0 +1,32 @@
+features: 132
+exhibit 01 HIT   peak 0.969  best-in-mask 0.969
+exhibit 02 HIT   peak 0.997  best-in-mask 0.997
+exhibit 03 HIT   peak 0.984  best-in-mask 0.984
+exhibit 04 HIT   peak 0.973  best-in-mask 0.973
+exhibit 05 HIT   peak 0.998  best-in-mask 0.998
+exhibit 06 HIT   peak 0.997  best-in-mask 0.997
+exhibit 07 miss  peak 0.115  best-in-mask 0.035
+exhibit 08 HIT   peak 0.781  best-in-mask 0.781
+exhibit 09 miss  peak 0.995  best-in-mask 0.992
+exhibit 10 HIT   peak 0.981  best-in-mask 0.981
+exhibit 11 HIT   peak 0.999  best-in-mask 0.999
+exhibit 12 HIT   peak 0.999  best-in-mask 0.999
+exhibit 13 miss  peak 0.021  best-in-mask 0.018
+exhibit 14 HIT   peak 0.779  best-in-mask 0.779
+exhibit 15 HIT   peak 0.987  best-in-mask 0.987
+exhibit 16 HIT   peak 0.982  best-in-mask 0.982
+exhibit 17 HIT   peak 0.998  best-in-mask 0.998
+exhibit 18 HIT   peak 0.999  best-in-mask 0.999
+exhibit 19 miss  peak 0.626  best-in-mask 0.385
+exhibit 20 HIT   peak 0.947  best-in-mask 0.947
+exhibit 21 HIT   peak 0.987  best-in-mask 0.987
+exhibit 22 HIT   peak 0.424  best-in-mask 0.418
+exhibit 23 HIT   peak 0.996  best-in-mask 0.996
+exhibit 24 HIT   peak 0.999  best-in-mask 0.999
+exhibit 25 miss  peak 0.148  best-in-mask 0.019
+exhibit 26 HIT   peak 0.993  best-in-mask 0.993
+exhibit 27 HIT   peak 1.000  best-in-mask 1.000
+exhibit 28 HIT   peak 0.916  best-in-mask 0.916
+exhibit 29 HIT   peak 0.998  best-in-mask 0.998
+exhibit 30 HIT   peak 1.000  best-in-mask 1.000
+LOO hits: 25 / 30

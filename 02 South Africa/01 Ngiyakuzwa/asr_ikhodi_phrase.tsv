@@ -1,0 +1,56 @@
+mms	voice_note	
+mms	voice_note_clean	kutshengisa yinkhoto enisu
+mms	voice_note_clean_strong	kutshengisa inkhoto efushu
+mms	voice_note_clean_voiceband	kutsengisa inkodo esisi
+mms	clean__demucs	kucengesali nkono uuu
+mms	clean__metricgan	kukhengezamnimuuakne
+mms	clean__sepdns	kuqengisa ikikhotho ekuzengiso
+mms	clean__sepwham	ushenge nisinnonkayia
+mms	raw__demucs+metricgan	uchengia
+mms	raw__demucs+sepdns	a
+mms	raw__demucs	kutshingia
+mms	raw__metricgan	
+mms	raw__sepdns	a
+mms	raw__sepwham	eaa
+w2vbert	voice_note	ushiii
+w2vbert	voice_note_clean	kushengiza iyikhodwa elishle
+w2vbert	voice_note_clean_strong	kutshengiza igkholoa eblishewahe
+w2vbert	voice_note_clean_voiceband	kutshengiza liyikhoo eishlewai
+w2vbert	clean__demucs	kuchingisa nikolo
+w2vbert	clean__metricgan	kuthingiso ikhubaphaketsinea
+w2vbert	clean__sepdns	oy kuclingiza idikholo iziiawate
+w2vbert	clean__sepwham	uthengiseoiuo
+w2vbert	raw__demucs+metricgan	utshengise ioloke ni2
+w2vbert	raw__demucs+sepdns	akuthiini oba fakeni uecakanyo
+w2vbert	raw__demucs	kuthingisie ikolo eishe taa
+w2vbert	raw__metricgan	
+w2vbert	raw__sepdns	nningic
+w2vbert	raw__sepwham	unp
+wsm-isizulu	voice_note	u jingis wakowakowis wakowakowis
+wsm-isizulu	voice_note_clean	kucingisa rikhodo isisho kuhang
+wsm-isizulu	voice_note_clean_strong	kucingisa ikhoto ikisho isuham
+wsm-isizulu	voice_note_clean_voiceband	kucingisa likhodo eisisi isiham
+wsm-isizulu	clean__demucs	u kusengisa dukota u
+wsm-isizulu	clean__metricgan	kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi
+wsm-isizulu	clean__sepdns	kudingi samikholo isivisa kuthi
+wsm-isizulu	clean__sepwham	wajing isli ha
+wsm-isizulu	raw__demucs+metricgan	ucingis
+wsm-isizulu	raw__demucs+sepdns	awo
+wsm-isizulu	raw__demucs	kuthi angis angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi angis kuthi
+wsm-isizulu	raw__metricgan	m
+wsm-isizulu	raw__sepdns	ucingis phabongan uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis uccingis u
+wsm-isizulu	raw__sepwham	cib
+wsm-isizulu-noisy	voice_note	ucingis lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa lakwa
+wsm-isizulu-noisy	voice_note_clean	kutshingisari kodwa ufishu kuhari
+wsm-isizulu-noisy	voice_note_clean_strong	kutshingisa rikhodo isishizwa
+wsm-isizulu-noisy	voice_note_clean_voiceband	kutshingisa rikhodo esisho isiham
+wsm-isizulu-noisy	clean__demucs	ucingisa bukota u
+wsm-isizulu-noisy	clean__metricgan	kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi kuthi
+wsm-isizulu-noisy	clean__sepdns	kudingi sabukhodo isisa
+wsm-isizulu-noisy	clean__sepwham	ucingo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo olujwayo oluj
+wsm-isizulu-noisy	raw__demucs+metricgan	ucingis
+wsm-isizulu-noisy	raw__demucs+sepdns	amu
+wsm-isizulu-noisy	raw__demucs	kutshi nguys nguyso nguyso nguysi amu
+wsm-isizulu-noisy	raw__metricgan	m
+wsm-isizulu-noisy	raw__sepdns	ucingis abamakhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalekhalek
+wsm-isizulu-noisy	raw__sepwham	c

@@ -1,0 +1,154 @@
+{
+ "args": {
+  "tag": "b0_r256_e25",
+  "arch": "efficientnet_b0",
+  "epochs": 25,
+  "hf_known": 0,
+  "no_oe": false,
+  "u_ratio": 1.0,
+  "lr": 0.0004,
+  "folds": "0,1,2,3,4",
+  "res": 256
+ },
+ "folds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "by_tau": {
+  "0.0": {
+   "known_acc": 0.9020408163265307,
+   "rej_heldout_mean": 0.9921666666666666,
+   "rej_heldout": {
+    "puma": 0.995,
+    "reebok": 0.9941666666666666,
+    "vans": 0.9758333333333333,
+    "asics": 0.9983333333333333,
+    "new": 0.9975
+   },
+   "rej_seen_brands": 0.9967025301074681
+  },
+  "0.3": {
+   "known_acc": 0.9020408163265307,
+   "rej_heldout_mean": 0.9921666666666666,
+   "rej_heldout": {
+    "puma": 0.995,
+    "reebok": 0.9941666666666666,
+    "vans": 0.9758333333333333,
+    "asics": 0.9983333333333333,
+    "new": 0.9975
+   },
+   "rej_seen_brands": 0.9967025301074681
+  },
+  "0.4": {
+   "known_acc": 0.8965986394557823,
+   "rej_heldout_mean": 0.993,
+   "rej_heldout": {
+    "puma": 0.995,
+    "reebok": 0.9958333333333333,
+    "vans": 0.9775,
+    "asics": 0.9991666666666666,
+    "new": 0.9975
+   },
+   "rej_seen_brands": 0.9968254557374621
+  },
+  "0.5": {
+   "known_acc": 0.8748299319727891,
+   "rej_heldout_mean": 0.9943333333333333,
+   "rej_heldout": {
+    "puma": 0.9958333333333333,
+    "reebok": 0.9966666666666667,
+    "vans": 0.9816666666666667,
+    "asics": 0.9991666666666666,
+    "new": 0.9983333333333333
+   },
+   "rej_seen_brands": 0.997801727472177
+  },
+  "0.6": {
+   "known_acc": 0.8408163265306122,
+   "rej_heldout_mean": 0.9974999999999999,
+   "rej_heldout": {
+    "puma": 0.9991666666666666,
+    "reebok": 0.9991666666666666,
+    "vans": 0.9891666666666666,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 0.9989020477872208
+  },
+  "0.7": {
+   "known_acc": 0.7904761904761904,
+   "rej_heldout_mean": 0.9984999999999999,
+   "rej_heldout": {
+    "puma": 0.9991666666666666,
+    "reebok": 0.9991666666666666,
+    "vans": 0.9941666666666666,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 0.9992709002772209
+  },
+  "0.75": {
+   "known_acc": 0.7619047619047619,
+   "rej_heldout_mean": 0.999,
+   "rej_heldout": {
+    "puma": 1.0,
+    "reebok": 1.0,
+    "vans": 0.995,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 0.9992709002772209
+  },
+  "0.8": {
+   "known_acc": 0.7156462585034014,
+   "rej_heldout_mean": 0.9996666666666666,
+   "rej_heldout": {
+    "puma": 1.0,
+    "reebok": 1.0,
+    "vans": 0.9983333333333333,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 0.9995143078349255
+  },
+  "0.85": {
+   "known_acc": 0.6408163265306123,
+   "rej_heldout_mean": 0.9996666666666666,
+   "rej_heldout": {
+    "puma": 1.0,
+    "reebok": 1.0,
+    "vans": 0.9983333333333333,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 0.9998795180722893
+  },
+  "0.9": {
+   "known_acc": 0.48299319727891155,
+   "rej_heldout_mean": 0.9998333333333334,
+   "rej_heldout": {
+    "puma": 1.0,
+    "reebok": 1.0,
+    "vans": 0.9991666666666666,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 1.0
+  },
+  "0.95": {
+   "known_acc": 0.10884353741496598,
+   "rej_heldout_mean": 1.0,
+   "rej_heldout": {
+    "puma": 1.0,
+    "reebok": 1.0,
+    "vans": 1.0,
+    "asics": 1.0,
+    "new": 1.0
+   },
+   "rej_seen_brands": 1.0
+  }
+ }
+}

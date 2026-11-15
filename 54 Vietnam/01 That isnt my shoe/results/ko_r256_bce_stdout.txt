@@ -1,0 +1,7 @@
+== Sat Nov 14 23:47:49 2026 {'tag': 'r256_bce', 'arch': 'efficientnet_b0', 'res': 256, 'epochs': 40, 'lr': 0.0004, 'smooth': 0.1, 'loss': 'bce'}
+fold 0: closed-set acc task val 0.905 | web photos of the 3 brands 0.849 | 270s
+fold 1: closed-set acc task val 0.925 | web photos of the 3 brands 0.824 | 162s
+fold 2: closed-set acc task val 0.932 | web photos of the 3 brands 0.819 | 130s
+fold 3: closed-set acc task val 0.925 | web photos of the 3 brands 0.820 | 63s
+fold 4: closed-set acc task val 0.925 | web photos of the 3 brands 0.820 | 90s
+done

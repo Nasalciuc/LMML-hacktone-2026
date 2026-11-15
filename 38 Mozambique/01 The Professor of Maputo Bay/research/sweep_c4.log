@@ -1,0 +1,22 @@
+== rawv=0.35
+SCORE 0.328  games won 323/480 (0.673) draws 23  me 35.3 opp 28.5  slowest 4.51s illegal 0 wall 99s rawv=0.35
+  by group 0:0.42 1:0.33 2:0.33 3:0.42 4:0.38 5:0.38 6:0.12 7:0.25
+== rawv=0.7
+SCORE 0.323  games won 295/480 (0.615) draws 74  me 35.5 opp 28.7  slowest 4.36s illegal 0 wall 89s rawv=0.7
+  by group 0:0.29 1:0.25 2:0.46 3:0.29 4:0.29 5:0.46 6:0.29 7:0.25
+== rawr=40
+SCORE 0.354  games won 320/480 (0.667) draws 37  me 35.4 opp 28.7  slowest 4.44s illegal 0 wall 86s rawr=40
+  by group 0:0.25 1:0.54 2:0.42 3:0.38 4:0.33 5:0.25 6:0.25 7:0.42
+== rawr=55
+SCORE 0.380  games won 322/480 (0.671) draws 42  me 35.7 opp 28.6  slowest 4.21s illegal 0 wall 87s rawr=55
+  by group 0:0.33 1:0.54 2:0.38 3:0.42 4:0.33 5:0.50 6:0.25 7:0.29
+== rawv=0.35 rawr=50
+SCORE 0.292  games won 302/480 (0.629) draws 14  me 34.3 opp 29.6  slowest 3.90s illegal 0 wall 86s rawv=0.35 rawr=50
+  by group 0:0.42 1:0.33 2:0.25 3:0.33 4:0.33 5:0.21 6:0.12 7:0.33
+== gm=0.98
+SCORE 0.396  games won 316/480 (0.658) draws 53  me 35.8 opp 28.5  slowest 4.41s illegal 0 wall 85s gm=0.98
+  by group 0:0.33 1:0.42 2:0.42 3:0.46 4:0.38 5:0.46 6:0.33 7:0.38
+== rawv=0.35 gm=0.96
+SCORE 0.292  games won 308/480 (0.642) draws 44  me 35.1 opp 29.0  slowest 4.08s illegal 0 wall 89s rawv=0.35 gm=0.96
+  by group 0:0.17 1:0.12 2:0.46 3:0.21 4:0.38 5:0.46 6:0.25 7:0.29
+SWEEPDONE

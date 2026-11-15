@@ -1,0 +1,480 @@
+{
+ "model": "sherlock_labels.pt",
+ "thr_joint": -9.042672157287598,
+ "thr_sem": -3.7887744903564453,
+ "w_trace": 2.0,
+ "train_as_is": {
+  "n": 735,
+  "accepted": 0.9932,
+  "label_correct": 0.9905,
+  "brand_guess_correct_in_sample": 0.9973,
+  "trace_score_pct_1_2_5_50_95": [
+   -1.01,
+   -0.6,
+   0.63,
+   4.87,
+   9.74
+  ],
+  "ms_per_image": 22.5
+ },
+ "train_shifted_3px": {
+  "rejected": 0.2585,
+  "trace_score_median": -1.23
+ },
+ "train_shifted_8px": {
+  "rejected": 0.9905,
+  "trace_score_median": -12.37
+ },
+ "train_shifted_16px": {
+  "rejected": 0.0054,
+  "trace_score_median": 4.95
+ },
+ "train_resaved_jpeg95": {
+  "rejected": 0.0068,
+  "label_correct": 0.9905,
+  "trace_score_median": 4.89
+ },
+ "train_down_to_224_and_back": {
+  "rejected": 0.6925,
+  "label_correct": 0.3075
+ },
+ "other_source_sample": {
+  "per_brand": {
+   "puma": 150,
+   "reebok": 150,
+   "vans": 150,
+   "asics": 100,
+   "nike": 150,
+   "adidas": 150,
+   "converse": 150
+  },
+  "near_duplicates_of_task_photos_dropped": 2,
+  "native_sizes_top": [
+   [
+    [
+     274,
+     274
+    ],
+    43
+   ],
+   [
+    [
+     241,
+     241
+    ],
+    27
+   ],
+   [
+    [
+     258,
+     258
+    ],
+    24
+   ],
+   [
+    [
+     474,
+     474
+    ],
+    15
+   ],
+   [
+    [
+     254,
+     254
+    ],
+    12
+   ],
+   [
+    [
+     250,
+     250
+    ],
+    12
+   ],
+   [
+    [
+     240,
+     240
+    ],
+    10
+   ],
+   [
+    [
+     262,
+     262
+    ],
+    9
+   ]
+  ]
+ },
+ "kernel_240_to_256": {
+  "pil_nearest": {
+   "trace_score_median": 3.59,
+   "share_above_task_2nd_pct": 0.887
+  },
+  "pil_bilinear": {
+   "trace_score_median": 4.08,
+   "share_above_task_2nd_pct": 1.0
+  },
+  "pil_bicubic": {
+   "trace_score_median": 4.52,
+   "share_above_task_2nd_pct": 0.992
+  },
+  "pil_lanczos": {
+   "trace_score_median": 3.87,
+   "share_above_task_2nd_pct": 0.904
+  },
+  "pil_box": {
+   "trace_score_median": 3.59,
+   "share_above_task_2nd_pct": 0.887
+  },
+  "cv_linear": {
+   "trace_score_median": 4.01,
+   "share_above_task_2nd_pct": 0.996
+  },
+  "cv_cubic": {
+   "trace_score_median": 4.64,
+   "share_above_task_2nd_pct": 0.983
+  },
+  "cv_area": {
+   "trace_score_median": 3.88,
+   "share_above_task_2nd_pct": 0.996
+  },
+  "cv_lanczos": {
+   "trace_score_median": 2.47,
+   "share_above_task_2nd_pct": 0.817
+  },
+  "cv_nearest": {
+   "trace_score_median": -6.4,
+   "share_above_task_2nd_pct": 0.083
+  }
+ },
+ "best_kernel": "cv_cubic",
+ "A_direct_pil_bilinear": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5982,
+  "per_brand": {
+   "puma": 0.56,
+   "reebok": 0.653,
+   "vans": 0.593,
+   "asics": 0.58
+  },
+  "rejected_by_semantic_rule_alone": 0.0309,
+  "trace_looks_genuine(p>0.05)": 0.2309
+ },
+ "A_direct_pil_bicubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5764,
+  "per_brand": {
+   "puma": 0.533,
+   "reebok": 0.647,
+   "vans": 0.593,
+   "asics": 0.51
+  },
+  "rejected_by_semantic_rule_alone": 0.0255,
+  "trace_looks_genuine(p>0.05)": 0.2291
+ },
+ "A_direct_pil_lanczos": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5673,
+  "per_brand": {
+   "puma": 0.54,
+   "reebok": 0.62,
+   "vans": 0.573,
+   "asics": 0.52
+  },
+  "rejected_by_semantic_rule_alone": 0.0255,
+  "trace_looks_genuine(p>0.05)": 0.2218
+ },
+ "A_direct_cv_area": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5927,
+  "per_brand": {
+   "puma": 0.567,
+   "reebok": 0.647,
+   "vans": 0.58,
+   "asics": 0.57
+  },
+  "rejected_by_semantic_rule_alone": 0.0291,
+  "trace_looks_genuine(p>0.05)": 0.2182
+ },
+ "A_direct_cv_linear": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5818,
+  "per_brand": {
+   "puma": 0.567,
+   "reebok": 0.647,
+   "vans": 0.567,
+   "asics": 0.53
+  },
+  "rejected_by_semantic_rule_alone": 0.0309,
+  "trace_looks_genuine(p>0.05)": 0.2364
+ },
+ "B_via240_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.0236,
+  "per_brand": {
+   "puma": 0.02,
+   "reebok": 0.04,
+   "vans": 0.02,
+   "asics": 0.01
+  },
+  "rejected_by_semantic_rule_alone": 0.0291,
+  "trace_looks_genuine(p>0.05)": 0.9382,
+  "known_n": 450,
+  "known_accepted": 0.9844,
+  "known_accuracy_as_scored": 0.8511,
+  "known_brand_guess_correct": 0.8644,
+  "known_per_brand_as_scored": {
+   "nike": 0.88,
+   "adidas": 0.727,
+   "converse": 0.947
+  }
+ },
+ "B_via240_cv_cubic_nojpeg240": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.0345,
+  "per_brand": {
+   "puma": 0.02,
+   "reebok": 0.067,
+   "vans": 0.027,
+   "asics": 0.02
+  },
+  "rejected_by_semantic_rule_alone": 0.0291,
+  "trace_looks_genuine(p>0.05)": 0.9182,
+  "known_n": 450,
+  "known_accepted": 0.9778,
+  "known_accuracy_as_scored": 0.8444,
+  "known_brand_guess_correct": 0.8622,
+  "known_per_brand_as_scored": {
+   "nike": 0.88,
+   "adidas": 0.72,
+   "converse": 0.933
+  }
+ },
+ "C_source_128_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.6,
+  "per_brand": {
+   "puma": 0.54,
+   "reebok": 0.68,
+   "vans": 0.533,
+   "asics": 0.67
+  },
+  "rejected_by_semantic_rule_alone": 0.1036,
+  "trace_looks_genuine(p>0.05)": 0.2491
+ },
+ "C_source_160_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.6982,
+  "per_brand": {
+   "puma": 0.713,
+   "reebok": 0.733,
+   "vans": 0.66,
+   "asics": 0.68
+  },
+  "rejected_by_semantic_rule_alone": 0.0491,
+  "trace_looks_genuine(p>0.05)": 0.0745
+ },
+ "C_source_200_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.64,
+  "per_brand": {
+   "puma": 0.633,
+   "reebok": 0.707,
+   "vans": 0.613,
+   "asics": 0.59
+  },
+  "rejected_by_semantic_rule_alone": 0.0345,
+  "trace_looks_genuine(p>0.05)": 0.1491
+ },
+ "C_source_224_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.9309,
+  "per_brand": {
+   "puma": 0.933,
+   "reebok": 0.927,
+   "vans": 0.9,
+   "asics": 0.98
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.0036
+ },
+ "C_source_232_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.6055,
+  "per_brand": {
+   "puma": 0.573,
+   "reebok": 0.693,
+   "vans": 0.587,
+   "asics": 0.55
+  },
+  "rejected_by_semantic_rule_alone": 0.0291,
+  "trace_looks_genuine(p>0.05)": 0.1982
+ },
+ "C_source_236_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5818,
+  "per_brand": {
+   "puma": 0.567,
+   "reebok": 0.667,
+   "vans": 0.573,
+   "asics": 0.49
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.2127
+ },
+ "C_source_239_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.8764,
+  "per_brand": {
+   "puma": 0.86,
+   "reebok": 0.9,
+   "vans": 0.833,
+   "asics": 0.93
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.0436
+ },
+ "C_source_241_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.9164,
+  "per_brand": {
+   "puma": 0.887,
+   "reebok": 0.953,
+   "vans": 0.873,
+   "asics": 0.97
+  },
+  "rejected_by_semantic_rule_alone": 0.0309,
+  "trace_looks_genuine(p>0.05)": 0.0345
+ },
+ "C_source_244_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5818,
+  "per_brand": {
+   "puma": 0.527,
+   "reebok": 0.667,
+   "vans": 0.573,
+   "asics": 0.55
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.2127
+ },
+ "C_source_248_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5382,
+  "per_brand": {
+   "puma": 0.493,
+   "reebok": 0.613,
+   "vans": 0.54,
+   "asics": 0.49
+  },
+  "rejected_by_semantic_rule_alone": 0.0255,
+  "trace_looks_genuine(p>0.05)": 0.2473
+ },
+ "C_source_256_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5927,
+  "per_brand": {
+   "puma": 0.58,
+   "reebok": 0.693,
+   "vans": 0.54,
+   "asics": 0.54
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.1618
+ },
+ "C_source_288_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.7164,
+  "per_brand": {
+   "puma": 0.66,
+   "reebok": 0.773,
+   "vans": 0.7,
+   "asics": 0.74
+  },
+  "rejected_by_semantic_rule_alone": 0.0273,
+  "trace_looks_genuine(p>0.05)": 0.0982
+ },
+ "C_source_300_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5764,
+  "per_brand": {
+   "puma": 0.533,
+   "reebok": 0.64,
+   "vans": 0.6,
+   "asics": 0.51
+  },
+  "rejected_by_semantic_rule_alone": 0.0236,
+  "trace_looks_genuine(p>0.05)": 0.2018
+ },
+ "C_source_320_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5182,
+  "per_brand": {
+   "puma": 0.493,
+   "reebok": 0.573,
+   "vans": 0.513,
+   "asics": 0.48
+  },
+  "rejected_by_semantic_rule_alone": 0.0236,
+  "trace_looks_genuine(p>0.05)": 0.2491
+ },
+ "C_source_384_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5927,
+  "per_brand": {
+   "puma": 0.587,
+   "reebok": 0.627,
+   "vans": 0.573,
+   "asics": 0.58
+  },
+  "rejected_by_semantic_rule_alone": 0.0236,
+  "trace_looks_genuine(p>0.05)": 0.1982
+ },
+ "C_source_400_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.5855,
+  "per_brand": {
+   "puma": 0.567,
+   "reebok": 0.64,
+   "vans": 0.593,
+   "asics": 0.52
+  },
+  "rejected_by_semantic_rule_alone": 0.0218,
+  "trace_looks_genuine(p>0.05)": 0.2218
+ },
+ "C_source_480_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.6364,
+  "per_brand": {
+   "puma": 0.6,
+   "reebok": 0.7,
+   "vans": 0.62,
+   "asics": 0.62
+  },
+  "rejected_by_semantic_rule_alone": 0.02,
+  "trace_looks_genuine(p>0.05)": 0.1509
+ },
+ "C_source_512_cv_cubic": {
+  "unknown_n": 550,
+  "unknown_rejected": 0.6073,
+  "per_brand": {
+   "puma": 0.573,
+   "reebok": 0.673,
+   "vans": 0.607,
+   "asics": 0.56
+  },
+  "rejected_by_semantic_rule_alone": 0.0164,
+  "trace_looks_genuine(p>0.05)": 0.2
+ },
+ "one_image_per_call_agreement_with_batch": {
+  "n": 184,
+  "float01": 1.0,
+  "imagenet_norm": 1.0,
+  "minus1_plus1": 1.0,
+  "float_0_255": 1.0,
+  "uint8": 1.0
+ }
+}

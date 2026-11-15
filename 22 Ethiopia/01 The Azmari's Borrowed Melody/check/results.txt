@@ -1,0 +1,92 @@
+Output of the check scripts, 15 Nov 2026, Python 3.13 (Anaconda), Windows.
+
+===== python build_cases.py ../../task_ethiopia/train-input.wav <cache> 3
+recordings: 345 | with a known replaced part: 344
+
+===== python compare.py <cache>
+control with nothing replaced: archive answers 16.16-17.81, fixed answers 13.17-17.86
+
+by test group                        cases  archive  fixed
+  first 140 / A train                    1        1      1
+  first 140 / B phrase moved             7        7      7
+  first 140 / C same notes + rumble     15       15     15
+  first 140 / D phrase without rumbl     3        3      3
+  first 140 / E phrase + music decoy     3        3      3
+  first 140 / F weak rumble + octave     3        0      0
+  first 140 / S1 diff_inst              12       12     12
+  first 140 / S1 same_inst_diff_chai    12       12     12
+  first 140 / S1 same_inst_same_chai    12       10     11
+  first 140 / S2 diff_inst              24       24     24
+  first 140 / S2 same_inst_diff_chai    24       23     24
+  first 140 / S2 same_inst_same_chai    24       24     24
+  fresh 204 / S3 fresh 2.5-10 s         72       70     72
+  fresh 204 / short 1.5-2.5 s           30       22     25
+  fresh 204 / long 10-14 s              30       29     29
+  fresh 204 / long 14-20 s              24       24     24
+  fresh 204 / at file start             24       24     24
+  fresh 204 / at file end               24       24     24
+  ALL                                  344      327    334
+
+by kind of replacement               cases  archive  fixed
+  train-made                            32       29     29
+  diff_inst                            104      103    104
+  same_inst_diff_chain                 104       98    103
+  same_inst_same_chain                 104       97     98
+  ALL                                  344      327    334
+
+by length of the replaced part       cases  archive  fixed
+  5-10 s                               188      182    185
+  2.5-5 s                               72       70     71
+  under 2.5 s                           30       22     25
+  10-20 s                               54       53     53
+  ALL                                  344      327    334
+
+fixed by the change: 7 | broken by the change: 0
+
+still failing with the fixed file:
+  first 140 F weak rumble + octave train-made             len  5.0 truth   6.00- 11.00 | fixed  30.01- 34.01 (start +24.01, end +23.01) elsewhere in the file
+  first 140 F weak rumble + octave train-made             len  5.0 truth  25.00- 30.00 | fixed  44.00- 48.05 (start +19.00, end +18.05) elsewhere in the file
+  first 140 F weak rumble + octave train-made             len  5.0 truth  40.00- 45.00 | fixed  10.07- 13.92 (start -29.93, end -31.08) elsewhere in the file
+  first 140 S1 same_inst_same_chai same_inst_same_chain   len  2.6 truth  17.02- 19.67 | fixed   0.02- 16.36 (start -17.00, end  -3.30) elsewhere in the file
+  fresh 204 short 1.5-2.5 s        same_inst_diff_chain   len  1.6 truth  25.73- 27.30 | fixed  30.21- 40.00 (start  +4.48, end +12.70) elsewhere in the file
+  fresh 204 short 1.5-2.5 s        same_inst_same_chain   len  1.6 truth  50.24- 51.87 | fixed   3.22- 11.92 (start -47.02, end -39.96) elsewhere in the file
+  fresh 204 short 1.5-2.5 s        same_inst_same_chain   len  1.7 truth   3.97-  5.71 | fixed  20.26- 32.16 (start +16.29, end +26.45) elsewhere in the file
+  fresh 204 short 1.5-2.5 s        same_inst_same_chain   len  1.6 truth  49.02- 50.59 | fixed  22.06- 42.05 (start -26.95, end  -8.53) elsewhere in the file
+  fresh 204 short 1.5-2.5 s        same_inst_same_chain   len  2.4 truth  14.89- 17.28 | fixed  36.06- 51.00 (start +21.16, end +33.72) elsewhere in the file
+  fresh 204 long 10-14 s           same_inst_same_chain   len 12.4 truth  16.72- 29.07 | fixed  20.01- 29.06 (start  +3.29, end  -0.02) start wrong
+
+edge error among passed recordings, fixed file: median 0.04 s, 95% 0.14 s, worst 1.17 s, over 1.0 s in 1.8%
+
+===== python ablation.py <cache>
+variant                                     first 140 S3 fresh 2.5-10 s   short 1.5-2.5 s      long 10-14 s      long 14-20 s     at file start       at file end   ALL
+recordings                                        140                72                30                30                24                24                24   344
+archive as is (max 40 s)                          134                70                22                29                24                24                24   327
+max 20 s                                          135                71                22                29                24                24                24   329
+max 15 s                                          135                71                23                29                 9                24                24   315
+max 12 s                                          136                71                23                24                 0                24                24   302
+no melody features                                135                71                25                29                24                24                24   332
+no melody + max 20 s = ../main.py                 136                72                25                29                24                24                24   334
+no melody + max 15 s                              136                72                26                29                 9                24                24   320
+no melody + max 12 s                              137                72                27                25                 0                24                24   309
+chain features only                               132                67                21                29                22                24                22   317
+
+===== python formats.py ../../task_ethiopia/train-input.wav <work folder>
+int16 as given                 exit 0   2.2 s  header start_s,end_s -> 14.965,20.912    ok
+float32 -1..1                  exit 0   2.4 s  header start_s,end_s -> 14.965,20.912    ok
+float64                        exit 0   2.2 s  header start_s,end_s -> 14.965,20.912    ok
+int32 (scaled up)              exit 0   2.1 s  header start_s,end_s -> 14.965,20.912    ok
+uint8 8-bit                    exit 0   2.5 s  header start_s,end_s -> 14.965,20.912    ok
+stereo (same both sides)       exit 0   2.0 s  header start_s,end_s -> 14.965,20.912    ok
+stereo (right silent)          exit 0   2.0 s  header start_s,end_s -> 14.965,20.912    ok
+44.1 kHz                       exit 0   3.3 s  header start_s,end_s -> 14.971,20.921    ok
+16 kHz                         exit 0   2.1 s  header start_s,end_s -> 14.939,20.889    ok
+8 kHz                          exit 0   1.5 s  header start_s,end_s -> 14.939,20.889    ok
+10x louder (near full scale)   exit 0   2.6 s  header start_s,end_s -> 14.965,20.912    ok
+10x quieter                    exit 0   2.7 s  header start_s,end_s -> 14.965,20.912    ok
+DC offset +500                 exit 0   2.5 s  header start_s,end_s -> 14.965,20.912    ok
+polarity inverted              exit 0   2.5 s  header start_s,end_s -> 14.965,20.912    ok
+first 30 s only                exit 0   1.5 s  header start_s,end_s -> 14.965,20.912    ok
+12-24 s only                   exit 0   1.3 s  header start_s,end_s -> 2.970,8.917      ok
+3 s of silence                 exit 0   1.6 s  header start_s,end_s -> 0.000,1.500      
+0.2 s clip                     exit 0   1.5 s  header start_s,end_s -> 0.021,0.200      
+not an audio file              exit 0          header start_s,end_s -> 0.000,1.500      extra files written: []
