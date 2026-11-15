@@ -62,15 +62,17 @@ Official SDK, current `main.py`, CPython, 24 maps, seed 11, four workers:
 
 That is 8 map wins, 9 draws and 7 losses across 120 games. The map score is `(8 + 9/2) / 24`, not `80 / 120`. Timing passed the SDK's limit on this machine. Python 3.10 syntax parsing and `git diff --check` also passed. PyPy is not installed here, so its runtime performance remains unverified. These practice results do not establish hidden-map qualification.
 
-## Later checks (15 November 2026, PyPy, 24 maps per seed)
+## Final version and checks (15 November 2026, PyPy 3.10, 24 maps per seed)
 
-Other versions of the agent were tried on three seeds. None reached 65%, and none was clearly better than this `main.py`.
+`main.py` is now the version with a fixed amount of search per move. It no longer stops on a clock, so a slow machine does not cut its planning short. It also compares both workshop sites in the opening, and once it has 17 points it sends the spare boat on quick raw-material deliveries.
 
-| Version | Seed 777 | Seed 11 | Seed 2026 |
-|---|---|---|---|
-| this `main.py` | 39.6% | 52.1% (CPython) | not run |
-| fixed search budget + spare-boat deliveries | 60.4% | 43.8% | 43.8% |
+| Version | Seed 777 | Seed 11 | Seed 2026 | Seed 5 | Seed 99 | Average |
+|---|---|---|---|---|---|---|
+| this `main.py` | 60.4% | 43.8% | 43.8% | 52.1% | 58.3% | 51.7% |
+| previous `main.py` (clock-limited) | 39.6% | 52.1% (CPython) | not run | 52.1% | 50.0% | 48.5% |
 
-The same version moves 10 to 15 points between seeds, so every version sits at roughly 45 to 50%. The task is not solved.
+Slowest game: 6.5 seconds, inside the 10-second limit. The numbers earlier in this README describe the previous version.
+
+No seed reached 65%. The same version moves 10 to 15 points between seeds. The task is not solved.
 
 `alternativa/` holds a teammate's different agent. It scored 0.27, 0.23 and 0.31 on the official arena.

@@ -13,7 +13,7 @@ CAP = 3
 ROUNDS = 80
 INF = 10 ** 6
 
-# Tunable parameters for micro-beam planner
+# Fixed-work beam search, with a shared time limit as a safety net.
 PR = {
     'gamma': 0.975,     # per-round discount of future points
     'lam': 0.85,        # per cost-unit discount of materials away from workshop
@@ -26,12 +26,11 @@ PR = {
     'nu': 0.16,         # small value factor of ungathered natural stock
     'unit': 0.18,       # per-unit bonus for useful T/F
     'build': 7.4,       # value of having workshop built at target M
-    'H': 22,            # beam search steps (wait rounds fast-forwarded)
-    'W': 72,            # beam width
-    'H0': 26,           # deeper opening search at round 0
-    'W0': 96,
-    'T0': 2.0,
-    'budget': 6.8,      # seconds of search per game
+    'H': 26,            # beam search steps (wait rounds fast-forwarded)
+    'W': 24,            # beam width
+    'H0': 32,           # deeper opening search at round 0
+    'W0': 32,
+    'budget': 8.0,      # seconds of search per game
 }
 
 # op codes
@@ -79,7 +78,7 @@ class Static(object):
                 hops[s][v] = ch
                 nxt[s][v] = first[v]
         self.dist, self.hops, self.nxt = dist, hops, nxt
-        # True travel rounds is dist; add tiny hop tiebreak (0.35*hops) for material routing
+        # Travel uses true route time; material values also account for departure actions.
         self.cost = [[dist[a][b] + hops[a][b] if a != b else 0 for b in range(n)] for a in range(n)]
         self.tcost2 = [[2 * dist[a][b] + hops[a][b] if a != b else 0 for b in range(n)] for a in range(n)]
 
@@ -161,6 +160,12 @@ def win_factor(S, c, del_r, oeta):
     return 0.28 + 1.05 * pw
 
 
+def state_key(L):
+    # The clock affects regeneration, deadlines and tie priority. Boat labels do not.
+    boats = sorted(tuple(L[5 + 6*b:11 + 6*b]) for b in range(L[4]))
+    return (L[0], L[2], L[3], L[4], tuple(boats), tuple(L[23:]))
+
+
 class Planner(object):
     def __init__(self, S, M, oeta, r0):
         self.S = S
@@ -226,6 +231,9 @@ class Planner(object):
         closed = L[3]
         nb = L[4]
         acts = []
+
+        if not any(not ((closed >> c) & 1) and r < S.cdl[c] for c in range(S.nc)):
+            return [(WAIT, 0, 0, 0)]
 
         has_om = any(not ((closed >> c) & 1) and r < S.cdl[c] for c in S.manuf)
         need_T = has_om or any(not ((closed >> c) & 1) and r < S.cdl[c] and S.cgood[c] == T for c in S.raws)
@@ -557,30 +565,29 @@ class Planner(object):
             seed_child = None
             for v, L, first, path in beam:
                 if L[0] >= ROUNDS:
-                    k = tuple(L[2:])
-                    old = children.get(k)
-                    if old is None or v > old[0]:
-                        children[k] = (v, L, first, path)
+                    key = state_key(L)
+                    old = children.get(key)
+                    if old is None or L[1] > old[0][1]:
+                        children[key] = (L, first, path)
                     continue
                 on_seed = seed is not None and depth < len(seed) and path == seed[:depth]
                 for a in self.actions(L):
                     L2 = self.apply(L, a)
-                    v2 = self.evaluate(L2)
-                    key = tuple(L2[2:])
+                    key = state_key(L2)
                     old = children.get(key)
-                    if old is None or v2 > old[0]:
-                        children[key] = (v2, L2, first if first is not None else a, path + [a])
+                    if old is None or L2[1] > old[0][1]:
+                        children[key] = (L2, first if first is not None else a, path + [a])
                     if on_seed and a == seed[depth]:
                         seed_child = key
             if not children:
                 break
-            items = sorted(children.values(), key=lambda x: -x[0])
-            nb = items[:W]
+            items = [(self.evaluate(L), L, first, path) for L, first, path in children.values()]
+            items.sort(key=lambda x: -x[0])
+            beam = items[:W]
             if seed_child is not None:
-                sc = children[seed_child]
-                if all(sc[1] is not x[1] for x in nb):
-                    nb.append(sc)
-            beam = nb
+                L, f, p = children[seed_child]
+                if all(L is not x[1] for x in beam):
+                    beam.append((self.evaluate(L), L, f, p))
             if time.perf_counter() > deadline and depth >= 2:
                 break
         best = max(beam, key=lambda x: x[0])
@@ -624,6 +631,9 @@ def decide(obs, memory):
     for s, v in enumerate(obs['stocks']):
         if v is not None and S.roles[s] in (T, F):
             memory['seen'][s] = (rnd, v)
+
+    if 2 * obs['own']['score'] > sum(S.cpts) or not any(obs['claims'][c] == -1 and rnd < S.cdl[c] for c in range(S.nc)):
+        return {'op':'wait'}
 
     # Dynamic oeta update from opponent claims + spotted enemy boats
     claims = obs['claims']
@@ -687,28 +697,33 @@ def decide(obs, memory):
 
     pl = Planner(S, memory['M'], oeta, rnd)
     L0 = pl.encode(obs, memory)
-    remaining = max(0.05, PR['budget'] - memory['used'])
-    per = remaining / max(4.0, (ROUNDS - rnd) * 0.42)
-    deadline = t0 + per * 1.4
     seed = memory.get('plan')
     if seed:
         seed = seed[1:] if len(seed) > 1 else None
-    H, W = PR['H'], PR['W']
-    if rnd == 0 and PR.get('H0'):
-        H, W = PR['H0'], PR['W0']
-        deadline = t0 + PR['T0']
-    if rnd == 0 and len(S.msites) > 1:
-        best = None
-        per_m = PR['T0'] / len(S.msites)
-        for m in S.msites:
-            plm = Planner(S, m, oeta, rnd)
-            f, pth = plm.search(L0, H, W, None, time.perf_counter() + per_m)
-            if best is None or plm.best_value > best[0]:
-                best = (plm.best_value, m, f, pth)
-        memory['M'] = best[1]
-        first, path = best[2], best[3]
+    remaining = PR['budget'] - memory['used']
+    if remaining <= 0:
+        # Keep the protocol responsive if a slower CPU exhausts the search budget.
+        if seed and to_json(seed[0]) in obs['legal_actions']:
+            first, path = seed[0], seed
+        else:
+            candidates = pl.actions(L0)
+            first = max(candidates, key=lambda a: pl.evaluate(pl.apply(L0, a)))
+            path = [first]
     else:
-        first, path = pl.search(L0, H, W, seed, deadline)
+        H = PR['H0'] if rnd == 0 else PR['H']
+        W = PR['W0'] if rnd == 0 else PR['W']
+        # Fixed work is stable across machines; this deadline is a final safety net.
+        if rnd == 0:
+            best = None
+            for M in S.msites:
+                opening = Planner(S,M,oeta,rnd)
+                f,p = opening.search(L0,H,W,None,t0+remaining)
+                if best is None or opening.best_value > best[0]:
+                    best = (opening.best_value,M,f,p)
+            memory['M'] = best[1]
+            first,path = best[2],best[3]
+        else:
+            first, path = pl.search(L0, H, W, seed, t0 + remaining)
     memory['plan'] = path
     memory['used'] += time.perf_counter() - t0
     if first is None:
@@ -728,6 +743,77 @@ def agent(observation, memory):
         print('agent error', repr(exc), file=sys.stderr)
         memory['plan'] = None
     return {'op': 'wait'} if {'op': 'wait'} in legal else legal[0]
+
+
+def dispatch_spare(obs,mem):
+    last=mem.pop('raw_pending',None)
+    path=mem.get('raw_path',[])
+    if last and path:
+        a,before=last;op,b,x,q=a;bt=obs['own']['boats'][b]
+        done=(op==SAIL and (bt['eta']>0 or bt['position']==x)) or (op in (GATHER,LOAD) and bt['cargo'][x]>before) or (op==UNLOAD and bt['cargo'][x]<before) or (op==DELIVER and obs['claims'][x]==obs['seat'])
+        if done:path.pop(0)
+    if path and obs['claims'][mem['raw_target']]!=-1:path=[]
+    if not path:
+        if obs['own']['score']<17 or 'S' not in mem:return None
+        S=mem['S'];boats=obs['own']['boats'];r=obs['round']
+        for s,v in enumerate(obs['stocks']):
+            if v is not None and S.roles[s] in (T,F):mem['seen'][s]=(r,v)
+        jobs=[s for s in S.msites if obs['own']['jobs'][s] or obs['own']['warehouses'][s][P]]
+        carriers=[]
+        for b,bt in enumerate(boats):
+            if bt['cargo'][P]:carriers.append((-100,b))
+            elif jobs and sum(bt['cargo'])<CAP:
+                loc=bt['destination'] if bt['eta'] else bt['position']
+                carriers.append((bt['eta']+min(S.dist[loc][s] for s in jobs),b))
+        if not carriers:return None
+        carrier=min(carriers)[1];best=None
+        def route(out,b,pos,dest):
+            while pos!=dest:
+                pos=S.nxt[pos][dest];out.append((SAIL,b,pos,0))
+        for b,bt in enumerate(boats):
+            if b==carrier or bt['eta'] or bt['cargo'][P]:continue
+            for c in S.raws:
+                if obs['claims'][c]!=-1 or r>=S.cdl[c]:continue
+                g=S.cgood[c];q=S.cqty[c];pos=bt['position'];acts=[];cargo=bt['cargo'];need=max(0,q-cargo[g]);extra=0
+                if need+sum(cargo)>CAP:
+                    for other in (T,F):
+                        if other!=g and cargo[other]:acts.append((UNLOAD,b,other,cargo[other]));extra+=1
+                source=pos;pickup=None
+                if need:
+                    options=[]
+                    for site in range(S.n):
+                        avail=obs['own']['warehouses'][site][g];op=LOAD
+                        if S.roles[site]==g and est_stock(mem,site,r)>avail:
+                            avail=est_stock(mem,site,r);op=GATHER
+                        if avail>=need:options.append((S.dist[pos][site]+S.dist[site][S.cdest[c]],site,op))
+                    if not options:continue
+                    _,source,pickup=min(options);route(acts,b,pos,source);acts.append((pickup,b,g,need))
+                route(acts,b,source,S.cdest[c]);acts.append((DELIVER,b,c,0))
+                cost=S.dist[pos][source]+S.dist[source][S.cdest[c]]+bool(need)+1+extra
+                if r+cost>=S.cdl[c]:continue
+                if best is None or cost<best[0]:best=(cost,c,acts)
+        if best is None:return None
+        _,mem['raw_target'],path=best
+    mem['raw_path']=path
+    if not path:return None
+    a=path[0];op,b,x,q=a;act=to_json(a);bt=obs['own']['boats'][b]
+    if act in obs['legal_actions']:
+        before=bt['cargo'][x] if op in (LOAD,GATHER,UNLOAD) else None
+        mem['raw_pending']=(a,before)
+        mem['plan']=None
+        return act
+    if not bt['eta']:mem['raw_path']=[]
+    return None
+
+base_agent=agent
+
+def agent(obs,mem):
+    deliveries=[a for a in obs['legal_actions'] if a['op']=='deliver']
+    if deliveries:
+        mem['plan']=None
+        return max(deliveries,key=lambda a:obs['map']['contracts'][a['contract']]['points'])
+    action=dispatch_spare(obs,mem)
+    return action if action is not None else base_agent(obs,mem)
 
 
 def serve():
